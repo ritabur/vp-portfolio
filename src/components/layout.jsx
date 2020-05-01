@@ -8,6 +8,7 @@ import Footer from './footer';
 import { Box } from './box';
 import theme from '../theme';
 
+// TODO: use react breakpoint lib not to render header
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalResetStyle />
@@ -15,11 +16,30 @@ const Layout = ({ children }) => (
       <Box display={['block', 'block', 'block', 'none']}>
         <Navbar />
       </Box>
-      <Box as="main" maxWidth={1200} margin="0 auto" pt={20}>
-        {children}
-      </Box>
-      <Box maxWidth={930} mb={20} ml={20}>
-        <Footer />
+
+      <Box margin="0 auto">
+        <Box
+          maxWidth={['none', null, null, null]}
+          width={['100%', null, null, '70%']}
+          display={['block', null, null, 'inline-block']}
+          verticalAlign="top"
+        >
+          <Box as="main" maxWidth={['none', null, null, 830]} ml="auto">
+            {children}
+          </Box>
+          <Box pb={20} pl={[0, null, null, 20]}>
+            <Footer />
+          </Box>
+        </Box>
+
+        <Box
+          width="30%"
+          height="100vh"
+          display={['none', null, null, 'inline-block']}
+          verticalAlign="top"
+        >
+          desktop header
+        </Box>
       </Box>
     </Box>
   </ThemeProvider>
