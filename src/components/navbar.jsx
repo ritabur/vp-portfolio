@@ -1,7 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import PropTypes from "prop-types"
+import React from 'react';
+import styled from 'styled-components';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 
 const StyledHeader = styled.header`
   display: flex;
@@ -13,26 +12,24 @@ const StyledHeader = styled.header`
 
 const Navbar = () => {
   const data = useStaticQuery(graphql`
-      query SiteTitleQuery {
-          site {
-              siteMetadata {
-                  title
-              }
-          }
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
       }
-  `)
+    }
+  `);
 
   const {
     site: {
-      siteMetadata: {
-        title,
-      }
-    }
+      siteMetadata: { title },
+    },
   } = data;
 
   return (
     <StyledHeader>
-      <h1>{ title }</h1>
+      <h1>{title}</h1>
       <div>
         <Link to="/">Homepage</Link>
         <Link to="/about">About</Link>
@@ -40,16 +37,7 @@ const Navbar = () => {
         <Link to="/blog-list">Blogs</Link>
       </div>
     </StyledHeader>
-  )
-}
+  );
+};
 
-Navbar.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Navbar.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Navbar
-
+export default Navbar;

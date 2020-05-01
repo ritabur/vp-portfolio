@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
   background-color: gainsboro;
@@ -7,6 +7,6 @@ const StyledFooter = styled.footer`
 
 const Footer = () => (
   <StyledFooter>FOOTER {new Date().getFullYear()}</StyledFooter>
-)
+);
 
 export default Footer;
