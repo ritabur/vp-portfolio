@@ -1,13 +1,32 @@
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import { sanitize } from 'dompurify';
 
 import Layout from 'components/layout';
+import { Box } from 'components/box';
+import img from 'images/gatsby-astronaut.png';
+import { media as MEDIA } from 'lib/media';
 
-const StyledContainer = styled.div`
-  padding: 20px;
+const StyledH1 = styled.h1`
+  padding-top: 12px;
+  padding-bottom: 20px;
+  font-size: ${props => props.theme.fontSizes.large};
+  font-weight: ${props => props.theme.fontWeights.bold};
+  text-align: center;
+  text-transform: lowercase;
+
+  ${MEDIA.above.md`
+    padding-top: 80px;
+  `}
+`;
+
+const StyledImg = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+
+  border: 1px solid black;
 `;
 
 const IndexPage = ({ data }) => {
@@ -15,25 +34,38 @@ const IndexPage = ({ data }) => {
     allMarkdownRemark: { edges },
     markdownRemark: {
       frontmatter: { title },
-      html,
     },
   } = data;
 
   return (
     <Layout>
-      <StyledContainer>
-        <h1>{title}</h1>
-        <p dangerouslySetInnerHTML={{ __html: sanitize(html) }} />
-      </StyledContainer>
-      <StyledContainer>
-        All pages:
-        {edges.map(({ node }) => (
-          <div key={node.frontmatter.title}>
-            {node.frontmatter.title}:
-            <Link to={node.fields.slug}>{node.fields.slug}</Link>
-          </div>
-        ))}
-      </StyledContainer>
+      <Box display={['block', null, null, 'flex']} pt={[0, null, null, 20]}>
+        <Box width={['100%', null, null, '25%']}>
+          <StyledH1>{title}</StyledH1>
+        </Box>
+        <Box width={['auto', null, null, '75%']} mx={[40, 98, 40]} pb={10}>
+          <Box mb={25}>
+            <StyledImg src={img} alt="" />
+          </Box>
+          <Box mb={25}>
+            <StyledImg src={img} alt="" />
+          </Box>
+          <Box mb={25}>
+            <StyledImg src={img} alt="" />
+          </Box>
+          <Box mb={25}>
+            <StyledImg src={img} alt="" />
+          </Box>
+        </Box>
+      </Box>
+      {/* <div> */}
+      {/*  {edges.map(({ node }) => ( */}
+      {/*      <div key={node.frontmatter.title}> */}
+      {/*        {node.frontmatter.title}: */}
+      {/*        <Link to={node.fields.slug}>{node.fields.slug}</Link> */}
+      {/*      </div> */}
+      {/*  ))} */}
+      {/* </div> */}
     </Layout>
   );
 };
@@ -63,7 +95,6 @@ export const pageQuery = graphql`
       }
     }
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      html
       frontmatter {
         title
       }

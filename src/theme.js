@@ -6,21 +6,22 @@ const breakpoints = [sm.min, md.min, lg.min, xl.min].map(b => `${b / 16}em`);
 
 const theme = {
     breakpoints,
+    space: [],
     fonts: {
         primary: "Karla, sans-serif",
     },
     colors: {
         bodyPrimary: "#050505",
         bodySecondary: "#aaa",
+        divider: "#b5b5b5",
     },
     fontSizes: {
-        small: 11,
-        medium: 14,
-        large: 18,
+        small: '11px',
+        medium: '14px',
+        large: '18px',
     },
     fontWeights: {
-        body: 800,
-        heading: 700,
+        body: 400,
         bold: 700,
     },
 };

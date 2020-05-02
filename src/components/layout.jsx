@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 
@@ -6,6 +6,7 @@ import { GlobalResetStyle } from 'lib/cssResets';
 import Navbar from './navbar';
 import Footer from './footer';
 import { Box } from './box';
+import { DesktopNavbar } from './desktopNavbar';
 import theme from '../theme';
 
 // TODO: use react breakpoint lib not to render header
@@ -24,10 +25,15 @@ const Layout = ({ children }) => (
           display={['block', null, null, 'inline-block']}
           verticalAlign="top"
         >
-          <Box as="main" maxWidth={['none', null, null, 830]} ml="auto">
+          <Box
+            as="main"
+            maxWidth={['none', null, null, 830]}
+            mx={[8, 16, null, 0]}
+            ml={[null, null, null, 'auto']}
+          >
             {children}
           </Box>
-          <Box pb={20} pl={[0, null, null, 20]}>
+          <Box pb={20} pl={[0, null, null, 20]} mx={[8, 16, null, 0]}>
             <Footer />
           </Box>
         </Box>
@@ -38,7 +44,7 @@ const Layout = ({ children }) => (
           display={['none', null, null, 'inline-block']}
           verticalAlign="top"
         >
-          desktop header
+          <DesktopNavbar />
         </Box>
       </Box>
     </Box>
