@@ -11,11 +11,16 @@ import { media as MEDIA } from 'lib/media';
 
 const StyledH1 = styled.h1`
   padding-top: 12px;
-  padding-bottom: 20px;
+  padding-bottom: 26px;
   font-size: ${props => props.theme.fontSizes.large};
   font-weight: ${props => props.theme.fontWeights.bold};
   text-align: center;
   text-transform: lowercase;
+
+  ${MEDIA.above.sm`
+    padding-top: 30px;
+    padding-bottom: 66px;
+  `}
 
   ${MEDIA.above.md`
     padding-top: 80px;
@@ -39,7 +44,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <Box display={['block', null, null, 'flex']} pt={[0, null, null, 20]}>
+      <Box display={['block', null, null, 'flex']} pt={[0, null, null, 30]}>
         <Box width={['100%', null, null, '25%']}>
           <StyledH1>{title}</StyledH1>
         </Box>

@@ -20,7 +20,7 @@ const Layout = ({ children }) => (
 
       <Box margin="0 auto">
         <Box
-          maxWidth={['none', null, null, null]}
+          maxWidth={['none', null]}
           width={['100%', null, null, '70%']}
           display={['block', null, null, 'inline-block']}
           verticalAlign="top"
@@ -33,7 +33,7 @@ const Layout = ({ children }) => (
           >
             {children}
           </Box>
-          <Box pb={20} pl={[0, null, null, 20]} mx={[8, 16, null, 0]}>
+          <Box pb={20} pl={[0, null, null, 20]} mx={[8, 16, null, 0]} as="footer">
             <Footer />
           </Box>
         </Box>
@@ -43,6 +43,7 @@ const Layout = ({ children }) => (
           height="100vh"
           display={['none', null, null, 'inline-block']}
           verticalAlign="top"
+          position="fixed"
         >
           <DesktopNavbar />
         </Box>

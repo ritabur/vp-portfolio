@@ -38,6 +38,8 @@ const SocialMediaLink = styled.a`
   font-size: ${props => props.theme.fontSizes.small};
   font-weight: ${props => props.theme.fontWeights.bold};
   text-transform: uppercase;
+  text-decoration: none;
+  color: ${props => props.theme.colors.bodyPrimary};
 
   &:not(:last-child):after {
     content: '/';
@@ -45,9 +47,14 @@ const SocialMediaLink = styled.a`
   }
 `;
 
+const StyledBox = styled(Box)`
+  top: 30%;
+  transform: translateY(-30%);
+`;
+
 export const DesktopNavbar = () => {
   return (
-    <Box pt={40}>
+    <StyledBox position="relative" pt={40}>
       <StyledH2>Name name</StyledH2>
       <Divider />
       <Box my={35}>
@@ -74,9 +81,13 @@ export const DesktopNavbar = () => {
       </Box>
       <Divider />
       <Box mt={35}>
-        <SocialMediaLink>Facebook</SocialMediaLink>
-        <SocialMediaLink>Twitter</SocialMediaLink>
+        <SocialMediaLink href="https://www.facebook.com" target="_blank">
+          Facebook
+        </SocialMediaLink>
+        <SocialMediaLink href="https://www.twitter.com" target="_blank">
+          Twitter
+        </SocialMediaLink>
       </Box>
-    </Box>
+    </StyledBox>
   );
 };

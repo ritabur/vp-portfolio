@@ -14,9 +14,11 @@ const theme = {
         bodyPrimary: "#050505",
         bodySecondary: "#aaa",
         divider: "#b5b5b5",
+        lightDivider: "#e6e6e6",
     },
     fontSizes: {
         small: '11px',
+        smMedium: '13px',
         medium: '14px',
         large: '18px',
     },
