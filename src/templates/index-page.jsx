@@ -44,7 +44,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <Box display={['block', null, null, 'flex']} pt={[0, null, null, 30]}>
+      <Box display={['block', null, null, 'flex']} pt={[0, null, null, 30]} mx={[8, 16, null, 0]} maxWidth={['none', null, null, 830]}>
         <Box width={['100%', null, null, '25%']}>
           <StyledH1>{title}</StyledH1>
         </Box>

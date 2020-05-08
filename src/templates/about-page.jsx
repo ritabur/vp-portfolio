@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { sanitize } from 'dompurify';
 
+import { Box } from 'components/box';
 import Layout from 'components/layout';
+import ContentBox from 'components/contentBox';
+import Heading from 'components/Heading';
 
 const AboutPage = ({ data }) => {
   const {
@@ -15,8 +18,14 @@ const AboutPage = ({ data }) => {
 
   return (
     <Layout>
-      <h1>{title}</h1>
-      <p dangerouslySetInnerHTML={{ __html: sanitize(html) }} />
+      <Box mt={[8, 16]} mb={[32, 72]} width={[null, null, null, "85%"]}>
+        <Box mx={[8, 16, null, 100]}>
+          <ContentBox>
+            <Heading>{title}</Heading>
+            <p dangerouslySetInnerHTML={{ __html: sanitize(html) }} />
+          </ContentBox>
+        </Box>
+      </Box>
     </Layout>
   );
 };

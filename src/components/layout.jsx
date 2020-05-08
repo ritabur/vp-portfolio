@@ -27,8 +27,6 @@ const Layout = ({ children }) => (
         >
           <Box
             as="main"
-            maxWidth={['none', null, null, 830]}
-            mx={[8, 16, null, 0]}
             ml={[null, null, null, 'auto']}
           >
             {children}
