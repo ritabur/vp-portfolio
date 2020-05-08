@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { Box } from 'components/box';
+import { Box } from 'components/Box';
 import { Link } from 'gatsby';
 
 const StyledH2 = styled.h2`

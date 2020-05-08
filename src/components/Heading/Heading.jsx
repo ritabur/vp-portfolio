@@ -7,8 +7,6 @@ const StyledH1 = styled.h1`
   font-weight: ${props => props.theme.fontWeights.bold};
 `;
 
-const Heading = ({children}) => (
+export const Heading = ({children}) => (
     <StyledH1>{ children }</StyledH1>
 );
-
-export default Heading;

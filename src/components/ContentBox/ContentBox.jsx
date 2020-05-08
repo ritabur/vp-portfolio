@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { Box } from 'components/box';
+import { Box } from 'components/Box';
 
 const StyledContainer = styled(Box)`
   background-color: ${props => props.theme.colors.contentBackground};

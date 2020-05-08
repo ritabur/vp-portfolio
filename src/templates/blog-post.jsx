@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { sanitize } from 'dompurify';
 
-import Layout from 'components/layout';
+import { Layout } from 'components/Layout';
 
 const BlogPost = ({ data }) => {
   const {

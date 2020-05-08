@@ -10,7 +10,7 @@ const StyledHeader = styled.header`
   background-color: gainsboro;
 `;
 
-const MobileNavbar = () => {
+export const MobileNavbar = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -39,5 +39,3 @@ const MobileNavbar = () => {
     </StyledHeader>
   );
 };
-
-export default MobileNavbar;

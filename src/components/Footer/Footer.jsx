@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Box } from 'components/box';
+import { Box } from 'components/Box';
 
 const StyledFooter = styled(Box)`
    border: 1px solid ${props => props.theme.colors.divider};
@@ -25,7 +25,7 @@ const StyledP = styled.p`
   line-height: 1.5;
 `;
 
-const Footer = () => (
+export const Footer = () => (
   <StyledFooter py={[18, null, 40, 56]} px={[30, null, 70, 90]} width={[null, null, null, "85%"]} display={[null, null, "flex"]}>
       <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]}>
           <StyledH4>
@@ -50,5 +50,3 @@ const Footer = () => (
       </Box>
   </StyledFooter>
 );
-
-export default Footer;

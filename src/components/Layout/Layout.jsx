@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalResetStyle } from 'lib/cssResets';
-import MobileNavbar from './navbar';
-import Footer from '../Footer';
-import { Box } from '../Box';
-import { DesktopNavbar } from '../DesktopNavbar';
-import theme from '../../theme';
+import { MobileNavbar } from 'components/MobileNavbar';
+import { Footer } from 'components/Footer';
+import { Box } from 'components/Box';
+import { DesktopNavbar } from 'components/DesktopNavbar';
+import theme from 'theme';
 
 // TODO: use react breakpoint lib not to render header
-const Layout = ({ children }) => (
+export const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
     <GlobalResetStyle />
     <Box minWidth={320} color="bodyPrimary" fontFamily="primary">
@@ -53,5 +53,3 @@ const Layout = ({ children }) => (
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default Layout;

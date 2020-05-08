@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { sanitize } from 'dompurify';
 
-import { Box } from 'components/box';
-import Layout from 'components/layout';
+import { Box } from 'components/Box';
+import { Layout } from 'components/Layout';
 import { ContentBoxWithImage } from 'components/ContentBox';
-import Heading from 'components/Heading';
+import { Heading } from 'components/Heading';
 
-const AboutPage = ({ data }) => {
+const About = ({ data }) => {
   const {
     markdownRemark: {
       frontmatter: { title },
@@ -30,11 +30,11 @@ const AboutPage = ({ data }) => {
   );
 };
 
-AboutPage.propTypes = {
+About.propTypes = {
   data: PropTypes.shape().isRequired,
 };
 
-export default AboutPage;
+export default About;
 
 export const aboutPageQuery = graphql`
   query AboutPage($id: String!) {

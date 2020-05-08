@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import { sanitize } from 'dompurify';
 
-import Layout from 'components/layout';
-import { Box } from 'components/box';
+import { Layout } from 'components/Layout';
+import { Box } from 'components/Box';
 import img from 'images/gatsby-astronaut.png';
 import { media as MEDIA } from 'lib/media';
 
