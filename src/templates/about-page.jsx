@@ -5,7 +5,7 @@ import { sanitize } from 'dompurify';
 
 import { Box } from 'components/box';
 import Layout from 'components/layout';
-import ContentBox from 'components/contentBox';
+import { ContentBoxWithImage } from 'components/ContentBox';
 import Heading from 'components/Heading';
 
 const AboutPage = ({ data }) => {
@@ -19,11 +19,11 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <Box mt={[8, 16]} mb={[32, 72]} width={[null, null, null, "85%"]}>
-        <Box mx={[8, 16, null, 100]}>
-          <ContentBox>
+        <Box mr={[8, 16, 100, 0]} ml={[8, 16, 100, 20]} >
+          <ContentBoxWithImage>
             <Heading>{title}</Heading>
             <p dangerouslySetInnerHTML={{ __html: sanitize(html) }} />
-          </ContentBox>
+          </ContentBoxWithImage>
         </Box>
       </Box>
     </Layout>

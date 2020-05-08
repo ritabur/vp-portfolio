@@ -7,12 +7,10 @@ const StyledContainer = styled(Box)`
   background-color: ${props => props.theme.colors.contentBackground};
 `;
 
-const ContentBox = ({ children }) => {
+export const ContentBox = ({ children }) => {
     return (
         <StyledContainer py={[24, 62, 70]} px={[18, 75, 84]}>
             { children }
         </StyledContainer>
     )
 };
-
-export default ContentBox;
