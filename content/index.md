@@ -1,5 +1,5 @@
 ---
-templateKey: index-page
+templateKey: index
 title: Landing Page
 ---
 ### Main stuff

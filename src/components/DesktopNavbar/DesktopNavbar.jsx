@@ -74,8 +74,8 @@ export const DesktopNavbar = () => {
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/blog-list" activeClassName="isActive">
-            Blogs
+          <StyledLink to="/stories" activeClassName="isActive">
+            Stories
           </StyledLink>
         </LinkWrapper>
       </Box>

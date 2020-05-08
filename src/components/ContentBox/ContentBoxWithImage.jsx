@@ -12,14 +12,26 @@ const StyledImg = styled.img`
   max-height:100%;
 `;
 
+const ContentFooter = styled(Box)`
+  background-color: ${props => props.theme.colors.contentFooter};
+  font-size: ${props => props.theme.fontSizes.small};
+  text-transform: uppercase;
+  text-align: center;
+`;
+
 // TODO: add validation in netlify cms for min-width 840px
-export const ContentBoxWithImage = ({ children }) => {
+export const ContentBoxWithImage = ({ children, footerContent, imageUrl, alt }) => {
     return (
         <StyledContainer>
-            <StyledImg src="https://images.squarespace-cdn.com/content/v1/59bad530f43b55edcb5214f4/1581948189752-I3FEJRWXU01TOUID1RHI/ke17ZwdGBToddI8pDm48kBMHBux6YLloQo9VnD0ji-d7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mhydAgiKdIfeAoxVgE7c7oEyYWj_Ixra01q53fBqVWvV3h6MQ3CX2m9brj2DWdW0Q/leaves?format=2500w" alt="Name name" />
+            <StyledImg src={imageUrl} alt={alt} />
             <Box py={[24, 62, 70]} px={[18, 75, 84]}>
                 { children }
             </Box>
+            { footerContent &&
+                <ContentFooter py={16} px={8}>
+                    {footerContent}
+                </ContentFooter>
+            }
         </StyledContainer>
     )
 };

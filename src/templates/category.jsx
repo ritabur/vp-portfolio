@@ -5,7 +5,7 @@ import { sanitize } from 'dompurify';
 
 import { Layout } from 'components/Layout';
 
-const CategoryPage = ({ data }) => {
+const Category = ({ data }) => {
   const {
     markdownRemark: {
       frontmatter: { title },
@@ -21,11 +21,11 @@ const CategoryPage = ({ data }) => {
   );
 };
 
-CategoryPage.propTypes = {
+Category.propTypes = {
   data: PropTypes.shape().isRequired,
 };
 
-export default CategoryPage;
+export default Category;
 
 export const categoryPageQuery = graphql`
   query CategoryPage($id: String!) {

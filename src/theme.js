@@ -16,6 +16,7 @@ const theme = {
         divider: "#b5b5b5",
         lightDivider: "#e6e6e6",
         contentBackground: "#f8f8f8",
+        contentFooter: "#eaeaea",
     },
     fontSizes: {
         small: '11px',

@@ -1,5 +1,5 @@
 ---
-templateKey: category-page
+templateKey: category
 path: /category
 title: Category
 ---

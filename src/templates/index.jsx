@@ -34,7 +34,7 @@ const StyledImg = styled.img`
   border: 1px solid black;
 `;
 
-const IndexPage = ({ data }) => {
+const Index = ({ data }) => {
   const {
     allMarkdownRemark: { edges },
     markdownRemark: {
@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => {
   );
 };
 
-IndexPage.propTypes = {
+Index.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -83,10 +83,10 @@ IndexPage.propTypes = {
   }),
 };
 
-export default IndexPage;
+export default Index;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
+  query IndexTemplate {
     allMarkdownRemark(limit: 1000) {
       edges {
         node {
@@ -99,7 +99,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
       frontmatter {
         title
       }
