@@ -13,6 +13,7 @@ import Img from 'gatsby-image';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+// TODO: remove
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {

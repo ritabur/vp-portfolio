@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalResetStyle } from 'lib/cssResets';
-import Navbar from './navbar';
-import Footer from './footer';
-import { Box } from './box';
-import { DesktopNavbar } from './desktopNavbar';
-import theme from '../theme';
+import MobileNavbar from './navbar';
+import Footer from '../Footer';
+import { Box } from '../Box';
+import { DesktopNavbar } from '../DesktopNavbar';
+import theme from '../../theme';
 
 // TODO: use react breakpoint lib not to render header
 const Layout = ({ children }) => (
@@ -15,7 +15,7 @@ const Layout = ({ children }) => (
     <GlobalResetStyle />
     <Box minWidth={320} color="bodyPrimary" fontFamily="primary">
       <Box display={['block', 'block', 'block', 'none']}>
-        <Navbar />
+        <MobileNavbar />
       </Box>
 
       <Box margin="0 auto">
