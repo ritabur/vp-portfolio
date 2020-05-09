@@ -8,9 +8,9 @@ const StyledContainer = styled(Box)`
 `;
 
 export const ContentBox = ({ children }) => {
-    return (
-        <StyledContainer py={[24, 62, 70]} px={[18, 75, 84]}>
-            { children }
-        </StyledContainer>
-    )
+  return (
+    <StyledContainer py={[24, 62, 70]} px={[18, 75, 84]}>
+      {children}
+    </StyledContainer>
+  );
 };

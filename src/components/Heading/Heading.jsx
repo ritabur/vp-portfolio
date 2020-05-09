@@ -7,6 +7,6 @@ const StyledH1 = styled.h1`
   font-weight: ${props => props.theme.fontWeights.bold};
 `;
 
-export const Heading = ({children, className}) => (
-    <StyledH1 className={className}>{ children }</StyledH1>
+export const Heading = ({ children, className }) => (
+  <StyledH1 className={className}>{children}</StyledH1>
 );

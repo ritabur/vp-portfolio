@@ -25,13 +25,15 @@ export const Layout = ({ children }) => (
           display={['block', null, null, 'inline-block']}
           verticalAlign="top"
         >
-          <Box
-            as="main"
-            ml={[null, null, null, 'auto']}
-          >
+          <Box as="main" ml={[null, null, null, 'auto']}>
             {children}
           </Box>
-          <Box pb={20} pl={[0, null, null, 20]} mx={[8, 16, null, 0]} as="footer">
+          <Box
+            pb={20}
+            pl={[0, null, null, 20]}
+            mx={[8, 16, null, 0]}
+            as="footer"
+          >
             <Footer />
           </Box>
         </Box>

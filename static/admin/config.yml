@@ -25,7 +25,7 @@ collections:
     label: "Pages"
     files:
       - file: "content/index.md"
-        label: "Landing page"
+        label: "Homepage"
         name: "index"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
@@ -38,10 +38,17 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "content/category/index.md"
-        label: "Category"
-        name: "category"
+      - file: "content/training/index.md"
+        label: "Training"
+        name: "training"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "training" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+      - file: "content/audio/index.md"
+          label: "Audio"
+          name: "audio"
+          fields:
+            - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio" }
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Body", name: "body", widget: "markdown" }

@@ -34,6 +34,11 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const StyledTitleLink = styled(Link)`
+  color: ${props => props.theme.colors.bodyPrimary};
+  text-decoration: none;
+`;
+
 const SocialMediaLink = styled.a`
   font-size: ${props => props.theme.fontSizes.small};
   font-weight: ${props => props.theme.fontWeights.bold};
@@ -55,22 +60,24 @@ const StyledBox = styled(Box)`
 export const DesktopNavbar = () => {
   return (
     <StyledBox position="relative" pt={40}>
-      <StyledH2>Name name</StyledH2>
+      <StyledTitleLink to="/" activeClassName="isActive">
+        <StyledH2>Name name</StyledH2>
+      </StyledTitleLink>
       <Divider />
       <Box my={35}>
         <LinkWrapper>
-          <StyledLink to="/" activeClassName="isActive">
-            Homepage
+          <StyledLink to="/audio" activeClassName="isActive">
+              Audio
+          </StyledLink>
+        </LinkWrapper>
+        <LinkWrapper>
+          <StyledLink to="/training" activeClassName="isActive">
+            Training
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
           <StyledLink to="/about" activeClassName="isActive">
-            About
-          </StyledLink>
-        </LinkWrapper>
-        <LinkWrapper>
-          <StyledLink to="/category" activeClassName="isActive">
-            Category
+              About
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
