@@ -2,6 +2,7 @@
 templateKey: about
 path: /about
 title: About stuff
+image: /img/leaves.jpeg
 ---
 
 ### About
