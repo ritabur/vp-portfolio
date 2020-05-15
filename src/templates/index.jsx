@@ -2,7 +2,6 @@ import * as React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
-import { sanitize } from 'dompurify';
 
 import { Layout } from 'components/Layout';
 import { Box } from 'components/Box';

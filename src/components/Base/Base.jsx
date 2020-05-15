@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { sanitize } from 'dompurify';
+import sanitizeHtml from 'sanitize-html';
 
 const StyledBase = styled.p`
   font-size: ${props => props.theme.fontSizes.medium};
@@ -8,5 +8,5 @@ const StyledBase = styled.p`
 `;
 
 export const Base = ({ content }) => (
-  <StyledBase dangerouslySetInnerHTML={{ __html: sanitize(content) }} />
+  <StyledBase dangerouslySetInnerHTML={{ __html: sanitizeHtml(content) }} />
 );
