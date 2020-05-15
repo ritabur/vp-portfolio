@@ -13,6 +13,8 @@ const StyledH1 = styled.h1`
   padding-bottom: 26px;
   font-size: ${props => props.theme.fontSizes.large};
   font-weight: ${props => props.theme.fontWeights.bold};
+  line-height: 1.5;
+  word-spacing: 9999999px;
   text-align: center;
   text-transform: lowercase;
 
@@ -36,7 +38,7 @@ const StyledImg = styled.img`
 const Index = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: { title },
+      frontmatter: { headlineLeft },
     },
   } = data;
 
@@ -49,7 +51,7 @@ const Index = ({ data }) => {
           ml={[8, 16, 86, 106]}
         >
           <Box width={['100%', null, null, '25%']}>
-            <StyledH1>{title}</StyledH1>
+            <StyledH1>{headlineLeft}</StyledH1>
           </Box>
           <Box width={['auto', null, null, '75%']} pb={10}>
             <Box mb={25}>
@@ -85,21 +87,9 @@ export default Index;
 
 export const pageQuery = graphql`
   query IndexTemplate {
-    allMarkdownRemark(limit: 1000) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
-        }
-      }
-    }
     markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
       frontmatter {
-        title
+        headlineLeft
       }
     }
   }
