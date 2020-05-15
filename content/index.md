@@ -1,6 +1,8 @@
 ---
 templateKey: index
 title: Homepage
+headline-left: homepage about stuff
+image: /img/leaves.jpeg
 ---
 
 ### Main stuff
