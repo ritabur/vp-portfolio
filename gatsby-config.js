@@ -34,13 +34,13 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`karla\:400,700`],
-        display: 'swap'
-      }
+        display: 'swap',
+      },
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        enableIdentityWidget: false //https://github.com/netlify/netlify-cms/issues/3295#issuecomment-589442521
+        enableIdentityWidget: false, //https://github.com/netlify/netlify-cms/issues/3295#issuecomment-589442521
       },
     },
     `gatsby-plugin-react-helmet`,

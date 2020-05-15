@@ -1,9 +1,11 @@
 Portfolio website of audio documentary artist created using:
-* Gatsby
-* Netlify CMS
-* Styled components
 
-----------------
+- Gatsby
+- Netlify CMS
+- Styled components
+
+---
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

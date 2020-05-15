@@ -11,7 +11,7 @@ const minCss = (px, ...args) =>
       @media (min-width: ${px}px) {
         ${css(...args)}
       }
-    `
+    `;
 
 const maxCss = (px, ...args) =>
   /* prettier-ignore */
@@ -21,7 +21,7 @@ const maxCss = (px, ...args) =>
       @media (max-width: ${px}px) {
         ${css(...args)}
       }
-    `
+    `;
 
 const betweenCss = (minPx, maxPx, ...args) =>
   /* prettier-ignore */
@@ -35,69 +35,71 @@ const betweenCss = (minPx, maxPx, ...args) =>
           @media (min-width: ${minPx}px) and (max-width: ${maxPx}px) {
             ${css(...args)}
           }
-        `
+        `;
 
 const from = fromPx => {
-  const fromFn = (...args) => minCss(fromPx, ...args)
-  fromFn.to = toPx => (...css) => betweenCss(fromPx, toPx, ...css)
-  return fromFn
-}
+  const fromFn = (...args) => minCss(fromPx, ...args);
+  fromFn.to = toPx => (...css) => betweenCss(fromPx, toPx, ...css);
+  return fromFn;
+};
 const to = toPx => {
-  const toFn = (...args) => maxCss(toPx, ...args)
-  toFn.from = fromPx => (...css) => betweenCss(fromPx, toPx, ...css)
-  return toFn
-}
+  const toFn = (...args) => maxCss(toPx, ...args);
+  toFn.from = fromPx => (...css) => betweenCss(fromPx, toPx, ...css);
+  return toFn;
+};
 
 sizes.forEach(size => {
-  const { min, max } = breakpoints[size]
+  const { min, max } = breakpoints[size];
 
-  const fromFn = (...args) => minCss(min, ...args)
-  const toFn = (...args) => maxCss(max, ...args)
+  const fromFn = (...args) => minCss(min, ...args);
+  const toFn = (...args) => maxCss(max, ...args);
 
-  fromFn.to = {}
-  toFn.from = {}
+  fromFn.to = {};
+  toFn.from = {};
 
   sizes.forEach(size => {
-    fromFn.to[size] = (...css) => betweenCss(min, breakpoints[size].max, ...css)
-    toFn.from[size] = (...css) => betweenCss(breakpoints[size].min, max, ...css)
-  })
+    fromFn.to[size] = (...css) =>
+      betweenCss(min, breakpoints[size].max, ...css);
+    toFn.from[size] = (...css) =>
+      betweenCss(breakpoints[size].min, max, ...css);
+  });
 
-  from[size] = fromFn
-  to[size] = toFn
-})
+  from[size] = fromFn;
+  to[size] = toFn;
+});
 
 // iterate through the sizes and create a media template
 const media = ['above', 'below', 'only'].reduce((media, key) => {
   media[key] = sizes.reduce((acc, size) => {
-    const { min, max } = breakpoints[size]
+    const { min, max } = breakpoints[size];
     switch (key) {
       case 'above':
         if (size === 'xl') {
-          return acc
+          return acc;
         }
-        acc[size] = (...args) => minCss(max + 1, ...args)
-        return acc
+        acc[size] = (...args) => minCss(max + 1, ...args);
+        return acc;
 
       case 'only':
-        acc[size] = (...args) => betweenCss(min, max, ...args)
-        return acc
+        acc[size] = (...args) => betweenCss(min, max, ...args);
+        return acc;
 
       case 'below':
         if (size === 'xs') {
-          return acc
+          return acc;
         }
-        acc[size] = (...args) => maxCss(min - 1, ...args)
-        return acc
+        acc[size] = (...args) => maxCss(min - 1, ...args);
+        return acc;
 
       default:
-        return acc
+        return acc;
     }
-  }, {})
-  return media
-}, {})
+  }, {});
+  return media;
+}, {});
 
-media.from = from
-media.to = to
+media.from = from;
+media.to = to;
 
-export { media }
-export default media
+export { media };
+export default media;

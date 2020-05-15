@@ -1,7 +1,15 @@
 import * as React from 'react';
 
 import { Box } from 'components/Box';
-import { StyledBox, StyledTitleLink, StyledH2, Divider, LinkWrapper, StyledLink, SocialMediaLink } from './StyledDesktopNavbar';
+import {
+  StyledBox,
+  StyledTitleLink,
+  StyledH2,
+  Divider,
+  LinkWrapper,
+  StyledLink,
+  SocialMediaLink,
+} from './StyledDesktopNavbar';
 
 export const DesktopNavbar = () => {
   return (
@@ -13,7 +21,7 @@ export const DesktopNavbar = () => {
       <Box my={35}>
         <LinkWrapper>
           <StyledLink to="/audio" activeClassName="isActive">
-              Audio
+            Audio
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
@@ -23,7 +31,7 @@ export const DesktopNavbar = () => {
         </LinkWrapper>
         <LinkWrapper>
           <StyledLink to="/about" activeClassName="isActive">
-              About
+            About
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>

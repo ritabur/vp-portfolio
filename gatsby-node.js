@@ -4,16 +4,16 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
+const path = require('path');
+const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
-      modules: [path.resolve(__dirname, "src"), "node_modules"]
-    }
-  })
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
+  });
 };
 
 exports.createPages = ({ actions, graphql }) => {
@@ -38,13 +38,13 @@ exports.createPages = ({ actions, graphql }) => {
   `).then(result => {
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()));
-      return Promise.reject(result.errors)
+      return Promise.reject(result.errors);
     }
 
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(edge => {
-      const id = edge.node.id
+      const id = edge.node.id;
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve(
@@ -54,9 +54,9 @@ exports.createPages = ({ actions, graphql }) => {
         context: {
           id,
         },
-      })
-    })
-  })
+      });
+    });
+  });
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -69,6 +69,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: `slug`,
       node,
       value,
-    })
+    });
   }
 };

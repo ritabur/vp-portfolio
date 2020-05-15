@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import { Layout } from 'components/Layout';
 import { Box } from 'components/Box';
@@ -35,38 +35,41 @@ const StyledImg = styled.img`
 
 const Index = ({ data }) => {
   const {
-    allMarkdownRemark: { edges },
     markdownRemark: {
       frontmatter: { title },
     },
   } = data;
 
   return (
-      <Layout>
-        <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
-          <Box display={["block", null, null, "flex"]} mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
-            <Box width={['100%', null, null, '25%']}>
-              <StyledH1>{title}</StyledH1>
+    <Layout>
+      <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
+        <Box
+          display={['block', null, null, 'flex']}
+          mr={[8, 16, 86, 0]}
+          ml={[8, 16, 86, 106]}
+        >
+          <Box width={['100%', null, null, '25%']}>
+            <StyledH1>{title}</StyledH1>
+          </Box>
+          <Box width={['auto', null, null, '75%']} pb={10}>
+            <Box mb={25}>
+              <StyledImg src={img} alt="" />
             </Box>
-            <Box width={['auto', null, null, '75%']} pb={10}>
-              <Box mb={25}>
-                <StyledImg src={img} alt="" />
-              </Box>
-              <Box mb={25}>
-                <StyledImg src={img} alt="" />
-              </Box>
+            <Box mb={25}>
+              <StyledImg src={img} alt="" />
             </Box>
           </Box>
         </Box>
-        {/* <div> */}
-        {/*  {edges.map(({ node }) => ( */}
-        {/*      <div key={node.frontmatter.title}> */}
-        {/*        {node.frontmatter.title}: */}
-        {/*        <Link to={node.fields.slug}>{node.fields.slug}</Link> */}
-        {/*      </div> */}
-        {/*  ))} */}
-        {/* </div> */}
-      </Layout>
+      </Box>
+      {/* <div> */}
+      {/* {edges.map(({ node }) => ( */}
+      {/*     <div key={node.frontmatter.title}> */}
+      {/*       {node.frontmatter.title}: */}
+      {/*       <Link to={node.fields.slug}>{node.fields.slug}</Link> */}
+      {/*     </div> */}
+      {/* ))} */}
+      {/* </div> */}
+    </Layout>
   );
 };
 

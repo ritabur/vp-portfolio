@@ -16,6 +16,7 @@ const Story = ({ data }) => {
     },
   } = data;
 
+  // image min-width: 840px
   // TODO: take image and alt from cms
   return (
     <Layout>
