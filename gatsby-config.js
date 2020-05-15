@@ -37,10 +37,16 @@ module.exports = {
         display: 'swap'
       }
     },
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        enableIdentityWidget: false //https://github.com/netlify/netlify-cms/issues/3295#issuecomment-589442521
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
-    `gatsby-plugin-netlify-cms`
   ],
 };
