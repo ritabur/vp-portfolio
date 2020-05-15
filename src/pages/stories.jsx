@@ -47,7 +47,7 @@ const Stories = ({ data }) => {
   return (
     <Layout>
       <SEO title="stories" />
-      <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '85%']}>
+      <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           {posts.map(({ node: post }) => (
             <Box mb={[30, 40, 70]}>

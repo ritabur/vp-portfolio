@@ -43,40 +43,31 @@ const Index = ({ data }) => {
   } = data;
 
   return (
-    <Layout>
-      <Box
-        display={['block', null, null, 'flex']}
-        pt={[0, null, null, 30]}
-        mx={[8, 16, null, 0]}
-        maxWidth={['none', null, null, 830]}
-      >
-        <Box width={['100%', null, null, '25%']}>
-          <StyledH1>{title}</StyledH1>
-        </Box>
-        <Box width={['auto', null, null, '75%']} mx={[40, 98, 40]} pb={10}>
-          <Box mb={25}>
-            <StyledImg src={img} alt="" />
-          </Box>
-          <Box mb={25}>
-            <StyledImg src={img} alt="" />
-          </Box>
-          <Box mb={25}>
-            <StyledImg src={img} alt="" />
-          </Box>
-          <Box mb={25}>
-            <StyledImg src={img} alt="" />
+      <Layout>
+        <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
+          <Box display={["block", null, null, "flex"]} mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
+            <Box width={['100%', null, null, '25%']}>
+              <StyledH1>{title}</StyledH1>
+            </Box>
+            <Box width={['auto', null, null, '75%']} pb={10}>
+              <Box mb={25}>
+                <StyledImg src={img} alt="" />
+              </Box>
+              <Box mb={25}>
+                <StyledImg src={img} alt="" />
+              </Box>
+            </Box>
           </Box>
         </Box>
-      </Box>
-      {/* <div> */}
-      {/*  {edges.map(({ node }) => ( */}
-      {/*      <div key={node.frontmatter.title}> */}
-      {/*        {node.frontmatter.title}: */}
-      {/*        <Link to={node.fields.slug}>{node.fields.slug}</Link> */}
-      {/*      </div> */}
-      {/*  ))} */}
-      {/* </div> */}
-    </Layout>
+        {/* <div> */}
+        {/*  {edges.map(({ node }) => ( */}
+        {/*      <div key={node.frontmatter.title}> */}
+        {/*        {node.frontmatter.title}: */}
+        {/*        <Link to={node.fields.slug}>{node.fields.slug}</Link> */}
+        {/*      </div> */}
+        {/*  ))} */}
+        {/* </div> */}
+      </Layout>
   );
 };
 

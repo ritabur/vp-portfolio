@@ -29,7 +29,7 @@ export const Footer = () => (
   <StyledFooter
     py={[18, null, 40, 56]}
     px={[30, null, 70, 90]}
-    width={[null, null, null, '85%']}
+    width={[null, null, null, '95%']}
     display={[null, null, 'flex']}
   >
     <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]}>
