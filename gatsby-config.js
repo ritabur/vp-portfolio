@@ -40,7 +40,6 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: false //https://github.com/netlify/netlify-cms/issues/3295#issuecomment-589442521
       },
     },
