@@ -30,7 +30,7 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Headline-Left", name: "headline-left", widget: "string" }
+          - { label: "Headline-Left", name: "headlineLeft", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "content/about/index.md"
