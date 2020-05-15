@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import sanitizeHtml from 'sanitize-html';
 
 // not using p tag: https://github.com/gatsbyjs/gatsby/issues/11108
-const StyledBase = styled.div`
+const StyledBase = styled.span`
   font-size: ${props => props.theme.fontSizes.medium};
   line-height: 1.6;
 `;
