@@ -2,6 +2,7 @@
 templateKey: index
 title: Homepage
 headline-left: homepage about stuff
+headlineLeft: homepage headline
 image: /img/leaves.jpeg
 ---
 
