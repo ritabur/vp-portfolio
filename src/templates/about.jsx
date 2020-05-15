@@ -11,18 +11,18 @@ import { Base } from 'components/Base';
 const About = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: { title },
+      frontmatter: { title, image },
       html,
     },
   } = data;
 
-  // TODO: take image and alt from cms
+  // TODO: alt, req image size
   return (
     <Layout>
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           <ContentBoxWithImage
-            imageUrl="https://images.squarespace-cdn.com/content/v1/59bad530f43b55edcb5214f4/1581948189752-I3FEJRWXU01TOUID1RHI/ke17ZwdGBToddI8pDm48kBMHBux6YLloQo9VnD0ji-d7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mhydAgiKdIfeAoxVgE7c7oEyYWj_Ixra01q53fBqVWvV3h6MQ3CX2m9brj2DWdW0Q/leaves?format=2500w"
+            imageUrl={image}
             alt="story image"
           >
             <Heading>{title}</Heading>
@@ -46,6 +46,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        image
       }
     }
   }
