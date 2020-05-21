@@ -39,11 +39,11 @@ const StyledHeading = styled(Heading)`
 `;
 
 const Stories = ({ data }) => {
+  console.log(data);
   const {
     allMarkdownRemark: { edges: posts },
   } = data;
 
-  // TODO: take image and alt from cms
   return (
     <Layout>
       <SEO title="stories" />
@@ -52,8 +52,8 @@ const Stories = ({ data }) => {
           {posts.map(({ node: post }) => (
             <Box mb={[30, 40, 70]} key={post.frontmatter.title}>
               <ContentBoxWithImage
-                imageUrl="https://images.squarespace-cdn.com/content/v1/59bad530f43b55edcb5214f4/1581948189752-I3FEJRWXU01TOUID1RHI/ke17ZwdGBToddI8pDm48kBMHBux6YLloQo9VnD0ji-d7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mhydAgiKdIfeAoxVgE7c7oEyYWj_Ixra01q53fBqVWvV3h6MQ3CX2m9brj2DWdW0Q/leaves?format=2500w"
-                alt="story image"
+                image={post.frontmatter.storyImage.image.childImageSharp.fluid}
+                alt={post.frontmatter.storyImage.alt}
                 footerContent={post.frontmatter.date}
               >
                 <StyledLink to={post.fields.slug}>
@@ -87,6 +87,16 @@ export const blogListQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            storyImage {
+              alt
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 850) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
           }
         }
       }
