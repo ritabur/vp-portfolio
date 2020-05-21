@@ -5,9 +5,6 @@ title: About stuff
 mainImage:
   image: /img/leaves.jpeg
   alt: photo of me
-image:
-  alt: photo of me
-  image: /img/leaves.jpeg
 ---
 
 ### About
