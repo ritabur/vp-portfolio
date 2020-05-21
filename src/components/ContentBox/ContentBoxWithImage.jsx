@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Img from "gatsby-image"
+import Img from 'gatsby-image';
 
 import { Box } from 'components/Box';
 
@@ -27,7 +27,7 @@ export const ContentBoxWithImage = ({
   image,
   alt,
 }) => {
-    return (
+  return (
     <StyledContainer>
       <StyledImg fluid={image} alt={alt} />
       <Box py={[24, 62, 70]} px={[18, 75, 84]}>
