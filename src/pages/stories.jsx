@@ -39,11 +39,11 @@ const StyledHeading = styled(Heading)`
 `;
 
 const Stories = ({ data }) => {
-  console.log(data);
   const {
     allMarkdownRemark: { edges: posts },
   } = data;
 
+  // all images - maxWidth at least 850px
   return (
     <Layout>
       <SEO title="stories" />
