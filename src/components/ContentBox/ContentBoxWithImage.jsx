@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Img from "gatsby-image"
 
 import { Box } from 'components/Box';
 
@@ -7,7 +8,7 @@ const StyledContainer = styled(Box)`
   background-color: ${props => props.theme.colors.contentBackground};
 `;
 
-const StyledImg = styled.img`
+const StyledImg = styled(Img)`
   max-width: 100%;
   max-height: 100%;
 `;
@@ -23,12 +24,12 @@ const ContentFooter = styled(Box)`
 export const ContentBoxWithImage = ({
   children,
   footerContent,
-  imageUrl,
+  image,
   alt,
 }) => {
-  return (
+    return (
     <StyledContainer>
-      <StyledImg src={imageUrl} alt={alt} />
+      <StyledImg fluid={image} alt={alt} />
       <Box py={[24, 62, 70]} px={[18, 75, 84]}>
         {children}
       </Box>

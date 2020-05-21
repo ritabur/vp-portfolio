@@ -9,6 +9,7 @@ import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
 
 const About = ({ data }) => {
+  console.log(data);
   const {
     markdownRemark: {
       frontmatter: { title, image },
@@ -16,13 +17,13 @@ const About = ({ data }) => {
     },
   } = data;
 
-  // TODO: alt, req image size
+  // TODO: alt
   return (
     <Layout>
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           <ContentBoxWithImage
-            imageUrl={image}
+            image={image.childImageSharp.fluid}
             alt="story image"
           >
             <Heading>{title}</Heading>
@@ -46,7 +47,13 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
-        image
+        image {
+          childImageSharp {
+            fluid(maxWidth: 850) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

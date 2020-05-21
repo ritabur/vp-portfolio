@@ -38,7 +38,7 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
+          - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "content/training/index.md"
         label: "Training"
