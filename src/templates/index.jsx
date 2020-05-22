@@ -2,10 +2,10 @@ import * as React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import { Layout } from 'components/Layout';
 import { Box } from 'components/Box';
-import img from 'images/gatsby-astronaut.png';
 import { media as MEDIA } from 'lib/media';
 
 const StyledH1 = styled.h1`
@@ -28,17 +28,15 @@ const StyledH1 = styled.h1`
   `}
 `;
 
-const StyledImg = styled.img`
+const StyledImg = styled(Img)`
   max-width: 100%;
   max-height: 100%;
-
-  border: 1px solid black;
 `;
 
 const Index = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: { headlineLeft },
+      frontmatter: { headlineLeft, images },
     },
   } = data;
 
@@ -54,23 +52,14 @@ const Index = ({ data }) => {
             <StyledH1>{headlineLeft}</StyledH1>
           </Box>
           <Box width={['auto', null, null, '75%']} pb={10}>
-            <Box mb={25}>
-              <StyledImg src={img} alt="" />
-            </Box>
-            <Box mb={25}>
-              <StyledImg src={img} alt="" />
-            </Box>
+            {images.map(({ image, alt }) => (
+              <Box mb={25} key={alt}>
+                <StyledImg fluid={image.childImageSharp.fluid} alt={alt} />
+              </Box>
+            ))}
           </Box>
         </Box>
       </Box>
-      {/* <div> */}
-      {/* {edges.map(({ node }) => ( */}
-      {/*     <div key={node.frontmatter.title}> */}
-      {/*       {node.frontmatter.title}: */}
-      {/*       <Link to={node.fields.slug}>{node.fields.slug}</Link> */}
-      {/*     </div> */}
-      {/* ))} */}
-      {/* </div> */}
     </Layout>
   );
 };
@@ -90,6 +79,16 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
       frontmatter {
         headlineLeft
+        images {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 640) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          alt
+        }
         footer {
           column1 {
             title
