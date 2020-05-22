@@ -90,6 +90,20 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
       frontmatter {
         headlineLeft
+        footer {
+          column1 {
+            title
+            body
+          }
+          column3 {
+            title
+            body
+          }
+          column2 {
+            title
+            body
+          }
+        }
       }
     }
   }

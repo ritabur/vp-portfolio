@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Box } from 'components/Box';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const StyledFooter = styled(Box)`
   border: 1px solid ${props => props.theme.colors.divider};
@@ -25,42 +26,58 @@ const StyledP = styled.p`
   line-height: 1.5;
 `;
 
-export const Footer = () => (
-  <StyledFooter
-    py={[18, null, 40, 56]}
-    px={[30, null, 70, 90]}
-    width={[null, null, null, '95%']}
-    display={[null, null, 'flex']}
-  >
-    <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]}>
-      <StyledH4>About</StyledH4>
-      <Divider />
-      <StyledP>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-        consequatur, debitis id inventore minima molestias necessitatibus quam
-        quo? Delectus dolores fugiat itaque iusto numquam obcaecati quas sit
-        tempore, vita{' '}
-      </StyledP>
-    </Box>
-    <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]}>
-      <StyledH4>My studio</StyledH4>
-      <Divider />
-      <StyledP>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-        consequatur, debitis id inventore minima molestias necessitatibus quam
-        quo? Delectus dolores fugiat itaque iusto numquam obcaecati quas sit
-        tempore, vita{' '}
-      </StyledP>
-    </Box>
-    <Box as="section">
-      <StyledH4>Posts</StyledH4>
-      <Divider />
-      <StyledP>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-        consequatur, debitis id inventore minima molestias necessitatibus quam
-        quo? Delectus dolores fugiat itaque iusto numquam obcaecati quas sit
-        tempore, vita{' '}
-      </StyledP>
-    </Box>
-  </StyledFooter>
-);
+export const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query FooterQuery {
+      markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
+        frontmatter {
+          footer {
+            column1 {
+              title
+              body
+            }
+            column3 {
+              title
+              body
+            }
+            column2 {
+              title
+              body
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const {
+    markdownRemark: {
+      frontmatter: { footer },
+    },
+  } = data;
+
+  return (
+    <StyledFooter
+      py={[18, null, 40, 56]}
+      px={[30, null, 70, 90]}
+      width={[null, null, null, '95%']}
+      display={[null, null, 'flex']}
+    >
+      <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
+        <StyledH4>{footer.column1.title}</StyledH4>
+        <Divider />
+        <StyledP>{footer.column1.body}</StyledP>
+      </Box>
+      <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
+        <StyledH4>{footer.column2.title}</StyledH4>
+        <Divider />
+        <StyledP>{footer.column2.body}</StyledP>
+      </Box>
+      <Box as="section" flex={1}>
+        <StyledH4>{footer.column3.title}</StyledH4>
+        <Divider />
+        <StyledP>{footer.column3.body}</StyledP>
+      </Box>
+    </StyledFooter>
+  );
+};
