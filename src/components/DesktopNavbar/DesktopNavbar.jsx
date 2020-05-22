@@ -20,22 +20,22 @@ export const DesktopNavbar = () => {
       <Divider />
       <Box my={35}>
         <LinkWrapper>
-          <StyledLink to="/audio" activeClassName="isActive">
+          <StyledLink to="/audio/" activeClassName="isActive">
             Audio
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/training" activeClassName="isActive">
+          <StyledLink to="/training/" activeClassName="isActive">
             Training
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/about" activeClassName="isActive">
+          <StyledLink to="/about/" activeClassName="isActive">
             About
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/stories" activeClassName="isActive">
+          <StyledLink to="/stories/" activeClassName="isActive">
             Stories
           </StyledLink>
         </LinkWrapper>
