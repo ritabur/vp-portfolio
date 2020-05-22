@@ -30,7 +30,7 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
           - { label: "Headline-Left", name: "headlineLeft", widget: "string" }
-          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Images", name: "images", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"}] }
           - { label: "Footer", name: "footer", widget: "object", fields: [{label: "Column-1", name: "column1", widget: "object", fields: [{ label: "Title", name: "title", widget: "markdown" }, { label: "Body", name: "body", widget: "markdown" }]}, {label: "Column-2", name: "column2", widget: "object", fields: [{ label: "Title", name: "title", widget: "markdown" }, { label: "Body", name: "body", widget: "markdown" }]}, {label: "Column-3", name: "column3", widget: "object", fields: [{ label: "Title", name: "title", widget: "markdown" }, { label: "Body", name: "body", widget: "markdown" }]}] }
       - file: "content/about/index.md"
         label: "About"
