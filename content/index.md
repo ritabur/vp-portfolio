@@ -6,6 +6,8 @@ image: /img/leaves.jpeg
 images:
   - image: /img/home.jpg
     alt: first image
+  - image: /img/home1.jpg
+    alt: second image
 footer:
   column1:
     title: Title1
