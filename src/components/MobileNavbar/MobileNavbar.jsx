@@ -1,41 +1,85 @@
 import React from 'react';
-import styled from 'styled-components';
-import { graphql, Link, useStaticQuery } from 'gatsby';
 
-const StyledHeader = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: gainsboro;
-`;
+import { Box } from 'components/Box';
+import MenuIcon from 'assets/menu.svg';
+import {
+  StyledOverlay,
+  StyledLinkContainer,
+  StyledLink,
+  Divider,
+  GlobaStyle,
+  StyledCloseIcon,
+} from './StyledMobileNavbar';
 
 export const MobileNavbar = () => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  const [isOverlayOpen, setOverlayOpen] = React.useState(false);
 
-  const {
-    site: {
-      siteMetadata: { title },
-    },
-  } = data;
+  const handleClick = () => {
+    setOverlayOpen(!isOverlayOpen);
+  };
+
+  const LinkContainer = () => (
+    <StyledLinkContainer m="0 auto" maxWidth={[270, null, 400]}>
+      <StyledLink to="/" activeClassName="isActive" onClick={handleClick}>
+        Homepage
+      </StyledLink>
+      <Divider />
+      <StyledLink to="/audio/" activeClassName="isActive" onClick={handleClick}>
+        Audio
+      </StyledLink>
+      <Divider />
+      <StyledLink
+        to="/training/"
+        activeClassName="isActive"
+        onClick={handleClick}
+      >
+        Training
+      </StyledLink>
+      <Divider />
+      <StyledLink to="/about" activeClassName="isActive" onClick={handleClick}>
+        About
+      </StyledLink>
+      <Divider />
+      <StyledLink
+        to="/stories"
+        activeClassName="isActive"
+        onClick={handleClick}
+      >
+        Stories
+      </StyledLink>
+      <Divider />
+    </StyledLinkContainer>
+  );
 
   return (
-    <StyledHeader>
-      <h1>{title}</h1>
-      <div>
-        <Link to="/">Homepage</Link>
-        <Link to="/about">About</Link>
-        <Link to="/category">Category</Link>
-        <Link to="/blog-list">Blogs</Link>
-      </div>
-    </StyledHeader>
+    <>
+      <Box
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+        padding={20}
+      >
+        <h1>Vaida Pilibaitytė</h1>
+        {isOverlayOpen && (
+          <StyledOverlay>
+            <LinkContainer />
+            <Box
+              position="absolute"
+              top={0}
+              right={0}
+              p={10}
+              onClick={handleClick}
+            >
+              <StyledCloseIcon height={20} />
+            </Box>
+          </StyledOverlay>
+        )}
+        <Box p={10} m={-10} onClick={handleClick}>
+          <MenuIcon height={20} />
+        </Box>
+        <GlobaStyle isOverlayOpen={isOverlayOpen} />
+      </Box>
+      <Divider mx={[8, null, 16]} />
+    </>
   );
 };
