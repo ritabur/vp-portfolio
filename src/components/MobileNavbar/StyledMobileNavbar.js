@@ -1,5 +1,5 @@
-import styled, {createGlobalStyle} from "styled-components";
-import {Link} from "gatsby";
+import styled, { createGlobalStyle } from 'styled-components';
+import { Link } from 'gatsby';
 
 import { Box } from 'components/Box';
 import CloseIcon from 'assets/close.svg';

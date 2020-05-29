@@ -74,17 +74,17 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: `${__dirname}/src/assets/` // See below to configure properly
-        }
-      }
+          include: `${__dirname}/src/assets/`, // See below to configure properly
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        enableIdentityWidget: false, //https://github.com/netlify/netlify-cms/issues/3295#issuecomment-589442521
+        enableIdentityWidget: false, // https://github.com/netlify/netlify-cms/issues/3295#issuecomment-589442521
       },
     },
     `gatsby-plugin-react-helmet`,
