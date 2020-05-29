@@ -69,7 +69,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`karla\:400,700`],
+        fonts: [`raleway\:400,700`],
         display: 'swap',
       },
     },
