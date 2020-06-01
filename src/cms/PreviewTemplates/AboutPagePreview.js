@@ -1,0 +1,23 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import About from 'templates/about';
+
+const AboutPagePreview = ({ entry, widgetFor }) => {
+    console.log('entry', entry);
+    console.log('widgetFor', widgetFor);
+    return (
+        <About
+            title={entry.getIn(['data', 'title'])}
+            content={widgetFor('body')}
+        />
+    );
+};
+
+AboutPagePreview.propTypes = {
+    entry: PropTypes.shape({
+        getIn: PropTypes.func,
+    }),
+    widgetFor: PropTypes.func,
+};
+
+export default AboutPagePreview

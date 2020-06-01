@@ -4,6 +4,7 @@ module.exports = {
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit`,
   },
   plugins: [
+    `path-resolver`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -81,16 +82,16 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         enableIdentityWidget: false, // https://github.com/netlify/netlify-cms/issues/3295#issuecomment-589442521
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-styled-components`,
   ],
 };
