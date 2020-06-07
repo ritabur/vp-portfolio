@@ -9,6 +9,8 @@ export default Component => props => {
         return null;
     }
 
+    console.log('props', props);
+
     return (
         <StyleSheetManager target={iframeHeadElem}>
             <Component {...props} />

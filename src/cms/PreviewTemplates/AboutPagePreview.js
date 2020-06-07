@@ -1,23 +1,35 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import About from 'templates/about';
 
-const AboutPagePreview = ({ entry, widgetFor }) => {
-    console.log('entry', entry);
-    console.log('widgetFor', widgetFor);
+const AboutPagePreview = (props) => {
+
+    const bla = props.entry.getIn(['data']).toJS()
+
+    // var image = props.entry.getIn(['data', 'mainImage', 'image']);
+    var bg = props.getAsset(bla.image);
+
+    const data = {
+        markdownRemark: {
+            frontmatter: {
+                title: 'test',
+                mainImage: {
+                    image: bg,
+                    alt: 'alt'
+                },
+            },
+            html: 'test',
+        },
+    };
+
     return (
         <About
-            title={entry.getIn(['data', 'title'])}
-            content={widgetFor('body')}
+            // title={data.title}
+            // html={data.body}
+            // image={getAsset(entry.getIn(['data', 'image']))}
+            // alt={data.alt}
+            data={data}
         />
     );
-};
-
-AboutPagePreview.propTypes = {
-    entry: PropTypes.shape({
-        getIn: PropTypes.func,
-    }),
-    widgetFor: PropTypes.func,
 };
 
 export default AboutPagePreview
