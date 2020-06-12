@@ -45,7 +45,6 @@ const Audio = ({ data }) => {
     markdownRemark: {
       frontmatter: {
         title,
-        audioList,
       },
       html,
     },
@@ -60,11 +59,11 @@ const Audio = ({ data }) => {
             <Base content={html} />
           </ContentBox>
           <Box display="flex" flexWrap="wrap" mt={24}>
-            {audioList.map(({featuredEntry, link, title, image}) => (
-              <StyledBox mb={25} key={title}>
-                <Link to={link}><StyledImg fluid={image.childImageSharp.fluid} alt={title}/></Link>
-              </StyledBox>
-            ))}
+            {/*{audioList.map(({featuredEntry, link, title, image}) => (*/}
+            {/*  <StyledBox mb={25} key={title}>*/}
+            {/*    <Link to={link}><StyledImg fluid={image.childImageSharp.fluid} alt={title}/></Link>*/}
+            {/*  </StyledBox>*/}
+            {/*))}*/}
           </Box>
         </Box>
       </Box>
@@ -85,19 +84,20 @@ export const categoryPageQuery = graphql`
       html
       frontmatter {
         title
-        audioList {
-          featuredEntry
-          image {
-            childImageSharp {
-              fluid(maxWidth: 640) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          link
-          title
-        }
       }
     }
   }
 `;
+
+// {
+//   featuredEntry
+//   image {
+//   childImageSharp {
+//     fluid(maxWidth: 640) {
+//     ...GatsbyImageSharpFluid
+//     }
+//   }
+// }
+//   link
+//   title
+// }
