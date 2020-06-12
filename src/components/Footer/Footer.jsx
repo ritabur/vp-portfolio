@@ -16,14 +16,14 @@ const Divider = styled.div`
 `;
 
 const StyledH4 = styled.h4`
-  padding-bottom: 18px;
+  padding-bottom: 26px;
   font-weight: ${props => props.theme.fontWeights.bold};
   text-transform: uppercase;
 `;
 
 const StyledP = styled.p`
-  padding-top: 18px;
-  line-height: 1.5;
+  padding-top: 26px;
+  line-height: 1.6;
 `;
 
 export const Footer = () => {
