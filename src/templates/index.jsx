@@ -29,8 +29,21 @@ const StyledH1 = styled.h1`
 `;
 
 const StyledImg = styled(Img)`
-  max-width: 100%;
-  max-height: 100%;
+  height: 100%;
+`;
+
+const StyledBox = styled(Box)`
+  &:nth-of-type(1)  {
+    flex: 1;
+    height: 220px;
+    margin-right: 12px;
+  }
+  
+   &:nth-of-type(2)  {
+    flex: 2;
+    height: 220px;
+    margin-left: 12px;
+  }
 `;
 
 const Index = ({ data }) => {
@@ -52,11 +65,13 @@ const Index = ({ data }) => {
             <StyledH1>{headlineLeft}</StyledH1>
           </Box>
           <Box width={['auto', null, null, '75%']} pb={10}>
-            {images.map(({ image, alt }) => (
-              <Box mb={25} key={alt}>
-                <StyledImg fluid={image.childImageSharp.fluid} alt={alt} />
-              </Box>
-            ))}
+            <Box display="flex">
+              {images.map(({ image, alt }) => (
+                <StyledBox mb={25} key={alt}>
+                  <StyledImg fluid={image.childImageSharp.fluid} alt={alt} />
+                </StyledBox>
+              ))}
+            </Box>
           </Box>
         </Box>
       </Box>

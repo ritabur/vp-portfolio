@@ -5,6 +5,7 @@
 * styles for admin (multiple issues listed in cms.js)
 * localization
 * breadcrumbs/back
+* audio images in Audio section?
 * SEO
 * a11y
 * TS
