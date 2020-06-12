@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Layout } from 'components/Layout';
@@ -12,40 +11,32 @@ import { Base } from 'components/Base';
 
 const StyledImg = styled(Img)`
   height: 100%;
-`;
-
-const StyledBox = styled(Box)`
-  &:nth-of-type(1),
-  &:nth-of-type(4) {
-    width: 30%;
-    height: 220px;
-  } //1 4 5 8 9
-
-  &:nth-of-type(2),
-  &:nth-of-type(3) {
-    width: 70%;
-    height: 220px;
+  position: relative;
+  
+  &:after {
+    content: "${props => props.title}";
+    position: absolute;
+    opacity: 0; 
+    bottom: 12px;
+    left: 15px;
+    padding: 4px 12px;
+    color: white;
+    background-color: ${props => props.theme.colors.bodyPrimary};
+    transition: opacity .2s;
   }
   
-    
-  
-  &:nth-of-type(1),
-  &:nth-of-type(3) {
-    padding-right: 12px;
-  }
-  
-  &:nth-of-type(2),
-  &:nth-of-type(4) {
-    padding-left: 12px;
+  &:hover {
+    &:after {
+     display: block;
+     opacity: 1;
+    }
   }
 `;
 
 const Audio = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: {
-        title,
-      },
+      frontmatter: { title, audioList },
       html,
     },
   } = data;
@@ -58,46 +49,81 @@ const Audio = ({ data }) => {
             <Heading>{title}</Heading>
             <Base content={html} />
           </ContentBox>
-          <Box display="flex" flexWrap="wrap" mt={24}>
-            {/*{audioList.map(({featuredEntry, link, title, image}) => (*/}
-            {/*  <StyledBox mb={25} key={title}>*/}
-            {/*    <Link to={link}><StyledImg fluid={image.childImageSharp.fluid} alt={title}/></Link>*/}
-            {/*  </StyledBox>*/}
-            {/*))}*/}
-          </Box>
+          {audioList.map(({ smallImage, largeImage }, index) => (
+            <Box
+              display="flex"
+              flexWrap="wrap"
+              mx={-12}
+              flexDirection={index % 2 ? 'row-reverse' : 'row'}
+              key={smallImage.title}
+            >
+              <Box mt={25} key={title} width={['100%', '30%']} px={12}>
+                <a href={smallImage.link}>
+                  <StyledImg
+                    fluid={smallImage.image.childImageSharp.fluid}
+                    alt={smallImage.title}
+                    title={smallImage.title}
+                  />
+                </a>
+              </Box>
+              <Box
+                mt={25}
+                key={largeImage.title}
+                width={['100%', '70%']}
+                px={12}
+              >
+                <a href={largeImage.link}>
+                  <StyledImg
+                    fluid={largeImage.image.childImageSharp.fluid}
+                    alt={largeImage.title}
+                    title={largeImage.title}
+                  />
+                </a>
+              </Box>
+            </Box>
+          ))}
         </Box>
       </Box>
     </Layout>
   );
 };
 
-Audio.propTypes = {
-  data: PropTypes.shape().isRequired,
-};
-
 export default Audio;
 
-// TODO: fix image max width
+// TODO: fix image max width/how gatsby-image works?
 export const categoryPageQuery = graphql`
   query AudioPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
+        audioList {
+          smallImage {
+            featuredEntry
+            image {
+              childImageSharp {
+                fluid(maxWidth: 640) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            link
+            title
+          }
+          largeImage {
+            featuredEntry
+            image {
+              childImageSharp {
+                fluid(maxWidth: 640) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            link
+            title
+          }
+        }
       }
     }
   }
 `;
-
-// {
-//   featuredEntry
-//   image {
-//   childImageSharp {
-//     fluid(maxWidth: 640) {
-//     ...GatsbyImageSharpFluid
-//     }
-//   }
-// }
-//   link
-//   title
-// }
