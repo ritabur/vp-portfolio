@@ -54,4 +54,4 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-          - { label: "Audio List", name: "audioList", widget: "list", fields: [{label: "Title", name: "title", widget: "string"}{label: "Image", name: "image", widget: "image"}, {label: "Link", name: "link", widget: "string"}] }
+          - { label: "Audio List", name: "audioList", widget: "list", comment: "Up to 6 featured entries possible", fields: [{label: "Featured Entry", name: "featuredEntry", widget: "boolean"}, {label: "Title", name: "title", widget: "string"}, {label: "Image", name: "image", widget: "image"}, {label: "Link", name: "link", widget: "string"}] }
