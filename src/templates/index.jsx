@@ -33,13 +33,13 @@ const StyledImg = styled(Img)`
 `;
 
 const StyledBox = styled(Box)`
-  &:nth-of-type(1)  {
+  &:nth-of-type(1) {
     flex: 1;
     height: 220px;
     margin-right: 12px;
   }
-  
-   &:nth-of-type(2)  {
+
+  &:nth-of-type(2) {
     flex: 2;
     height: 220px;
     margin-left: 12px;
