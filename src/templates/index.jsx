@@ -6,6 +6,10 @@ import Img from 'gatsby-image';
 
 import { Layout } from 'components/Layout';
 import { Box } from 'components/Box';
+
+// TODO: add and fix audio gallery
+import { AudioGallery } from 'components/AudioGallery';
+
 import { media as MEDIA } from 'lib/media';
 
 const StyledH1 = styled.h1`
@@ -103,20 +107,6 @@ export const pageQuery = graphql`
             }
           }
           alt
-        }
-        footer {
-          column1 {
-            title
-            body
-          }
-          column3 {
-            title
-            body
-          }
-          column2 {
-            title
-            body
-          }
         }
       }
     }

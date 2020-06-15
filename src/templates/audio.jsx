@@ -99,7 +99,6 @@ export const categoryPageQuery = graphql`
         title
         audioList {
           smallImage {
-            featuredEntry
             image {
               childImageSharp {
                 fluid(maxWidth: 640) {
@@ -111,7 +110,6 @@ export const categoryPageQuery = graphql`
             title
           }
           largeImage {
-            featuredEntry
             image {
               childImageSharp {
                 fluid(maxWidth: 640) {
