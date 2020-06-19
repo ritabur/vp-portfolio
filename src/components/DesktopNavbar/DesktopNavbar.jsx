@@ -15,7 +15,7 @@ export const DesktopNavbar = () => {
   return (
     <StyledBox position="relative" pt={40} ml={30}>
       <StyledTitleLink to="/" activeClassName="isActive">
-        <StyledH2>VP</StyledH2>
+        <StyledH2>Vaida Pilibaitytė</StyledH2>
       </StyledTitleLink>
       <Divider />
       <Box my={35}>

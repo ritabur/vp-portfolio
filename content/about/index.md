@@ -1,7 +1,7 @@
 ---
 templateKey: about
 path: /about
-title: About stuff
+title: About me
 mainImage:
   image: /img/leaves.jpeg
   alt: photo of me

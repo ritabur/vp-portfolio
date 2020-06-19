@@ -1,42 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import { Layout } from 'components/Layout';
 import { Box } from 'components/Box';
 import { ContentBox } from 'components/ContentBox';
 import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
-
-const StyledImg = styled(Img)`
-  height: 100%;
-  position: relative;
-  
-  &:after {
-    content: "${props => props.title}";
-    position: absolute;
-    opacity: 0; 
-    bottom: 12px;
-    left: 15px;
-    padding: 4px 12px;
-    color: white;
-    background-color: ${props => props.theme.colors.bodyPrimary};
-    transition: opacity .2s;
-  }
-  
-  &:hover {
-    &:after {
-     display: block;
-     opacity: 1;
-    }
-  }
-`;
+import { AudioGallery } from 'components/AudioGallery';
 
 const Audio = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: { title, audioList },
+      frontmatter: { title },
       html,
     },
   } = data;
@@ -49,39 +24,7 @@ const Audio = ({ data }) => {
             <Heading>{title}</Heading>
             <Base content={html} />
           </ContentBox>
-          {audioList.map(({ smallImage, largeImage }, index) => (
-            <Box
-              display="flex"
-              flexWrap="wrap"
-              mx={-12}
-              flexDirection={index % 2 ? 'row-reverse' : 'row'}
-              key={smallImage.title}
-            >
-              <Box mt={25} key={title} width={['100%', '30%']} px={12}>
-                <a href={smallImage.link}>
-                  <StyledImg
-                    fluid={smallImage.image.childImageSharp.fluid}
-                    alt={smallImage.title}
-                    title={smallImage.title}
-                  />
-                </a>
-              </Box>
-              <Box
-                mt={25}
-                key={largeImage.title}
-                width={['100%', '70%']}
-                px={12}
-              >
-                <a href={largeImage.link}>
-                  <StyledImg
-                    fluid={largeImage.image.childImageSharp.fluid}
-                    alt={largeImage.title}
-                    title={largeImage.title}
-                  />
-                </a>
-              </Box>
-            </Box>
-          ))}
+          <AudioGallery />
         </Box>
       </Box>
     </Layout>
@@ -97,30 +40,6 @@ export const categoryPageQuery = graphql`
       html
       frontmatter {
         title
-        audioList {
-          smallImage {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 640) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            link
-            title
-          }
-          largeImage {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 640) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            link
-            title
-          }
-        }
       }
     }
   }
