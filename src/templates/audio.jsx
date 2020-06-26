@@ -25,7 +25,11 @@ const Audio = ({ data }) => {
             <Base content={html} />
           </ContentBox>
           <Box mt={[30, 40]}>
-            <ThumbnailList contentList={audioList} title="test" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta dolores ex, harum ipsum labore laudantium quas quod, reiciendis saepe sunt, tenetur. Eius, libero minima nihil optio quibusdam soluta voluptatem."/>
+            <ThumbnailList
+              contentList={audioList}
+              title="test"
+              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta dolores ex, harum ipsum labore laudantium quas quod, reiciendis saepe sunt, tenetur. Eius, libero minima nihil optio quibusdam soluta voluptatem."
+            />
           </Box>
         </Box>
       </Box>

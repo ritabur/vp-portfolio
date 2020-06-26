@@ -11,7 +11,7 @@ import { media as MEDIA } from 'lib/media';
 const StyledH1 = styled.h1`
   padding-top: 12px;
   padding-bottom: 26px;
-  font-size: ${props => props.theme.fontSizes.large};
+  font-size: 21px;
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: 1.5;
   word-spacing: 9999999px;
@@ -69,7 +69,7 @@ export const pageQuery = graphql`
   query IndexTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
       frontmatter {
-        headlineLeft    
+        headlineLeft
       }
     }
   }

@@ -19,8 +19,6 @@ const About = ({ data }) => {
     },
   } = data;
 
-  console.log(image);
-
   return (
     <Layout>
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>

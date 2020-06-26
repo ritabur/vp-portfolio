@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import { Box } from 'components/Box';
 import CloseIcon from 'assets/close.svg';
 
+export const duration = 200;
+
 export const GlobaStyle = createGlobalStyle`
   html,
   body,
@@ -11,6 +13,18 @@ export const GlobaStyle = createGlobalStyle`
     overflow: ${props => (props.isOverlayOpen ? 'hidden' : 'auto')};
   };
 `;
+
+export const defaultStyle = {
+    transition: `opacity ${duration}ms ease-in-out`,
+    opacity: 0,
+};
+
+export const transitionStyles = {
+    entering: { opacity: 1 },
+    entered:  { opacity: 1 },
+    exiting:  { opacity: 0 },
+    exited:  { opacity: 0 },
+};
 
 export const Divider = styled(Box)`
   height: 1px;

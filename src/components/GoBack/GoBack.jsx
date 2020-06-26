@@ -16,12 +16,22 @@ const GoBackContent = styled(Box)`
 `;
 
 export const GoBack = ({ to: backToText }) => {
-    return (
-        <GoBackWrapper px={8} py={8} mb={[8, 16]}>
-            <GoBackContent onClick={() => window.history.back()} px={16} py={8} display="inline-flex" alignItems="center" tabindex="0" role="button">
-                <ArrowIcon height={15} />
-                <Box pt={2} pl={10}>{backToText}</Box>
-            </GoBackContent>
-        </GoBackWrapper>
-    );
+  return (
+    <GoBackWrapper px={8} py={8} mb={[8, 16]}>
+      <GoBackContent
+        onClick={() => window.history.back()}
+        px={16}
+        py={8}
+        display="inline-flex"
+        alignItems="center"
+        tabindex="0"
+        role="button"
+      >
+        <ArrowIcon height={15} />
+        <Box pt={2} pl={10}>
+          {backToText}
+        </Box>
+      </GoBackContent>
+    </GoBackWrapper>
+  );
 };

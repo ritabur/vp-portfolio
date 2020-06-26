@@ -1,4 +1,5 @@
 import React from 'react';
+import { Transition } from 'react-transition-group';
 
 import { Box } from 'components/Box';
 import MenuIcon from 'assets/menu.svg';
@@ -9,6 +10,9 @@ import {
   Divider,
   GlobaStyle,
   StyledCloseIcon,
+  duration,
+  defaultStyle,
+  transitionStyles,
 } from './StyledMobileNavbar';
 
 export const MobileNavbar = () => {
@@ -60,20 +64,27 @@ export const MobileNavbar = () => {
         padding={20}
       >
         <h1>Vaida Pilibaitytė</h1>
-        {isOverlayOpen && (
-          <StyledOverlay>
-            <LinkContainer />
-            <Box
-              position="absolute"
-              top={0}
-              right={0}
-              p={10}
-              onClick={handleClick}
+        <Transition in={isOverlayOpen} timeout={duration}>
+          {state => (
+            <StyledOverlay
+              style={{
+                ...defaultStyle,
+                ...transitionStyles[state],
+              }}
             >
-              <StyledCloseIcon height={20} />
-            </Box>
-          </StyledOverlay>
-        )}
+              <LinkContainer />
+              <Box
+                position="absolute"
+                top={0}
+                right={0}
+                p={10}
+                onClick={handleClick}
+              >
+                <StyledCloseIcon height={20} />
+              </Box>
+            </StyledOverlay>
+          )}
+        </Transition>
         <Box p={10} m={-10} onClick={handleClick}>
           <MenuIcon height={20} />
         </Box>
