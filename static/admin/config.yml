@@ -21,6 +21,21 @@ collections:
       - { label: "Story-image", name: "storyImage", widget: "object", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"} ] }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "audio1"
+    label: "Audio1"
+    folder: "content/audio1"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio1" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Audio image", name: "audioImage", widget: "image" }
+      - { label: "Short description", name: "shortDescription", widget: "string" }
+      - { label: "Full description", name: "fullDescription", widget: "markdown" }
+      - { label: "Link", name: "link", widget: "string" }
+
   - name: "pages"
     label: "Pages"
     files:
@@ -31,6 +46,29 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
           - { label: "Headline-Left", name: "headlineLeft", widget: "string" }
           - { label: "Footer", name: "footer", widget: "object", fields: [{label: "Column-1", name: "column1", widget: "object", fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Body", name: "body", widget: "markdown" }]}, {label: "Column-2", name: "column2", widget: "object", fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Body", name: "body", widget: "markdown" }]}, {label: "Column-3", name: "column3", widget: "object", fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Body", name: "body", widget: "markdown" }]}] }
+          - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio/training/stories", types:
+            [
+            {
+              label: "Audio"
+              name: "audio"
+              widget: "object"
+              fields:
+                [
+                {
+                  label: "Audio",
+                  name: "items",
+                  widget: "relation",
+                  collection: "audio1",
+                  file: "audio1",
+                  valueField: "title",
+                  searchFields: ["title"]
+                  displayFields: ["title"]
+                  multiple: true,
+                  required: false,
+                }
+                ]
+            }
+            ] }
       - file: "content/about/index.md"
         label: "About"
         name: "about"
