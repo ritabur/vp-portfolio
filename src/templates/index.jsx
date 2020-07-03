@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 
 import { Layout } from 'components/Layout';
 import { Box } from 'components/Box';
-import { AudioGallery } from 'components/AudioGallery';
+import { AudioGalleryWithData } from 'components/AudioGallery';
 import { media as MEDIA } from 'lib/media';
 
 const StyledH1 = styled.h1`
@@ -31,7 +31,7 @@ const StyledH1 = styled.h1`
 const Index = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: { headlineLeft },
+      frontmatter: { headlineLeft, featuredEntries },
     },
   } = data;
 
@@ -47,7 +47,7 @@ const Index = ({ data }) => {
             <StyledH1>{headlineLeft}</StyledH1>
           </Box>
           <Box width={['auto', null, null, '75%']} pb={10}>
-            <AudioGallery />
+            <AudioGalleryWithData featuredEntries={featuredEntries} />
           </Box>
         </Box>
       </Box>
@@ -70,6 +70,10 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
       frontmatter {
         headlineLeft
+        featuredEntries {
+          items
+          type
+        }
       }
     }
   }

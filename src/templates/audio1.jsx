@@ -16,7 +16,7 @@ export default Audio1;
 //                     slug
 //                 }
 //                 frontmatter {
-//                     audioImage
+//                     image
 //                     shortDescription
 //                     title
 //                 }
@@ -41,6 +41,17 @@ export default Audio1;
 //                     }
 //                 }
 //             }
+//         }
+//     }
+// }
+
+// ONE AUDIO ENTRY:
+// query IndexTemplate {
+//     markdownRemark(frontmatter: {title: {eq: "one more audio"}}) {
+//         frontmatter {
+//             image
+//             shortDescription
+//             title
 //         }
 //     }
 // }

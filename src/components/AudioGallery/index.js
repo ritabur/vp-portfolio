@@ -1,1 +1,2 @@
-export * from './AudioGallery';
+export { AudioGallery } from './AudioGallery';
+export { AudioGalleryWithData } from './AudioGalleryWithData';
