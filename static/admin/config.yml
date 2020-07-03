@@ -61,7 +61,7 @@ collections:
                   widget: "relation",
                   collection: "audio1",
                   file: "audio1",
-                  valueField: "slug",
+                  valueField: "id",
                   searchFields: ["title"],
                   displayFields: ["title"],
                   multiple: true,
