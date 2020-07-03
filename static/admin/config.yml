@@ -49,9 +49,9 @@ collections:
           - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio/training/stories", types:
             [
             {
-              label: "Audio"
-              name: "audio"
-              widget: "object"
+              label: "Audio",
+              name: "audio",
+              widget: "object",
               fields:
                 [
                 {
@@ -61,8 +61,8 @@ collections:
                   collection: "audio1",
                   file: "audio1",
                   valueField: "title",
-                  searchFields: ["title"]
-                  displayFields: ["title"]
+                  searchFields: ["title"],
+                  displayFields: ["title"],
                   multiple: true,
                   required: false,
                 }
