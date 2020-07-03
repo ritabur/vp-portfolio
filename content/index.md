@@ -2,7 +2,11 @@
 templateKey: index
 title: Homepage
 headlineLeft: homepage headline
-featuredEntries: []
+featuredEntries:
+  - type: audio
+    items:
+      - one more audio
+      - test audio entry
 footer:
   column1:
     title: Title1
