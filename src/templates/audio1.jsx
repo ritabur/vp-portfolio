@@ -24,3 +24,23 @@ export default Audio1;
 //         }
 //     }
 // }
+
+// HOME:
+// query MyQuery {
+//     allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "index"}}}) {
+//         edges {
+//             node {
+//                 id
+//                 fields {
+//                     slug
+//                 }
+//                 frontmatter {
+//                     featuredEntries {
+//                         items
+//                         type
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
