@@ -60,7 +60,7 @@ collections:
                   widget: "relation",
                   collection: "audio1",
                   file: "audio1",
-                  valueField: "title",
+                  valueField: ["title", "audioImage", "link"],
                   searchFields: ["title"],
                   displayFields: ["title"],
                   multiple: true,

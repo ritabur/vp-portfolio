@@ -6,3 +6,21 @@ const Audio1 = () => (
 );
 
 export default Audio1;
+// LIST:
+// query MyQuery {
+//     allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "audio1"}}}) {
+//         edges {
+//             node {
+//                 id
+//                 fields {
+//                     slug
+//                 }
+//                 frontmatter {
+//                     audioImage
+//                     shortDescription
+//                     title
+//                 }
+//             }
+//         }
+//     }
+// }
