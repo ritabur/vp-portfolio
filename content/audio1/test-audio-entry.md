@@ -1,7 +1,7 @@
 ---
 templateKey: audio1
 title: test audio entry
-audioImage: /img/home.jpg
+image: /img/home.jpg
 shortDescription: short description here
 fullDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

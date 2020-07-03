@@ -1,7 +1,7 @@
 ---
 templateKey: audio1
 title: one more audio
-audioImage: /img/home3.jpg
+image: /img/home3.jpg
 shortDescription: Lorem ipsum
 fullDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

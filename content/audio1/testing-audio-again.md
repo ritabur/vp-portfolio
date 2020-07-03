@@ -1,7 +1,7 @@
 ---
 templateKey: audio1
 title: testing audio again
-audioImage: /img/leaves.jpeg
+image: /img/leaves.jpeg
 shortDescription: one-two
 fullDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
