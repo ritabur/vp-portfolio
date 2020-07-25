@@ -10,7 +10,7 @@ featuredEntries:
   - type: training
     items:
       - training one
-      - training three
+      - training two
   - type: story
     items:
       - test title
