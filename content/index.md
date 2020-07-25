@@ -7,6 +7,14 @@ featuredEntries:
     items:
       - one more audio
       - test audio entry
+  - type: training
+    items:
+      - training one
+      - training three
+  - type: story
+    items:
+      - test title
+      - TESTING
 footer:
   column1:
     title: Title1
