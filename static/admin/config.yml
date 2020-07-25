@@ -31,10 +31,25 @@ collections:
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio1" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
       - { label: "Audio image", name: "image", widget: "image" }
       - { label: "Short description", name: "shortDescription", widget: "string" }
       - { label: "Full description", name: "fullDescription", widget: "markdown" }
+
+  - name: "training1"
+    label: "Training1"
+    folder: "content/training1"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "training1" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Link", name: "link", widget: "string" }
+      - { label: "Training image", name: "image", widget: "image" }
+      - { label: "Short description", name: "shortDescription", widget: "string" }
+      - { label: "Full description", name: "fullDescription", widget: "markdown" }
 
   - name: "pages"
     label: "Pages"
@@ -61,6 +76,30 @@ collections:
                   widget: "relation",
                   collection: "audio1",
                   file: "audio1",
+                  valueField: "title",
+                  searchFields: ["title"],
+                  displayFields: ["title"],
+                  multiple: true,
+                  required: false,
+                },
+                {
+                  label: "Training",
+                  name: "items",
+                  widget: "relation",
+                  collection: "training1",
+                  file: "training1",
+                  valueField: "title",
+                  searchFields: ["title"],
+                  displayFields: ["title"],
+                  multiple: true,
+                  required: false,
+                },
+                {
+                  label: "Story",
+                  name: "items",
+                  widget: "relation",
+                  collection: "story",
+                  file: "story",
                   valueField: "title",
                   searchFields: ["title"],
                   displayFields: ["title"],
