@@ -52,8 +52,8 @@ const Stories = ({ data }) => {
           {posts.map(({ node: post }) => (
             <Box mb={[30, 40, 70]} key={post.frontmatter.title}>
               <ContentBoxWithImage
-                image={post.frontmatter.storyImage.image.childImageSharp.fluid}
-                alt={post.frontmatter.storyImage.alt}
+                image={post.frontmatter.image.childImageSharp.fluid}
+                alt={post.frontmatter.title}
                 footerContent={post.frontmatter.date}
               >
                 <StyledLink to={post.fields.slug}>
@@ -87,13 +87,10 @@ export const blogListQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            storyImage {
-              alt
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 850) {
-                    ...GatsbyImageSharpFluid
-                  }
+            image {
+              childImageSharp {
+                fluid(maxWidth: 850) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

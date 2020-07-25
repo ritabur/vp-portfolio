@@ -15,7 +15,7 @@ const Story = ({ data }) => {
       frontmatter: {
         title,
         date,
-        storyImage: { image, alt },
+        image,
       },
       html,
     },
@@ -29,7 +29,7 @@ const Story = ({ data }) => {
           <GoBack to="Stories" />
           <ContentBoxWithImage
             image={image.childImageSharp.fluid}
-            alt={alt}
+            alt={title}
             footerContent={date}
           >
             <Heading>{title}</Heading>
@@ -56,13 +56,10 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        storyImage {
-          alt
-          image {
-            childImageSharp {
-              fluid(maxWidth: 850) {
-                ...GatsbyImageSharpFluid
-              }
+        image {
+          childImageSharp {
+            fluid(maxWidth: 850) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

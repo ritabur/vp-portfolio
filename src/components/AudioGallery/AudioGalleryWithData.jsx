@@ -4,10 +4,8 @@ import {graphql, useStaticQuery} from "gatsby";
 import { AudioGallery } from './AudioGallery';
 
 export const AudioGalleryWithData = ({ featuredEntries }) => {
-    const { items: itemsToFetch } = featuredEntries.reduce((accumulator, currentValue) => ([
-        ...accumulator.items,
-        ...currentValue.items,
-    ]));
+    const featuredEntryNames = featuredEntries.map((item) => [...item.items]);
+    const itemsToFetch = [].concat(...featuredEntryNames);
 
     // TODO: gatsby useStaticQuery doesn't accept variables: https://github.com/gatsbyjs/gatsby/issues/10482,
     // so we need to filter entries manually
