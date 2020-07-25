@@ -81,7 +81,15 @@ collections:
                   displayFields: ["title"],
                   multiple: true,
                   required: false,
-                },
+                }
+                ]
+            },
+            {
+              label: "Training",
+              name: "training",
+              widget: "object",
+              fields:
+                [
                 {
                   label: "Training",
                   name: "items",
@@ -93,7 +101,15 @@ collections:
                   displayFields: ["title"],
                   multiple: true,
                   required: false,
-                },
+                }
+                ]
+            },
+            {
+              label: "Story",
+              name: "story",
+              widget: "object",
+              fields:
+                [
                 {
                   label: "Story",
                   name: "items",
