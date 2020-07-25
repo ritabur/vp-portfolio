@@ -4,3 +4,5 @@ import * as React from 'react';
 const Training1 = () => (
     <div>ladida</div>
 );
+
+export default Training1;
