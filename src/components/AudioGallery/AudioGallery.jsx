@@ -6,6 +6,8 @@ import Img from 'gatsby-image';
 import { Box } from 'components/Box';
 import { media as MEDIA } from 'lib/media';
 
+const PORTRAIT_INDICES = [0, 3, 4, 7, 8, 11];
+
 const StyledImg = styled(Img)`
   height: 100%;
   position: relative;
@@ -43,16 +45,19 @@ export const AudioGallery = ({galleryList}) => (
         flexWrap="wrap"
         mx={-12}
     >
-      {galleryList.map((galleryItem) => (
-          <Box mt={25} key={galleryItem.title} width={['100%', `${galleryItem.portrait ? '30%' : '70%'}`]} maxHeight={300} px={12}>
-            <Link to={galleryItem.slug}>
-              <StyledImg
-                  fluid={galleryItem.image.fluid}
-                  alt={galleryItem.title}
-                  title={galleryItem.title}
-              />
-            </Link>
-          </Box>
-      ))}
+      {galleryList.map((galleryItem, index) => {
+          console.log(index);
+          return (
+              <Box mt={25} key={galleryItem.title} width={['100%', `${PORTRAIT_INDICES.includes(index) ? '30%' : '70%'}`]} maxHeight={300} px={12}>
+                  <Link to={galleryItem.slug}>
+                      <StyledImg
+                          fluid={galleryItem.image.fluid}
+                          alt={galleryItem.title}
+                          title={galleryItem.title}
+                      />
+                  </Link>
+              </Box>
+          )
+      })}
     </Box>
 );

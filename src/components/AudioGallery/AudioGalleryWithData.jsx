@@ -44,15 +44,16 @@ export const AudioGalleryWithData = ({ featuredEntries }) => {
     });
 
     const galleryEntriesFormatted = galleryEntries.map(({node}) => {
-        const { fields: { slug }, frontmatter: { title, image: { childImageSharp, childImageSharp: { fluid: { aspectRatio }} } } } = node;
+        const { fields: { slug }, frontmatter: { title, image: { childImageSharp } } } = node;
 
         return {
-            ...(aspectRatio < 1 ? {portrait: true}: {landscape: true}),
             slug,
             image: childImageSharp,
             title,
         };
     });
+
+    console.log(galleryEntriesFormatted);
 
     return (
             <AudioGallery galleryList={galleryEntriesFormatted} />
