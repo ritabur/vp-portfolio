@@ -3,18 +3,18 @@ templateKey: index
 title: Homepage
 headlineLeft: homepage headline
 featuredEntries:
-  - type: audio
-    items:
-      - one more audio
-      - test audio entry
-  - type: training
-    items:
-      - training one
-      - training two
   - type: story
     items:
       - test title
       - TESTING
+  - type: training
+    items:
+      - training one
+      - training two
+  - type: audio
+    items:
+      - one more audio
+      - test audio entry
 footer:
   column1:
     title: Title1
