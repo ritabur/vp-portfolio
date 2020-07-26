@@ -23,7 +23,7 @@ const StyledHeading = styled(Heading)`
     position: absolute;
     width: 100%;
     height: 1px;
-    bottom: -1px;
+    bottom: -4px;
     left: 0;
     background-color: ${props => props.theme.colors.bodyPrimary};
     visibility: hidden;

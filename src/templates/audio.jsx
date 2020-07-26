@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import { Layout } from 'components/Layout';
 import { Box } from 'components/Box';
@@ -11,9 +11,10 @@ import { Base } from 'components/Base';
 const Audio = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: { title, audioList },
+      frontmatter: { title },
       html,
     },
+    allMarkdownRemark: { edges: thumbnailList },
   } = data;
 
   return (
@@ -25,11 +26,7 @@ const Audio = ({ data }) => {
             <Base content={html} />
           </ContentBox>
           <Box mt={[30, 40]}>
-            <ThumbnailList
-              contentList={audioList}
-              title="test"
-              content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta dolores ex, harum ipsum labore laudantium quas quod, reiciendis saepe sunt, tenetur. Eius, libero minima nihil optio quibusdam soluta voluptatem."
-            />
+            <ThumbnailList contentList={thumbnailList} />
           </Box>
         </Box>
       </Box>
@@ -46,8 +43,22 @@ export const categoryPageQuery = graphql`
       html
       frontmatter {
         title
-        audioList {
-          largeImage {
+      }
+    }
+    allMarkdownRemark(
+      limit: 1000
+      filter: { frontmatter: { templateKey: { eq: "audio1" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            link
+            shortDescription
+            fullDescription
             image {
               childImageSharp {
                 fluid(maxWidth: 100) {
@@ -55,7 +66,6 @@ export const categoryPageQuery = graphql`
                 }
               }
             }
-            title
           }
         }
       }

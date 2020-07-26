@@ -12,11 +12,7 @@ import { GoBack } from 'components/GoBack';
 const Story = ({ data }) => {
   const {
     markdownRemark: {
-      frontmatter: {
-        title,
-        date,
-        image,
-      },
+      frontmatter: { title, date, image },
       html,
     },
   } = data;

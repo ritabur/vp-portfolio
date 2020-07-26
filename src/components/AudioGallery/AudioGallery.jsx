@@ -39,25 +39,29 @@ const StyledImg = styled(Img)`
   `}
 `;
 
-export const AudioGallery = ({galleryList}) => (
-    <Box
-        display="flex"
-        flexWrap="wrap"
-        mx={-12}
-    >
-      {galleryList.map((galleryItem, index) => {
-          console.log(index);
-          return (
-              <Box mt={25} key={galleryItem.title} width={['100%', `${PORTRAIT_INDICES.includes(index) ? '30%' : '70%'}`]} maxHeight={300} px={12}>
-                  <Link to={galleryItem.slug}>
-                      <StyledImg
-                          fluid={galleryItem.image.fluid}
-                          alt={galleryItem.title}
-                          title={galleryItem.title}
-                      />
-                  </Link>
-              </Box>
-          )
-      })}
-    </Box>
+export const AudioGallery = ({ galleryList }) => (
+  <Box display="flex" flexWrap="wrap" mx={-12}>
+    {galleryList.map((galleryItem, index) => {
+      return (
+        <Box
+          mt={25}
+          key={galleryItem.title}
+          width={[
+            '100%',
+            `${PORTRAIT_INDICES.includes(index) ? '30%' : '70%'}`,
+          ]}
+          maxHeight={300}
+          px={12}
+        >
+          <Link to={galleryItem.slug}>
+            <StyledImg
+              fluid={galleryItem.image.fluid}
+              alt={galleryItem.title}
+              title={galleryItem.title}
+            />
+          </Link>
+        </Box>
+      );
+    })}
+  </Box>
 );
