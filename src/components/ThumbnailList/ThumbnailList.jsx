@@ -8,10 +8,12 @@ import { ContentBoxThumbnail } from 'components/ContentBox';
 
 const H2 = styled.h2`
   position: relative;
+  display: inline-block;
   margin-bottom: 12px;
   font-size: ${props => props.theme.fontSizes.medium};
   font-weight: ${props => props.theme.fontWeights.bold};
-  
+
+  // TODO: extract together with stories hover effect
   &:after {
     content: '';
     position: absolute;
