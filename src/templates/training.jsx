@@ -7,6 +7,7 @@ import { Box } from 'components/Box';
 import { ContentBox } from 'components/ContentBox';
 import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
+import { ThumbnailList } from 'components/ThumbnailList';
 
 const Training = ({ data }) => {
   const {
@@ -14,6 +15,7 @@ const Training = ({ data }) => {
       frontmatter: { title },
       html,
     },
+    allMarkdownRemark: { edges: thumbnailList },
   } = data;
 
   return (
@@ -24,6 +26,9 @@ const Training = ({ data }) => {
             <Heading>{title}</Heading>
             <Base content={html} />
           </ContentBox>
+          <Box mt={[30, 40]}>
+            <ThumbnailList contentList={thumbnailList} />
+          </Box>
         </Box>
       </Box>
     </Layout>
@@ -37,11 +42,36 @@ Training.propTypes = {
 export default Training;
 
 export const categoryPageQuery = graphql`
-  query TrainingPageaaa($id: String!) {
+  query TrainingPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
+      }
+    }
+    allMarkdownRemark(
+      limit: 1000
+      filter: { frontmatter: { templateKey: { eq: "training1" } } }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            link
+            shortDescription
+            fullDescription
+            image {
+              childImageSharp {
+                fluid(maxWidth: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
