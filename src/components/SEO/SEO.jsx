@@ -25,7 +25,9 @@ export const SEO = ({ description, lang, meta, title }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const metaTitle = title ? `${title} | ${site.siteMetadata.title}` : site.siteMetadata.title;
+  const metaTitle = title
+    ? `${title} | ${site.siteMetadata.title}`
+    : site.siteMetadata.title;
 
   return (
     <Helmet

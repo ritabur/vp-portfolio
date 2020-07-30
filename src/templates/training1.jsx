@@ -27,7 +27,9 @@ const Training1 = ({ data }) => {
             <Heading>{title}</Heading>
             <Base content={fullDescription} />
             <Box pt={16}>
-                <Base content={`Link to training: <a href="${link}">${link}</a>`} />
+              <Base
+                content={`Link to training: <a href="${link}">${link}</a>`}
+              />
             </Box>
           </ContentBoxWithImage>
         </Box>
