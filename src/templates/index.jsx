@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 
 import { Layout } from 'components/Layout';
 import { Box } from 'components/Box';
+import { SEO } from 'components/SEO';
 import { AudioGalleryWithData } from 'components/AudioGallery';
 import { media as MEDIA } from 'lib/media';
 
@@ -37,6 +38,7 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
+      <SEO />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box
           display={['block', null, null, 'flex']}
