@@ -1,87 +1,35 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-export const SEO = ({ description, lang, meta, title, image }) => {
+// TODO: change lang to content lang
+export const SEO = ({ description, lang = 'en', title, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
-            description
           }
         }
       }
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
   const metaTitle = title
     ? `${title} | ${site.siteMetadata.title}`
     : site.siteMetadata.title;
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={metaTitle}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: metaTitle,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:image`,
-          content: image,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:title`,
-          content: metaTitle,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    <Helmet>
+      <html lang={lang} />
+      <title>{metaTitle}</title>
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={metaTitle} />
+      {image && <meta property="og:image" content={image} />}
+      {description && <meta property="og:description" content={description} />}
+      <meta name="keywords" content="Audio, Documentary, Radio" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Helmet>
   );
-};
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 };

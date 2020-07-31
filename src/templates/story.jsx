@@ -21,7 +21,7 @@ const Story = ({ data }) => {
   // image min-width: 840px
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={title} image={image.childImageSharp.fluid.src} />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           <GoBack to="Stories" />

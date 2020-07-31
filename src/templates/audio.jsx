@@ -20,7 +20,7 @@ const Audio = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Audio" />
+      <SEO title="Audio" image={thumbnailList[0].node.frontmatter.image.childImageSharp.fluid.src} />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           <ContentBox>

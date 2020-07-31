@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: 'Vaida Pilibaitytė',
-    description: 'Portfolio',
   },
   plugins: [
     `path-resolver`,
