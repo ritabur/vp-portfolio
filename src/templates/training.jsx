@@ -21,7 +21,7 @@ const Training = ({ data, location }) => {
 
   return (
     <Layout>
-      <SEO title="Training" image={thumbnailList[0].node.frontmatter.image.childImageSharp.fluid.src} path={location.pathname} />
+      <SEO title="Training" path={location.pathname} />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           <ContentBox>

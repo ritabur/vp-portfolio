@@ -33,6 +33,7 @@ export const SEO = ({ description, lang = 'en', title, image, path }) => {
 
       <meta property="og:title" content={metaTitle} />
       <meta property="og:type" content="website" />
+      {/* TODO: add generic image for audio and training lists */}
       {image && <meta property="og:image" content={`${url}${image}`} />}
       {description && <meta property="og:description" content={description} />}
       {description && <meta name="description" content={description} />}
