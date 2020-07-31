@@ -28,7 +28,7 @@ export const SEO = ({ description, lang = 'en', title, image }) => {
       <meta property="og:title" content={metaTitle} />
       {image && <meta property="og:image" content={image} />}
       {description && <meta property="og:description" content={description} />}
-      <meta name="keywords" content="Audio, Documentary, Radio" />
+      <meta name="keywords" content="Audio, Documentary, Radio, Training" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Helmet>
   );
