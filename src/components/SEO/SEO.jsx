@@ -10,12 +10,14 @@ export const SEO = ({ description, lang = 'en', title, image }) => {
         site {
           siteMetadata {
             title
+            siteUrl
           }
         }
       }
     `
   );
 
+  const url = site.siteMetadata.siteUrl;
   const metaTitle = title
     ? `${title} | ${site.siteMetadata.title}`
     : site.siteMetadata.title;
@@ -24,10 +26,16 @@ export const SEO = ({ description, lang = 'en', title, image }) => {
     <Helmet>
       <html lang={lang} />
       <title>{metaTitle}</title>
-      <meta property="og:type" content="website" />
+
+      {/* TODO: change to domain in gatsby-config */}
+      <link rel="canonical" href={url} />
+      <meta property="og:url" content={url} />
+
       <meta property="og:title" content={metaTitle} />
-      {image && <meta property="og:image" content={image} />}
+      <meta property="og:type" content="website" />
+      {image && <meta property="og:image" content={`${url}${image}`} />}
       {description && <meta property="og:description" content={description} />}
+      {description && <meta name="description" content={description} />}
       <meta name="keywords" content="Audio, Documentary, Radio, Training" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Helmet>

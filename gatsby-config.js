@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Vaida Pilibaitytė',
+    // TODO: change to domain
+    siteUrl: 'https://brave-hypatia-40862b.netlify.app/',
   },
   plugins: [
     `path-resolver`,
@@ -86,6 +88,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
