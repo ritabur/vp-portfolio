@@ -9,7 +9,7 @@ import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
 import { SEO } from 'components/SEO';
 
-const About = ({ data }) => {
+const About = ({ data, location }) => {
   const {
     markdownRemark: {
       frontmatter: {
@@ -22,7 +22,7 @@ const About = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="About" image={image.childImageSharp.fluid.src} />
+      <SEO title="About" image={image.childImageSharp.fluid.src} path={location.pathname} />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           <ContentBoxWithImage image={image.childImageSharp.fluid} alt={alt}>

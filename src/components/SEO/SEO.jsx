@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // TODO: change lang to content lang
-export const SEO = ({ description, lang = 'en', title, image }) => {
+export const SEO = ({ description, lang = 'en', title, image, path }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -28,8 +28,8 @@ export const SEO = ({ description, lang = 'en', title, image }) => {
       <title>{metaTitle}</title>
 
       {/* TODO: change to domain in gatsby-config */}
-      <link rel="canonical" href={url} />
-      <meta property="og:url" content={url} />
+      <link rel="canonical" href={path ? `${url}${path}`: url} />
+      <meta property="og:url" content={path ? `${url}${path}`: url} />
 
       <meta property="og:title" content={metaTitle} />
       <meta property="og:type" content="website" />

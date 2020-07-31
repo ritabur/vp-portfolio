@@ -38,7 +38,7 @@ const StyledHeading = styled(Heading)`
   }
 `;
 
-const Stories = ({ data }) => {
+const Stories = ({ data, location }) => {
   const {
     allMarkdownRemark: { edges: posts },
   } = data;
@@ -46,7 +46,7 @@ const Stories = ({ data }) => {
   // all images - maxWidth at least 850px
   return (
     <Layout>
-      <SEO title="Stories" image={posts[0].node.frontmatter.image.childImageSharp.fluid.src} />
+      <SEO title="Stories" image={posts[0].node.frontmatter.image.childImageSharp.fluid.src} path={location.pathname} />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           {posts.map(({ node: post }) => (
