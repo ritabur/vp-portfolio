@@ -10,6 +10,7 @@ import {
   Divider,
   GlobaStyle,
   StyledCloseIcon,
+  StyledHeaderLink,
   duration,
   defaultStyle,
   transitionStyles,
@@ -63,7 +64,7 @@ export const MobileNavbar = () => {
         alignItems="center"
         padding={20}
       >
-        <h1>Vaida Pilibaitytė</h1>
+        <StyledHeaderLink to="/"><h1>Vaida Pilibaitytė</h1></StyledHeaderLink>
         <Transition in={isOverlayOpen} timeout={duration}>
           {state => (
             <StyledOverlay

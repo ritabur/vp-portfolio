@@ -67,6 +67,11 @@ export const StyledLink = styled(Link)`
   }
 `;
 
+export const StyledHeaderLink = styled(Link)`
+  text-decoration: none;
+  color: ${props => props.theme.colors.bodyPrimary};
+`;
+
 export const StyledLinkContainer = styled(Box)`
   position: relative;
   top: 50%;

@@ -8,14 +8,18 @@
 * ~~extra pages for every training/audio~~
 * ~~404~~
 * FIX mobile menu overlay! & transitions for mobile menu and pages (?)
+* fix namings e.g. audio1
+* move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
 * styles for admin (multiple issues listed in cms.js)
 * localization https://github.com/netlify/netlify-cms/issues/716
 * styles for markup typography
-* go through SEO with V.
+* go through SEO with V. + pageview tracking?
 * a11y
 * TS
 ---
-* built-in audio player?
+post mvp:
+* built-in audio player
+* comments inside story/training/audio entry
 
 
 ---
