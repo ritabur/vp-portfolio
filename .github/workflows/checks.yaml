@@ -16,4 +16,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: npm run serve
+          start: gatsby serve -p 8000
+          wait-on: http://localhost:8000
