@@ -47,7 +47,7 @@ const Index = ({ data }) => {
           ml={[8, 16, 86, 106]}
         >
           <Box width={['100%', null, null, '25%']}>
-            <StyledH1>{headlineLeft}</StyledH1>
+            <StyledH1 data-cy="homepage-headline">{headlineLeft}</StyledH1>
           </Box>
           <Box width={['auto', null, null, '75%']} pb={10}>
             <AudioGalleryWithData featuredEntries={featuredEntries} />

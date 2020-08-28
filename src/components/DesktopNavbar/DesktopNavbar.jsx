@@ -13,7 +13,7 @@ import {
 
 export const DesktopNavbar = () => {
   return (
-    <StyledBox position="relative" pt={40} ml={30}>
+    <StyledBox position="relative" pt={40} ml={30} data-cy="desktop-navbar">
       <StyledTitleLink to="/" activeClassName="isActive">
         <StyledH2>Vaida Pilibaitytė</StyledH2>
       </StyledTitleLink>

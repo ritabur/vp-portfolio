@@ -13,29 +13,11 @@
 * styles for admin (multiple issues listed in cms.js)
 * localization https://github.com/netlify/netlify-cms/issues/716
 * styles for markup typography
-* go through SEO with V. + pageview tracking?
+* go through SEO with V. + add pageview tracking?
 * a11y
 * TS
+* e2e cypress tests
 ---
 post mvp:
 * built-in audio player
 * comments inside story/training/audio entry
-
-
----
-List:
-
-title
-image
-short description
-long description
-link
-radio or select for portrait/landscape image (possible from graphql)
-
-idea:
-- add above to audio/trainings/stories
-- add related field https://docs.stackbit.com/best-practices/relationships-netlify-cms/
-- in homepage
-    - add two fields: portrait image and landscape image
-    - add related field searches in those fields
-    - search for wanted items according to their image aspect ratio (e.g. in small image search field - a list with only small images appear)

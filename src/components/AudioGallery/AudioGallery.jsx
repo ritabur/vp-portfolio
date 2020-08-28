@@ -40,7 +40,7 @@ const StyledImg = styled(Img)`
 `;
 
 export const AudioGallery = ({ galleryList }) => (
-  <Box display="flex" flexWrap="wrap" mx={-12}>
+  <Box display="flex" flexWrap="wrap" mx={-12} data-cy="audio-gallery">
     {galleryList.map((galleryItem, index) => {
       return (
         <Box

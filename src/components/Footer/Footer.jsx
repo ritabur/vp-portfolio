@@ -62,6 +62,7 @@ export const Footer = () => {
       px={[30, null, 70, 90]}
       width={[null, null, null, '95%']}
       display={[null, null, 'flex']}
+      data-cy="footer"
     >
       <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
         <StyledH4>{footer.column1.title}</StyledH4>

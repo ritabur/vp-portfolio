@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "cypress/globals": true
   },
   "extends": [
     "airbnb",
@@ -15,7 +16,8 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:cypress/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -24,7 +26,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["prettier", "react", "import", "jsx-a11y"],
+  "plugins": ["prettier", "react", "import", "jsx-a11y", "cypress"],
   "rules": {
     "prettier/prettier": "error",
     "react/prop-types": 0,
