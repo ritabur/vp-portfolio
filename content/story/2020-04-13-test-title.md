@@ -1,6 +1,6 @@
 ---
 templateKey: story
-title: test title
+title: Story 1
 date: 2020-04-13T11:21:25.201Z
 image: /img/leaves.jpeg
 ---
