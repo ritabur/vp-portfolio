@@ -53,7 +53,7 @@ export const categoryPageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { templateKey: { eq: "training1" } } }
+      filter: { frontmatter: { templateKey: { eq: "training-post" } } }
     ) {
       edges {
         node {

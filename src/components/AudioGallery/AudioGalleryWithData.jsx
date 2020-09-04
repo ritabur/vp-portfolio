@@ -14,7 +14,7 @@ export const AudioGalleryWithData = ({ featuredEntries }) => {
       allMarkdownRemark(
         limit: 1000
         filter: {
-          frontmatter: { templateKey: { in: ["audio-post", "training1", "story"] } }
+          frontmatter: { templateKey: { in: ["audio-post", "training-post", "story"] } }
         }
       ) {
         edges {

@@ -21,9 +21,9 @@ collections:
       - { label: "Story image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "audioPost"
-    label: "AudioPost"
-    folder: "content/audioPost"
+  - name: "audio-post"
+    label: "Audio Post"
+    folder: "content/audio-post"
     create: true
     slug: "{{slug}}"
     editor:
@@ -36,15 +36,15 @@ collections:
       - { label: "Short description", name: "shortDescription", widget: "string" }
       - { label: "Full description", name: "fullDescription", widget: "markdown" }
 
-  - name: "training1"
-    label: "Training1"
-    folder: "content/training1"
+  - name: "training-post"
+    label: "Training Post"
+    folder: "content/training-post"
     create: true
     slug: "{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "training1" }
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "training-post" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Training image", name: "image", widget: "image" }
@@ -66,7 +66,7 @@ collections:
             [
             {
               label: "Audio Post",
-              name: "audioPost",
+              name: "audio-post",
               widget: "object",
               fields:
                 [
@@ -74,8 +74,8 @@ collections:
                   label: "Audio Post",
                   name: "items",
                   widget: "relation",
-                  collection: "audioPost",
-                  file: "audioPost",
+                  collection: "audio-post",
+                  file: "audio-post",
                   valueField: "title",
                   searchFields: ["title"],
                   displayFields: ["title"],
@@ -85,17 +85,17 @@ collections:
                 ]
             },
             {
-              label: "Training",
-              name: "training",
+              label: "Training Post",
+              name: "training-post",
               widget: "object",
               fields:
                 [
                 {
-                  label: "Training",
+                  label: "Training Post",
                   name: "items",
                   widget: "relation",
-                  collection: "training1",
-                  file: "training1",
+                  collection: "training-post",
+                  file: "training-post",
                   valueField: "title",
                   searchFields: ["title"],
                   displayFields: ["title"],

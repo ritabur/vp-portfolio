@@ -1,5 +1,5 @@
 ---
-templateKey: training1
+templateKey: training-post
 title: training three
 link: www.google.com
 image: /img/arita-1.jpg

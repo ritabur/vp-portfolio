@@ -9,7 +9,7 @@ import { Base } from 'components/Base';
 import { GoBack } from 'components/GoBack';
 import { SEO } from 'components/SEO';
 
-const Training1 = ({ data, location }) => {
+const TrainingPost = ({ data, location }) => {
   const {
     markdownRemark: {
       frontmatter: { title, link, fullDescription, shortDescription, image },
@@ -38,10 +38,10 @@ const Training1 = ({ data, location }) => {
   );
 };
 
-export default Training1;
+export default TrainingPost;
 
 export const pageQuery = graphql`
-  query TrainingByID($id: String!) {
+  query TrainingPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
