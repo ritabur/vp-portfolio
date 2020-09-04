@@ -2,7 +2,11 @@
 templateKey: index
 title: Homepage
 headlineLeft: homepage headline
-featuredEntries: []
+featuredEntries:
+  - type: story
+    items:
+      - Story 1
+      - Story 2
 footer:
   column1:
     title: Title1
