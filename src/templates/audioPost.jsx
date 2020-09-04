@@ -9,7 +9,7 @@ import { Base } from 'components/Base';
 import { GoBack } from 'components/GoBack';
 import { SEO } from 'components/SEO';
 
-const Audio1 = ({ data, location }) => {
+const AudioPost = ({ data, location }) => {
   const {
     markdownRemark: {
       frontmatter: { title, link, fullDescription, shortDescription, image },
@@ -36,10 +36,10 @@ const Audio1 = ({ data, location }) => {
   );
 };
 
-export default Audio1;
+export default AudioPost;
 
 export const pageQuery = graphql`
-  query AudioByID($id: String!) {
+  query AudioPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title

@@ -6,8 +6,6 @@ local_backend: true
 media_folder: static/img
 public_folder: /img
 
-publish_mode: editorial_workflow
-
 collections:
   - name: "story"
     label: "Stories"
@@ -23,15 +21,15 @@ collections:
       - { label: "Story image", name: "image", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "audio1"
-    label: "Audio1"
-    folder: "content/audio1"
+  - name: "audioPost"
+    label: "AudioPost"
+    folder: "content/audioPost"
     create: true
     slug: "{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio1" }
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audioPost" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Audio image", name: "image", widget: "image" }
@@ -67,17 +65,17 @@ collections:
           - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio/training/stories", types:
             [
             {
-              label: "Audio",
-              name: "audio",
+              label: "Audio Post",
+              name: "audioPost",
               widget: "object",
               fields:
                 [
                 {
-                  label: "Audio",
+                  label: "Audio Post",
                   name: "items",
                   widget: "relation",
-                  collection: "audio1",
-                  file: "audio1",
+                  collection: "audioPost",
+                  file: "audioPost",
                   valueField: "title",
                   searchFields: ["title"],
                   displayFields: ["title"],

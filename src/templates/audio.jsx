@@ -49,7 +49,7 @@ export const categoryPageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 1000
-      filter: { frontmatter: { templateKey: { eq: "audio1" } } }
+      filter: { frontmatter: { templateKey: { eq: "audioPost" } } }
     ) {
       edges {
         node {
