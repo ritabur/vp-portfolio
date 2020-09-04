@@ -7,14 +7,14 @@ featuredEntries:
     items:
       - audio 1
       - audio 2
-  - type: training-post
-    items:
-      - training 1
-      - training 2
   - type: story
     items:
       - Story 1
       - Story 2
+  - type: training-post
+    items:
+      - training 1
+      - training 2
 footer:
   column1:
     title: Title1
