@@ -2,19 +2,7 @@
 templateKey: index
 title: Homepage
 headlineLeft: homepage headline
-featuredEntries:
-  - type: training
-    items:
-      - training one
-      - training two
-  - type: story
-    items:
-      - test title
-      - TESTING
-  - type: audio
-    items:
-      - one more audio
-      - test audio entry
+featuredEntries: []
 footer:
   column1:
     title: Title1
