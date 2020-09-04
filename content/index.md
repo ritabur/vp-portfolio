@@ -3,6 +3,14 @@ templateKey: index
 title: Homepage
 headlineLeft: homepage headline
 featuredEntries:
+  - type: audio-post
+    items:
+      - audio 1
+      - audio 2
+  - type: training-post
+    items:
+      - training 1
+      - training 2
   - type: story
     items:
       - Story 1

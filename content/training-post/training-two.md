@@ -1,6 +1,6 @@
 ---
 templateKey: training-post
-title: training two
+title: training 2
 link: www.google.com
 image: /img/home.jpg
 shortDescription: Lorem ipsum dolor sit amet, consectetur adipisicing elit.

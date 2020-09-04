@@ -1,6 +1,6 @@
 ---
 templateKey: training-post
-title: training three
+title: training 3
 link: www.google.com
 image: /img/arita-1.jpg
 shortDescription: Lorem ipsum dolor sit amet, consectetur adipisicing elit.

@@ -1,6 +1,6 @@
 ---
 templateKey: training-post
-title: training one
+title: training 1
 link: https://www.lrt.lt/mediateka/audio/radijo-laidos/vienkartine-planeta
 image: /img/portrait.jpg
 shortDescription: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
