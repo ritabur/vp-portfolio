@@ -13,8 +13,8 @@ featuredEntries:
       - Story 2
   - type: training-post
     items:
-      - training 1
       - training 2
+      - training 1
 footer:
   column1:
     title: Title1
