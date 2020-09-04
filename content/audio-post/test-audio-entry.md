@@ -1,6 +1,6 @@
 ---
 templateKey: audio-post
-title: test audio entry
+title: audio 2
 link: https://www.lrt.lt/mediateka/audio/radijo-laidos/vienkartine-planeta
 image: /img/home.jpg
 shortDescription: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
