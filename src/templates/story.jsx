@@ -24,7 +24,7 @@ const Story = ({ data, location }) => {
       <SEO title={title} description={html} image={image.childImageSharp.fluid.src} path={location.pathname} />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
-          <GoBack to="Stories" />
+          <GoBack />
           <ContentBoxWithImage
             image={image.childImageSharp.fluid}
             alt={title}

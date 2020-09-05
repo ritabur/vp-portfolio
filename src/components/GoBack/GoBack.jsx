@@ -15,7 +15,7 @@ const GoBackContent = styled(Box)`
   cursor: pointer;
 `;
 
-export const GoBack = ({ to: backToText }) => {
+export const GoBack = () => {
   return (
     <GoBackWrapper px={8} py={8} mb={[8, 16]}>
       <GoBackContent
@@ -29,7 +29,7 @@ export const GoBack = ({ to: backToText }) => {
       >
         <ArrowIcon height={15} />
         <Box pt={2} pl={10}>
-          {backToText}
+          Back
         </Box>
       </GoBackContent>
     </GoBackWrapper>
