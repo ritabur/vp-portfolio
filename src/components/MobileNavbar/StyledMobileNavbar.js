@@ -20,10 +20,10 @@ export const defaultStyle = {
 };
 
 export const transitionStyles = {
-    entering: { opacity: 1 },
-    entered:  { opacity: 1 },
-    exiting:  { opacity: 0 },
-    exited:  { opacity: 0 },
+    entering: { opacity: 1, zIndex: 1 },
+    entered:  { opacity: 1, zIndex: 1 },
+    exiting:  { opacity: 0, zIndex: -1 },
+    exited:  { opacity: 0, zIndex: -1 },
 };
 
 export const Divider = styled(Box)`
@@ -38,7 +38,6 @@ export const StyledOverlay = styled.div`
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1;
 `;
 
 export const StyledLink = styled(Link)`
