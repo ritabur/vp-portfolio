@@ -9,9 +9,10 @@
 * ~~404~~
 * ~~fix namings e.g. audio1~~
 * ~~FIX mobile menu overlay!~~
+* ~~fix e2e cypress test running on CI~~
+* iframe from LRT or audioplayer (?): fallback image for homepage (?)
 * transitions for mobile menu and pages (?)
 * don't render mobile navbar on desktop and desktop navbar on mobile
-* fix e2e cypress test running on CI
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
 * styles for admin (multiple issues listed in cms.js)
 * localization https://github.com/netlify/netlify-cms/pull/4139
