@@ -89,6 +89,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-page-transitions`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

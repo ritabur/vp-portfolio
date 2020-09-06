@@ -1,6 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 import { GlobalResetStyle } from 'lib/cssResets';
 import { MobileNavbar } from 'components/MobileNavbar';
@@ -26,7 +27,9 @@ export const Layout = ({ children }) => (
           verticalAlign="top"
         >
           <Box as="main" ml={[null, null, null, 'auto']}>
-            {children}
+            <PageTransition>
+              {children}
+            </PageTransition>
           </Box>
           <Box
             pb={20}
