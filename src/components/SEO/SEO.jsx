@@ -28,8 +28,8 @@ export const SEO = ({ description, lang = 'en', title, image, path }) => {
       <title>{metaTitle}</title>
 
       {/* TODO: change to domain in gatsby-config */}
-      <link rel="canonical" href={path ? `${url}${path}`: url} />
-      <meta property="og:url" content={path ? `${url}${path}`: url} />
+      <link rel="canonical" href={path ? `${url}${path}` : url} />
+      <meta property="og:url" content={path ? `${url}${path}` : url} />
 
       <meta property="og:title" content={metaTitle} />
       <meta property="og:type" content="website" />

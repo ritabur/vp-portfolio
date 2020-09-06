@@ -10,8 +10,8 @@
 * ~~fix namings e.g. audio1~~
 * ~~FIX mobile menu overlay!~~
 * ~~fix e2e cypress test running on CI~~
+* transitions for mobile menu and pages
 * iframe from LRT or audioplayer (?): fallback image for homepage (?)
-* transitions for mobile menu and pages (?)
 * don't render mobile navbar on desktop and desktop navbar on mobile
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
 * styles for admin (multiple issues listed in cms.js)

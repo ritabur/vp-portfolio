@@ -64,7 +64,9 @@ export const MobileNavbar = () => {
         alignItems="center"
         padding={20}
       >
-        <StyledHeaderLink to="/"><h1>Vaida Pilibaitytė</h1></StyledHeaderLink>
+        <StyledHeaderLink to="/">
+          <h1>Vaida Pilibaitytė</h1>
+        </StyledHeaderLink>
         <Transition in={isOverlayOpen} timeout={duration}>
           {state => (
             <StyledOverlay

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 import { GlobalResetStyle } from 'lib/cssResets';
 import { MobileNavbar } from 'components/MobileNavbar';
