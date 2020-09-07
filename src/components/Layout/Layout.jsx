@@ -26,9 +26,7 @@ export const Layout = ({ children }) => (
           verticalAlign="top"
         >
           <Box as="main" ml={[null, null, null, 'auto']}>
-            <PageTransition>
-              {children}
-            </PageTransition>
+            {children}
           </Box>
           <Box
             pb={20}
