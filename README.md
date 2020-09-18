@@ -1,17 +1,8 @@
-Portfolio website of audio documentary artist created using:
-
-- Gatsby
-- Netlify CMS
-- Styled components
+Portfolio [website](https://brave-hypatia-40862b.netlify.app/) of an audio documentary author
 
 ---
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Gatsby's default starter
 </h1>
