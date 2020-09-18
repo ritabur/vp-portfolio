@@ -8,6 +8,7 @@ import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
 import { GoBack } from 'components/GoBack';
 import { SEO } from 'components/SEO';
+import { CommentSection } from 'components/CommentSection';
 
 const AudioPost = ({ data, location }) => {
   const {
@@ -35,6 +36,7 @@ const AudioPost = ({ data, location }) => {
               <Base content={`Link to audio: <a href="${link}">${link}</a>`} />
             </Box>
           </ContentBoxWithImage>
+          <CommentSection pathname={location.pathname} />
         </Box>
       </Box>
     </Layout>
