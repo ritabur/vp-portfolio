@@ -34,9 +34,7 @@ footer:
     title: Training and discussion facilitation
     body: I have conducted science and environmental communication training
       workshops for youth, researchers and environmental protection
-      professionals. My clients include State Service for Protected Areas, the
-      European Commission representation in Lithuania and the British Council
-      Lithuania. I teach a course in radio documentary production at the
+      professionals. I teach a course in radio documentary production at the
       Lithuanian Journalism Center and mentor participants of the Ake Blomstrom
       international training program for talented audio producers.
 ---
