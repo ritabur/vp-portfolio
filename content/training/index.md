@@ -3,5 +3,8 @@ templateKey: training
 path: /training
 title: Training
 ---
+I have conducted science and environmental communication training workshops for youth, researchers and environmenal protection professionals. My clients include State Service for Protected Areas, the European Commission representation in Lithuania and the British Council Lithuania.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+I am reading a course in radio documentary production at the [Lithuanian Journalism Center](https://lzc.lt/komanda/).
+
+Since 2020 I am a mentor of the Ake Blomstrom international [training program](https://ifc2.wordpress.com/ake-blomstrom-home/) for audio producers.
