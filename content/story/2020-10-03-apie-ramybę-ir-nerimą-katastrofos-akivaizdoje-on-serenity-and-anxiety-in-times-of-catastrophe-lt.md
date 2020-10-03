@@ -2,7 +2,7 @@
 templateKey: story
 title: Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety in
   Times of Catastrophe [LT]
-date: 2020-10-03T15:43:15.734Z
+date: 2020-09-27T07:30:00.000Z
 image: /img/20200813_moletai_v.pilibaityte.jpg
 ---
 *Molėtų r., 2020 m. rugpjūtis*
