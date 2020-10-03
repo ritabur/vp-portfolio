@@ -14,7 +14,8 @@ More: https://www.lrt.lt/tema/vaida-pilibaityte \
 \
 **Awards** 
 
-PRIX EUROPA nomination in Best European Radio Documentary category, 2018 National investigative journalism prize for radio documentary series, 2018
+PRIX EUROPA nomination in Best European Radio Documentary category, 2018 \
+National investigative journalism prize for radio documentary series, 2018 \
 National journalism prize for radio documentary, 2017, 2018
 National award for environmental reporting, 2003, 2005, 2008, 2016
 First prize for sustainable energy reporting in Central and Eastern Europe, 2007
