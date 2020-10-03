@@ -1,7 +1,7 @@
 ---
 templateKey: index
 title: Homepage
-headlineLeft: homepage headline
+headlineLeft: Vaida Pilibaitytė
 featuredEntries:
   - type: audio-post
     items:
