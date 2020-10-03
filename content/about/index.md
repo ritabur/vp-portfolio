@@ -4,7 +4,7 @@ path: /about
 title: About me
 mainImage:
   image: /img/2020_vaidapimiske.jpg
-  alt: photo of me
+  alt: Vaida in the forest
 ---
 ### About
 
