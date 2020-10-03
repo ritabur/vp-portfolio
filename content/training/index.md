@@ -1,7 +1,7 @@
 ---
 templateKey: training
 path: /training
-title: Training
+title: Publications
 ---
 I have conducted science and environmental communication training workshops for youth, researchers and environmental protection professionals. My clients include State Service for Protected Areas, the European Commission representation in Lithuania and the British Council Lithuania.
 
