@@ -13,7 +13,7 @@ Rugpjūtį Molėtų krašte gali pasijusti tarsi Claude Monet paveiksle. Šiltą
 
 Žalsvas, dumblu atsiduodantis Siesarčio vanduo primena ramią, ties Gargždais sulėtėjančią Miniją, prie kurios užaugau. Ten, ant upės kranto, prieš dvidešimt metų gulint aukštoje žolėje vidurvasarį dangus atrodydavo toks pat aukštas, krūmynai irgi svirpdavo, bimbdavo ir šnarėdavo, tik grįžus namo nereikėdavo baimingai ieškoti kojomis ropinėjančių erkių. Nei apie erkinį encefalitą, nei apie klimato kaitą anuomet niekas garsiai nekalbėjo.
 
-**
+\*\*
 
 Vieną rytą akis užkliūva už antraštės, kad vakar JAV, Kalifornijos valstijoje, Mirties slėnio nacionaliniame parke (angl. Death Valley National Park) termometras rodė 54,4°C. Jei klimatologai patvirtins, tai bus aukščiausia „patikimai užfiksuota“ temperatūra Žemėje1. Žiūriu į tuos skaičius ir mintimis grįžtu į pernai metų birželį Berlyne, kai vos virš horizonto pakilusi saulė jau svilindavo, o dieną oro temperatūrai perkopus 38 °C kaitra imdavo kelti paniką.
 
@@ -25,13 +25,13 @@ Tai buvo pirmas kartas, kai fiziškai pajutau ir suvokiau, kad klimato kaita ne 
 
 Pranešimai apie karščio rekordus jau tokie įprasti, kad lengva praleisti pro ausis kaip eilinę orų prognozę. Ir tie rekordai trumpalaikiai – regis, kiekvieni metai pranoksta prieš tai buvusius. Minėtas rekordinis 2019-ųjų birželis Lietuvoje buvo karščiausias nuo stebėjimų pradžios5. Bet šių, 2020-ųjų, birželis vėl buvo šilčiausias metų mėnuo6. Vilniaus universiteto klimatologas Justinas Kilpys pastebi, kad per 60 metų paskutinę birželio dekadą dar niekada nebuvo taip karšta ir mano, kad šie metai gali būti šilčiausi Lietuvos istorijoje7. Bet ką tai man reiškia ryt, poryt, po mėnesio, po metų, po dešimtmečio?
 
-**
+\*\*
 
 Paežerės orą suvirpina tankiai plakami sparnai. Pakeliu akis: nuo klevo į mane žiūri nedidelis paukštis melsva nugara ir šviesiu pilvu. Pasukioja galvą, akimirką sustingsta ir nuropoja kamienu aukštyn. Čia, Rytų Lietuvoje, dabar rugpjūtis. Vakar buvo apie 30°C šilumos.
 
 Kam pasisekė būti prie vandens ar miške toji 2020-ųjų vasaros diena įsimins kaip maloniai šilta. Ežerų krašte apsistojusiai vasarotojai iš miesto su linine suknele, plačiabryle skrybėle ir gera knyga akivaizdžių ekologinės katastrofos ženklų pro saulės akinius nematyti. Kol kas prisitaikyti nesunku. Iš čiaupo bėga šaltas geriamas vanduo. Klevų pavėsyje nekaršta. Ežero vanduo maloniai gaivina. Jis atrodo skaidrus ir pilnas žuvų, žuvautojų bei paukščių. Sodas kvepia alyviniais obuoliais. Pakrantės pušynuose, jei nekreipsime dėmesio į tualetinio popieriaus skiautėmis nužymėtas neformalias poilsiautojų išvietes, sklando ant laužo kepamos mėsos kvapas, dar galima prisiskinti saują mėlynių. Sutemus rugpjūčio danguje išryškėja Paukščių takas ir lyja perseidais. Jei ne pandemija, dėl kurios parduotuvėje tenka slėptis po veido kauke, atrodytų, kad žmonių gyvenimas teka įprasta vaga. Tik vakaro žiniose šmėsteli pranešimas apie stichinę sausrą ir nusekusius Nemuną, Nerį bei kitas upes.
 
-**
+\*\*
 
 Britų filosofas, tamsiuoju Antropoceno – naujos mūsų geologinės eros – pranašu vadinamas Timothy Morton mano, kad ekologinės katastrofos akivaizdoje pajausti ryšį su supančia aplinka yra ne be galo sunku, o pernelyg lengva. „Kvėpuoji, tavo žarnyno bakterijos sau murma, fone patyliukais skleidžiasi evoliucija. Kažkur pragysta paukštis, virš galvos praplaukia debesys“, ­­– rašo jis8. T. Morton įsitikinęs, kad atpažinti katastrofą tuomet, kai ji jau vyksta, gali būti kartu ir sudėtinga, ir skausminga. Tą būseną filosofas prilygina bandymui išvengti susidūrimo su atvažiuojančiu automobiliu tą pat akimirką, kai susidūrimas jau vyksta. Todėl dauguma mūsų to arba nepastebi, arba sąmoningai renkasi ignoruoti. Jo įsitikinimu, dabartinė ekologinė krizė prasidėjo dar tada, kai žmogus ėmė dirbti žemę, maždaug prieš 12 tūkstančių metų, o pastaraisiais dešimtmečiais tik gilėja.
 
@@ -43,7 +43,7 @@ Pavakarę išeinu pasivaikščioti miško taku, vedančiu palei ežerą pro vaiz
 
 Netikėtai prasidėjęs pokalbis apie klimatą – būtent, klimatą, o ne orus – nutrūksta. Nors būtų smalsu pasikalbėti daugiau. Turiu prisipažinti, kad nesu tam pasiruošusi. Ką sakyčiau, jei paaiškėtų, kad pašnekovas visgi „netiki“ klimato kaita arba jei imtų vardyti natūralius veiksnius, pavyzdžiui, saulės spinduliuotės intensyvumą, ir galiausiai paklaustų, ar žinau, kodėl išnyko dinozaurai? Jau esu buvusi tokiose situacijose ir vis dar nemoku iš jų lengvai išsisukti, nesikarščiuoti ir nepamokslauti. Nežinočiau, kaip reaguoti, jei užsimintų, kad nerimauja dėl savo vaikų ar anūkų ateities. Dar daugiau – jei prasitartų, kad išvis nebūtų turėjęs vaikų, jei būtų žinojęs, kas jų laukia? Esu girdėjusi ir tai. Tikriausiai prisipažinčiau, kad ir pati nelaukiu to laiko, kai pokalbiams su sūnėnais iliustruotų knygelių apie liūdinčią ir besišypsančią planetą nebepakaks. Kai teks pasakoti apie vis grėsmingesnius ateities orus, naujas ligas, svilinančią kaitrą išbetonuotuose miestuose, vandenynus be žuvų, miškus be žvėrių ir sužvėrėjusius žmones.  Ir kad tai bus nelabai tolimais laikais, gal net jiems sulaukus mano metų. Bijau prisipažinti, kad dažniausiai baisu net pagalvoti apie tai. Dažniausiai su tomis mintimis jaučiuosi gana vieniša. Bet gal, jei išdrįsčiau tą pokalbį tęsti, paaiškėtų, kad mūsų yra daugiau?
 
-*Esė parašytas dalyvaujant 2020 m. tarptautinėje rašytojų rezidencijų programoje „Parašyta Molėtų krašte“. Projektą įgyvendina Molėtų rajono savivaldybės viešoji biblioteka. Projektą remia Lietuvos Kultūros taryba.*
+*Esė parašytas dalyvaujant 2020 m. tarptautinėje rašytojų [rezidencijų programoje „Parašyta Molėtų krašte“](https://moletai.rvb.lt/2020/09/07/apie-ramybe-ir-nerima-katastrofos-akivaizdoje/). Projektą įgyvendina Molėtų rajono savivaldybės viešoji biblioteka. Projektą remia Lietuvos Kultūros taryba.*
 
 1. https://www.nytimes.com/2020/08/17/climate/death-valley-hottest-temperature-on-earth.html
 2. http://www.meteo.lt/en/news/-/asset_publisher/RrOmWx3nFPCR/content/2019-07-02-rekordiskai-karstas-2019-metu-birzel-1
