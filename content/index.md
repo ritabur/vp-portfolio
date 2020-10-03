@@ -18,20 +18,25 @@ featuredEntries:
 footer:
   column1:
     title: Science and environment reporting
-    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    body: I specialize in science and environment reporting and co-host an
+      award-winning weekly programme on environment on the Lithuanian National
+      radio *Vienkartinė planeta*. In 2018 I produced a two-part radio
+      documentary series about arsenic pollution in drinking water in Lithuania
+      which was awarded an Investigative Journalism prize by the Vilnius
+      Institute for Policy Analysis.
   column2:
     title: Crafted radio documentaries
-    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    body: Since 2006 I have produced 30+ original radio features on history,
+      culture, science and nature since 2006. My work has won numerous national
+      awards and a feature about encounters with wolves was nominated at the
+      prestigious PRIX EUROPA festival in Berlin in 2018.
   column3:
     title: Training and discussion facilitation
-    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
+    body: I have conducted science and environmental communication training
+      workshops for youth, researchers and environmental protection
+      professionals. My clients include State Service for Protected Areas, the
+      European Commission representation in Lithuania and the British Council
+      Lithuania. I teach a course in radio documentary production at the
+      Lithuanian Journalism Center and mentor participants of the Ake Blomstrom
+      international training program for talented audio producers.
 ---
