@@ -6,6 +6,7 @@ import sanitizeHtml from 'sanitize-html';
 const StyledBase = styled.div`
   font-size: ${props => props.theme.fontSizes.medium};
   line-height: 1.6;
+  white-space: pre-line;
 `;
 
 export const Base = ({ content }) => (
