@@ -1,6 +1,6 @@
 ---
 templateKey: audio-post
-title: "Arsenas iš giedro dangaus / Arsenic From the Clear Sky  "
+title: Arsenas iš giedro dangaus / Arsenic From the Clear Sky [LT]
 link: "Part I:
   https://www.lrt.lt/mediateka/irasas/1013690493/radijo-dokumentika-arsenas-is-\
   giedro-dangaus-i, Part II:
