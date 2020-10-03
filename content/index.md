@@ -21,8 +21,8 @@ footer:
     body: I specialize in science and environment reporting and co-host an
       award-winning weekly programme on environment on the LRT RADIO -
       *Vienkartinė planeta*. I produced a two-part radio documentary series
-      about arsenic pollution in drinking water in Lithuania which was awarded
-      an Investigative Journalism prize by the Vilnius Institute for Policy
+      about arsenic pollution in drinking water in Lithuania which received an
+      Investigative Journalism prize by the Vilnius Institute for Policy
       Analysis in 2018.
   column2:
     title: Crafted radio documentaries
