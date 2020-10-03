@@ -23,7 +23,9 @@ fullDescription: >-
 
   \
 
-  \*\* \
+  \
+
+  \*\*\
 
   Vieną rytą akis užkliūva už antraštės, kad vakar JAV, Kalifornijos valstijoje, Mirties slėnio nacionaliniame parke (angl. Death Valley National Park) termometras rodė 54,4°C. Jei klimatologai patvirtins, tai bus aukščiausia „patikimai užfiksuota“ temperatūra Žemėje1. Žiūriu į tuos skaičius ir mintimis grįžtu į pernai metų birželį Berlyne, kai vos virš horizonto pakilusi saulė jau svilindavo, o dieną oro temperatūrai perkopus 38 °C kaitra imdavo kelti paniką.\
 
@@ -45,16 +47,17 @@ fullDescription: >-
 
   \
 
-  \*\* \
+  \*\*\
 
-  Paežerės orą suvirpina tankiai plakami sparnai. Pakeliu akis: nuo klevo į mane žiūri nedidelis paukštis melsva nugara ir šviesiu pilvu. Pasukioja galvą, akimirką sustingsta ir nuropoja kamienu aukštyn. Čia, Rytų Lietuvoje, dabar rugpjūtis. Vakar buvo apie 30°C šilumos.\  
+  Paežerės orą suvirpina tankiai plakami sparnai. Pakeliu akis: nuo klevo į mane žiūri nedidelis paukštis melsva nugara ir šviesiu pilvu. Pasukioja galvą, akimirką sustingsta ir nuropoja kamienu aukštyn. Čia, Rytų Lietuvoje, dabar rugpjūtis. Vakar buvo apie 30°C šilumos.  \
 
+  \
 
   Kam pasisekė būti prie vandens ar miške toji 2020-ųjų vasaros diena įsimins kaip maloniai šilta. Ežerų krašte apsistojusiai vasarotojai iš miesto su linine suknele, plačiabryle skrybėle ir gera knyga akivaizdžių ekologinės katastrofos ženklų pro saulės akinius nematyti. Kol kas prisitaikyti nesunku. Iš čiaupo bėga šaltas geriamas vanduo. Klevų pavėsyje nekaršta. Ežero vanduo maloniai gaivina. Jis atrodo skaidrus ir pilnas žuvų, žuvautojų bei paukščių. Sodas kvepia alyviniais obuoliais. Pakrantės pušynuose, jei nekreipsime dėmesio į tualetinio popieriaus skiautėmis nužymėtas neformalias poilsiautojų išvietes, sklando ant laužo kepamos mėsos kvapas, dar galima prisiskinti saują mėlynių. Sutemus rugpjūčio danguje išryškėja Paukščių takas ir lyja perseidais. Jei ne pandemija, dėl kurios parduotuvėje tenka slėptis po veido kauke, atrodytų, kad žmonių gyvenimas teka įprasta vaga. Tik vakaro žiniose šmėsteli pranešimas apie stichinę sausrą ir nusekusius Nemuną, Nerį bei kitas upes.\
 
   \
 
-  \*\* \
+  \*\*\
 
   Britų filosofas, tamsiuoju Antropoceno – naujos mūsų geologinės eros – pranašu vadinamas Timothy Morton mano, kad ekologinės katastrofos akivaizdoje pajausti ryšį su supančia aplinka yra ne be galo sunku, o pernelyg lengva. „Kvėpuoji, tavo žarnyno bakterijos sau murma, fone patyliukais skleidžiasi evoliucija. Kažkur pragysta paukštis, virš galvos praplaukia debesys“, ­­– rašo jis8. T. Morton įsitikinęs, kad atpažinti katastrofą tuomet, kai ji jau vyksta, gali būti kartu ir sudėtinga, ir skausminga. Tą būseną filosofas prilygina bandymui išvengti susidūrimo su atvažiuojančiu automobiliu tą pat akimirką, kai susidūrimas jau vyksta. Todėl dauguma mūsų to arba nepastebi, arba sąmoningai renkasi ignoruoti. Jo įsitikinimu, dabartinė ekologinė krizė prasidėjo dar tada, kai žmogus ėmė dirbti žemę, maždaug prieš 12 tūkstančių metų, o pastaraisiais dešimtmečiais tik gilėja.\
 
@@ -68,10 +71,6 @@ fullDescription: >-
 
   \
 
-  \*\*\
-
-  \
-
   Pavakarę išeinu pasivaikščioti miško taku, vedančiu palei ežerą pro vaizdingas maudykles ir neišvaizdžias stovyklavietes, kurios baigiantis vasarai kasdien vis labiau primena liūdnus plastiko, greito maisto ir nušiurusių lauko baldų monumentus mūsų trumparegystei. Ką tik nulijo, oras minkštas, nors truputį žvarbus, miškas kvepia grybais ir rudeniu, skersai taką perbėga pasibaidžiusi kurapka, tolumoje vandeny švilpčioja krago jaunikliai. Viena stovyklavietė išsiskiria iš kitų – palei ežerą įrengtos didelės palapinės kaip pereinami kambariai, šalimais sustatyti automobiliai apsaugoti surenkamomis stoginėmis. Tarp statinių išnyra guvus pusamžis vyras ir pasiteirauja, ar šiaip sau vaikščioju? „O kaip gi kitaip?“ – atitariu, tuoj pat pagirdama gaivų orą, gražius vaizdus ir perklausiu, ar ne per šalta stovyklauti, kai jau pakvipo rudeniu? „Mes užsigrūdinę, maudomės ežere nuo gegužės iki spalio, ir taip jau 40 metų. Tik šiemet gegužės 12-tą užsnigo“, – vienu atsikvėpimu pažeria statistikos ir įdomybių. Iš palapinės pasisveikinti išlenda ilgamečio stovyklautojo partnerė, draugiškai nusišypso. „Šiemet ežeras labai nusekęs, kaip ir pernai. Miške sausa, voveraitės visai sudžiūvusios“, – parodo suspaustą sprindį. „Ką darysi, juk kaip ir patys kalti…?“ – nelabai subtiliai apibendrinu ir jau sukuosi eiti, kol nesutemo. Mano nuostabai, pašnekovas pritariamai linkteli: „Na taip, be abejo, kad patys…“\
 
   \
@@ -80,37 +79,20 @@ fullDescription: >-
 
   \
 
-  *Esė parašytas dalyvaujant 2020 m. tarptautinėje rašytojų rezidencijų programoje „Parašyta Molėtų krašte“. Projektą įgyvendina Molėtų rajono savivaldybės viešoji biblioteka. Projektą remia Lietuvos Kultūros taryba.*\
+  *Esė parašytas dalyvaujant 2020 m. tarptautinėje rašytojų rezidencijų programoje „Parašyta Molėtų krašte“. Projektą įgyvendina Molėtų rajono savivaldybės viešoji biblioteka. Projektą remia Lietuvos Kultūros taryba.*
 
-  \
 
-  1 https://www.nytimes.com/2020/08/17/climate/death-valley-hottest-temperature-on-earth.html
+  1 https://www.nytimes.com/2020/08/17/climate/death-valley-hottest-temperature-on-earth.html  \
 
-  \
+  2  http://www.meteo.lt/en/news/-/asset_publisher/RrOmWx3nFPCR/content/2019-07-02-rekordiskai-karstas-2019-metu-birzel-1  3  https://www.copernicus.eu/en/news/news/observer-european-state-climate-2019-year-weather-context-climate-change \
 
-  2  http://www.meteo.lt/en/news/-/asset_publisher/RrOmWx3nFPCR/content/2019-07-02-rekordiskai-karstas-2019-metu-birzel-1
+  4 https://www.worldweatherattribution.org/human-contribution-to-record-breaking-june-2019-heatwave-in-france/ \
 
-  \
+  5 http://www.meteo.lt/en/news/-/asset_publisher/RrOmWx3nFPCR/content/2019-07-02-rekordiskai-karstas-2019-metu-birzel-1 \
 
-  3  https://www.copernicus.eu/en/news/news/observer-european-state-climate-2019-year-weather-context-climate-change
+  6  http://www.meteo.lt/lt/naujienos/-/asset_publisher/RrOmWx3nFPCR/content/2020-09-04-i-trumpa-vasaros-apzvalga-silciausias-buvo-birzelis \
 
-  \
-
-  4 https://www.worldweatherattribution.org/human-contribution-to-record-breaking-june-2019-heatwave-in-france/
-
-  \
-
-  5 http://www.meteo.lt/en/news/-/asset_publisher/RrOmWx3nFPCR/content/2019-07-02-rekordiskai-karstas-2019-metu-birzel-1
-
-  \
-
-  6  http://www.meteo.lt/lt/naujienos/-/asset_publisher/RrOmWx3nFPCR/content/2020-09-04-i-trumpa-vasaros-apzvalga-silciausias-buvo-birzelis
-
-  \
-
-  7 https://www.lrt.lt/naujienos/lietuvoje/2/1203069/klimatologas-2020-metai-gali-tapti-silciausiais-metais-lietuvos-istorijoje
-
-  \
+  7 https://www.lrt.lt/naujienos/lietuvoje/2/1203069/klimatologas-2020-metai-gali-tapti-silciausiais-metais-lietuvos-istorijoje \
 
   8 Being Ecological. Timothy Morton. Pelican Books, 2018, p. 215
 ---
