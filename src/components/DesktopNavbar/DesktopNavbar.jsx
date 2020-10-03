@@ -15,18 +15,18 @@ export const DesktopNavbar = () => {
   return (
     <StyledBox position="relative" pt={40} ml={30} data-cy="desktop-navbar">
       <StyledTitleLink to="/" activeClassName="isActive">
-        <StyledH2>Lorem ipsum</StyledH2>
+        <StyledH2>Vaida Pilibaitytė</StyledH2>
       </StyledTitleLink>
       <Divider />
       <Box my={35}>
         <LinkWrapper>
-          <StyledLink to="/audio/" activeClassName="isActive">
-            Audio
+          <StyledLink to="/stories/" activeClassName="isActive">
+            Stories
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/training/" activeClassName="isActive">
-            Training
+          <StyledLink to="/audio/" activeClassName="isActive">
+            Audio
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
@@ -35,17 +35,17 @@ export const DesktopNavbar = () => {
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/stories/" activeClassName="isActive">
-            Stories
+          <StyledLink to="/training/" activeClassName="isActive">
+            Training
           </StyledLink>
         </LinkWrapper>
       </Box>
       <Divider />
       <Box mt={35}>
-        <SocialMediaLink href="https://www.facebook.com" target="_blank">
+        <SocialMediaLink href="https://www.facebook.com/vaida.pilibaityte" target="_blank">
           Facebook
         </SocialMediaLink>
-        <SocialMediaLink href="https://www.twitter.com" target="_blank">
+        <SocialMediaLink href="https://www.twitter.com/vpilibaityte" target="_blank">
           Twitter
         </SocialMediaLink>
       </Box>

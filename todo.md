@@ -10,7 +10,12 @@
 * ~~fix namings e.g. audio1~~
 * ~~FIX mobile menu overlay!~~
 * ~~fix e2e cypress test running on CI~~
-* transitions for mobile menu and pages
+* Trainings rename to Contact
+* Trainings/Contact => template like about (without photo, without list)
+* url with LT alphabet parsed by og parsers (convert to latin)
+* sorting posts/manual sorting-dragging
+* add photo ownership field for posts and render in UI below photo
+* resolution of audio list photos (pixelated)
 * iframe from LRT or audioplayer (?): fallback image for homepage (?)
 * don't render mobile navbar on desktop and desktop navbar on mobile
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
@@ -20,6 +25,7 @@
 * go through SEO with V. + add pageview tracking?
 * a11y
 * TS
+* transitions for mobile menu and pages
 ---
 post mvp:
 * built-in audio player

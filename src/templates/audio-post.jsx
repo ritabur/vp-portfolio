@@ -33,7 +33,7 @@ const AudioPost = ({ data, location }) => {
             <Heading>{title}</Heading>
             <Base content={fullDescription} />
             <Box pt={16}>
-              <Base content={`Link to audio: <a href="${link}">${link}</a>`} />
+              <Base content={`<a href="${link}">${link}</a>`} />
             </Box>
           </ContentBoxWithImage>
           <CommentSection pathname={location.pathname} />

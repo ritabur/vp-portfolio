@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Lorem ipsum',
+    title: 'Vaida Pilibaitytė',
     // TODO: change to domain
     siteUrl: 'https://brave-hypatia-40862b.netlify.app/',
   },

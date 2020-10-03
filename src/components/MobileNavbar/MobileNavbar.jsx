@@ -29,28 +29,28 @@ export const MobileNavbar = () => {
         Homepage
       </StyledLink>
       <Divider />
+        <StyledLink
+            to="/stories"
+            activeClassName="isActive"
+            onClick={handleClick}
+        >
+            Stories
+        </StyledLink>
+        <Divider />
       <StyledLink to="/audio/" activeClassName="isActive" onClick={handleClick}>
         Audio
       </StyledLink>
       <Divider />
+        <StyledLink to="/about" activeClassName="isActive" onClick={handleClick}>
+            About
+        </StyledLink>
+        <Divider />
       <StyledLink
         to="/training/"
         activeClassName="isActive"
         onClick={handleClick}
       >
         Training
-      </StyledLink>
-      <Divider />
-      <StyledLink to="/about" activeClassName="isActive" onClick={handleClick}>
-        About
-      </StyledLink>
-      <Divider />
-      <StyledLink
-        to="/stories"
-        activeClassName="isActive"
-        onClick={handleClick}
-      >
-        Stories
       </StyledLink>
       <Divider />
     </StyledLinkContainer>
@@ -65,7 +65,7 @@ export const MobileNavbar = () => {
         padding={20}
       >
         <StyledHeaderLink to="/">
-          <h1>Lorem ipsum</h1>
+          <h1>Vaida Pilibaitytė</h1>
         </StyledHeaderLink>
         <Transition in={isOverlayOpen} timeout={duration}>
           {state => (
