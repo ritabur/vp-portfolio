@@ -18,23 +18,16 @@ featuredEntries:
 footer:
   column1:
     title: Science and environment reporting
-    body: I specialize in science and environment reporting and co-host an
-      award-winning weekly programme on environment on the LRT RADIO -
-      *Vienkartinė planeta*. I produced a two-part radio documentary series
-      about arsenic pollution in drinking water in Lithuania which received an
-      Investigative Journalism prize by the Vilnius Institute for Policy
-      Analysis in 2018.
+    body: Specialized science and environment reporter and co-host an award-winning
+      weekly programme on environment on the LRT RADIO.
   column2:
     title: Crafted radio documentaries
-    body: I have produced 30+ original radio features on history, culture, science
-      and nature since 2006. My work has won numerous national awards and a
-      feature about encounters with wolves was nominated at the prestigious PRIX
-      EUROPA festival in Berlin in 2018.
+    body: Author of 30+ original radio features on history, culture, science and
+      nature since 2006.
   column3:
     title: Training and discussion facilitation
-    body: I have conducted science and environmental communication training
-      workshops for youth, researchers and environmental protection
-      professionals. I teach a course in radio documentary production at the
-      Lithuanian Journalism Center and mentor participants of the Åke Blomström
-      international training program for talented audio producers.
+    body: Science and environmental communication training workshops for youth,
+      researchers and environmental protection professionals. A course in radio
+      documentary production, mentoring of audio producers and public discussion
+      facilitation.
 ---
