@@ -1,11 +1,11 @@
 ---
 templateKey: training-post
-title: Apie ramybę ir nerimą katastrofos akivaizdoje
+title: Apie ramybę ir nerimą katastrofos akivaizdoje/ On serenity and anxiety in
+  times of catastrophe [LT]
 link: https://moletai.rvb.lt/2020/09/07/apie-ramybe-ir-nerima-katastrofos-akivaizdoje/
 image: /img/20200819_074629_2.jpg
-shortDescription: "On serenity and anxiety in times of catastrophe. An essay
-  written during international writers' residency program Writing@Molėtai in
-  August 2020 [LT] "
+shortDescription: An essay written during international writers' residency
+  program Writing@Molėtai in August 2020
 fullDescription: >-
   *Molėtų r., 2020 m. rugpjūtis*
 
