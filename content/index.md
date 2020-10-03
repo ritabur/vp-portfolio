@@ -1,7 +1,7 @@
 ---
 templateKey: index
 title: Homepage
-headlineLeft: Vaida Pilibaitytė
+headlineLeft: Stories about humans and the planet
 featuredEntries:
   - type: audio-post
     items:
