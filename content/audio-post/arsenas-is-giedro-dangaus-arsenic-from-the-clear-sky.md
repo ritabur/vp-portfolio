@@ -8,6 +8,7 @@ link: "Part I:
   https://www.lrt.lt/mediateka/irasas/1013691184/radijo-dokumentika-arsenas-is-\
   giedro-dangaus-ii"
 image: /img/sienlaukio_vandenviete.v.pilibaitytes_lrt-2-.jpg
+imageCredits: ""
 shortDescription: "Two-part radio documentary series about arsenic pollution in
   drinking water in Lithuania.  Awarded investigative journalism prize by the
   Vilnius Institute for Policy Analysis in 2018. "

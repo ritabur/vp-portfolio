@@ -4,6 +4,7 @@ title: Širdies formos pėdsakai / Heart-shaped Footprints [LT]
 date: 2017-11-26T12:21:25.201Z
 link: https://www.lrt.lt/mediateka/irasas/1013679878/radijo-dokumentika-sirdies-formos-pedsakai
 image: /img/2017_vilkas_v.karpavičius.jpg
+imageCredits: ""
 shortDescription: "Five stories about encounters with wolves.  Nominated for the
   PRIX EUROPA, Best Radio Documentary category in 2018.  "
 fullDescription: >-
