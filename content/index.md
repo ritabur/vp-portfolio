@@ -5,16 +5,17 @@ headlineLeft: Stories about humans and the planet
 featuredEntries:
   - type: audio-post
     items:
-      - audio 1
-      - audio 2
+      - Suprasti debesis / The Cloud Study [LT]
+      - Medžio pusėn stojęs žmogus/ Siding With the Trees [LT]
   - type: story
     items:
+      - Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety
+        in Times of Catastrophe [LT]
       - Story 1
-      - Story 2
   - type: training-post
     items:
       - training 2
-      - training 1
+      - training 3
 footer:
   column1:
     title: Science and environment reporting
