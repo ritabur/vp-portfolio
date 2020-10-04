@@ -1,6 +1,7 @@
 ---
 templateKey: training-post
 title: training 3
+date: 2020-05-01T11:21:25.201Z
 link: www.google.com
 image: /img/arita-1.jpg
 shortDescription: Lorem ipsum dolor sit amet, consectetur adipisicing elit.

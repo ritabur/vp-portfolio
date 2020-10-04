@@ -1,6 +1,7 @@
 ---
 templateKey: training-post
 title: training 2
+date: 2020-04-01T11:21:25.201Z
 link: www.google.com
 image: /img/home.jpg
 shortDescription: Lorem ipsum dolor sit amet, consectetur adipisicing elit.

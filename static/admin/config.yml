@@ -31,6 +31,7 @@ collections:
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio-post" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Audio image", name: "image", widget: "image" }
       - { label: "Short description", name: "shortDescription", widget: "string" }
@@ -46,6 +47,7 @@ collections:
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "training-post" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Training image", name: "image", widget: "image" }
       - { label: "Short description", name: "shortDescription", widget: "string" }

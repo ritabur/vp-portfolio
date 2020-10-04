@@ -1,6 +1,7 @@
 ---
 templateKey: audio-post
 title: Medžio pusėn stojęs žmogus/ Siding With the Trees [LT]
+date: 2020-10-01T11:21:25.201Z
 link: https://www.lrt.lt/mediateka/irasas/2000091128/radijo-dokumentika-medzio-pusen-stojes-zmogus
 image: /img/201810_kastonai_kaune_d.petrulis.jpg
 shortDescription: Two women struggle to protect trees and fail. A story of one
