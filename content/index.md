@@ -27,8 +27,7 @@ footer:
       nature since 2006.
   column3:
     title: Training and discussion facilitation
-    body: Experience conducting science and environmental communication training
-      workshops for youth, researchers and environmental protection
-      professionals. Teaching a course in radio documentary production,
-      mentoring of audio producers and public discussion facilitation.
+    body: Experience in conducting science and environmental communication training
+      workshops and public discussion facilitation. Teaching a course in radio
+      documentary production and mentoring young audio producers.
 ---
