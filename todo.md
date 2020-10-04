@@ -11,9 +11,9 @@
 * ~~FIX mobile menu overlay!~~
 * ~~fix e2e cypress test running on CI~~
 * ~~post sorting from newest~~
+* ~~url with LT alphabet parsed by og parsers (clean accents)~~
 * Trainings rename to Contact
 * Trainings/Contact => template like about (without photo, without list)
-* url with LT alphabet parsed by og parsers (convert to latin)
 * manual post sorting-dragging
 * add photo ownership field for posts and render in UI below photo
 * resolution of audio list photos (pixelated)
