@@ -13,7 +13,7 @@ import { CommentSection } from 'components/CommentSection';
 const AudioPost = ({ data, location }) => {
   const {
     markdownRemark: {
-      frontmatter: { title, link, fullDescription, shortDescription, image },
+      frontmatter: { title, link, fullDescription, shortDescription, image, imageCredits },
     },
   } = data;
 
@@ -29,7 +29,11 @@ const AudioPost = ({ data, location }) => {
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           <GoBack />
-          <ContentBoxWithImage image={image.childImageSharp.fluid} alt={title}>
+          <ContentBoxWithImage
+            image={image.childImageSharp.fluid}
+            alt={title}
+            imageCredits={imageCredits}
+          >
             <Heading>{title}</Heading>
             <Base content={fullDescription} />
             <Box pt={16}>
@@ -50,6 +54,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        imageCredits
         link
         shortDescription
         fullDescription

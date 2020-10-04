@@ -4,6 +4,8 @@ import Img from 'gatsby-image';
 
 import { Box } from 'components/Box';
 
+const IMAGE_CREDITS_COLOR = '#373737';
+
 const StyledContainer = styled(Box)`
   background-color: ${props => props.theme.colors.contentBackground};
 `;
@@ -20,16 +22,27 @@ const ContentFooter = styled(Box)`
   text-align: center;
 `;
 
+const ImageCredits = styled.div`
+padding-top: 2px;
+padding-right: 20px;
+font-size: ${props => props.theme.fontSizes.smMedium};
+font-style: italic;
+color: ${IMAGE_CREDITS_COLOR};
+text-align: right;
+`;
+
 // TODO: add validation in netlify cms for min-width 840px
 export const ContentBoxWithImage = ({
   children,
   footerContent,
   image,
   alt,
+  imageCredits
 }) => {
   return (
     <StyledContainer>
       <StyledImg fluid={image} alt={alt} />
+      {imageCredits && <ImageCredits>{imageCredits}</ImageCredits>}
       <Box py={[24, 62, 70]} px={[18, 75, 84]}>
         {children}
       </Box>

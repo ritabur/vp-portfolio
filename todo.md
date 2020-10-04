@@ -12,9 +12,10 @@
 * ~~fix e2e cypress test running on CI~~
 * ~~post sorting from newest~~
 * ~~url with LT alphabet parsed by og parsers (clean accents)~~
-* Trainings/Contact => template like about (without photo, without list)
+* ~~Trainings/Contact => template like about (without photo, without list)~~
+* ~~add photo ownership field for posts and render in UI below photo~~
+* fix audio gallery label/name styling for mobile (long titles)
 * manual post sorting-dragging
-* add photo ownership field for posts and render in UI below photo
 * resolution of audio list photos (pixelated)
 * footnotes superscript/links to footnote list and `<ol>` in footnote list
 * Play icon for LRT links in post
@@ -28,6 +29,7 @@
 * a11y
 * TS
 * transitions for mobile menu and pages
+* add more e2e tests
 ---
 post mvp:
 * built-in audio player

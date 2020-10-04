@@ -13,7 +13,7 @@ import { SEO } from 'components/SEO';
 const Story = ({ data, location }) => {
   const {
     markdownRemark: {
-      frontmatter: { title, date, image },
+      frontmatter: { title, date, image, imageCredits },
       html,
     },
   } = data;
@@ -34,6 +34,7 @@ const Story = ({ data, location }) => {
             image={image.childImageSharp.fluid}
             alt={title}
             footerContent={date}
+            imageCredits={imageCredits}
           >
             <Heading>{title}</Heading>
             <Base content={html} />
@@ -58,6 +59,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        imageCredits
         date(formatString: "MMMM DD, YYYY")
         image {
           childImageSharp {
