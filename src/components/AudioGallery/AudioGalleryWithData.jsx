@@ -15,7 +15,7 @@ export const AudioGalleryWithData = ({ featuredEntries }) => {
         limit: 1000
         filter: {
           frontmatter: {
-            templateKey: { in: ["audio-post", "training-post", "story"] }
+            templateKey: { in: ["audio-post", "story"] }
           }
         }
       ) {

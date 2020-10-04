@@ -35,8 +35,8 @@ export const DesktopNavbar = () => {
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/training/" activeClassName="isActive">
-            Training
+          <StyledLink to="/contact/" activeClassName="isActive">
+            Contact
           </StyledLink>
         </LinkWrapper>
       </Box>

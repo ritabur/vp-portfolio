@@ -46,11 +46,11 @@ export const MobileNavbar = () => {
         </StyledLink>
         <Divider />
       <StyledLink
-        to="/training/"
+        to="/contact/"
         activeClassName="isActive"
         onClick={handleClick}
       >
-        Training
+        Contact
       </StyledLink>
       <Divider />
     </StyledLinkContainer>

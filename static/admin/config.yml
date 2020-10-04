@@ -41,22 +41,6 @@ collections:
       - { label: "Short description", name: "shortDescription", widget: "string" }
       - { label: "Full description", name: "fullDescription", widget: "markdown" }
 
-  - name: "training-post"
-    label: "Training Post"
-    folder: "content/training-post"
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "training-post" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Link", name: "link", widget: "string" }
-      - { label: "Training image", name: "image", widget: "image" }
-      - { label: "Short description", name: "shortDescription", widget: "string" }
-      - { label: "Full description", name: "fullDescription", widget: "markdown" }
-
   - name: "pages"
     label: "Pages"
     editor:
@@ -68,7 +52,7 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
           - { label: "Headline-Left", name: "headlineLeft", widget: "string" }
-          - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio/training/stories", types:
+          - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio-posts/stories", types:
             [
             {
               label: "Audio Post",
@@ -82,26 +66,6 @@ collections:
                   widget: "relation",
                   collection: "audio-post",
                   file: "audio-post",
-                  valueField: "title",
-                  searchFields: ["title"],
-                  displayFields: ["title"],
-                  multiple: true,
-                  required: false,
-                }
-                ]
-            },
-            {
-              label: "Training Post",
-              name: "training-post",
-              widget: "object",
-              fields:
-                [
-                {
-                  label: "Training Post",
-                  name: "items",
-                  widget: "relation",
-                  collection: "training-post",
-                  file: "training-post",
                   valueField: "title",
                   searchFields: ["title"],
                   displayFields: ["title"],
@@ -140,11 +104,11 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Main-image", name: "mainImage", widget: "object", fields: [{label: "Image", name: "image", widget: "image"}, {label: "Alt", name: "alt", widget: "string"}] }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "content/training/index.md"
-        label: "Training"
-        name: "training"
+      - file: "content/contact/index.md"
+        label: "Contact"
+        name: "contact"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "training" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "content/audio/index.md"
