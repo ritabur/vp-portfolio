@@ -7,15 +7,13 @@ featuredEntries:
     items:
       - Suprasti debesis / The Cloud Study [LT]
       - Medžio pusėn stojęs žmogus/ Siding With the Trees [LT]
+      - Širdies formos pėdsakai / Heart-shaped Footprints [LT]
+      - Arsenas iš giedro dangaus / Arsenic From the Clear Sky [LT]
   - type: story
     items:
       - Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety
         in Times of Catastrophe [LT]
       - Story 1
-  - type: training-post
-    items:
-      - training 2
-      - training 3
 footer:
   column1:
     title: Science and environment reporting
