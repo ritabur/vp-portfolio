@@ -16,6 +16,7 @@
 * sorting posts/manual sorting-dragging
 * add photo ownership field for posts and render in UI below photo
 * resolution of audio list photos (pixelated)
+* footnotes superscript/links to footnote list and <ol> in footnote list
 * iframe from LRT or audioplayer (?): fallback image for homepage (?)
 * don't render mobile navbar on desktop and desktop navbar on mobile
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
