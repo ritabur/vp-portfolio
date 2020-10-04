@@ -5,6 +5,8 @@ title: Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety 
 date: 2020-09-27T07:30:00.000Z
 image: /img/20200813_moletai_v.pilibaityte.jpg
 ---
+An essay written during international writers' residency program Writing@Molėtai in August 2020, in Lithuanian.
+
 *Molėtų r., 2020 m. rugpjūtis*
 
 Rugpjūtį Molėtų krašte gali pasijusti tarsi Claude Monet paveiksle. Šiltą pavakarę, saulei leidžiantis, žvejų valtys ežere sudvigubėja, kaip ir miškas horizonte, juodalksniais apaugusi nedidelė sala, vėjo šiūruojami nendrynai ir tingiai tarp jų šmirinėjančios antys. Visiškai užsimiršti neleidžia tik kitapus krante vis ritmingai sudunksintis greitkelis, gretimoje sodyboje amsintis šuva ar perpildytos nuotekų duobės išsiurbti atvažiavęs cisternos operatorius.
