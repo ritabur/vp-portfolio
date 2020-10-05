@@ -19,28 +19,26 @@ fullDescription: >-
   V. Karpavičiaus nuotrauka
 
 
-  \*\*\
+  \*\*
 
-  Very few people have seen them. Some have been trying to meet them for years and have failed. Others feel a sense of unease when they happen to stumble upon their footsteps alone. This program tells five stories about encounters with one of the most controversial wild predators in Lithuania.\
 
-  \
+  Very few people have seen them. Some have been trying to meet them for years and have failed. Others feel a sense of unease when they happen to stumble upon their footsteps alone. This program tells five stories about encounters with one of the most controversial wild predators in Lithuania.
 
-  *Nominated for the Prix Europa 2018, Berlin* \
+
+  *Nominated for the Prix Europa 2018, Berlin*
 
   *Presented at the 44TH International Feature Conference, May 20-24, 2018, Prague*
 
 
-  English transcript: drive.google.com/open?id=1LyzPkvZ…H7lfEItdcpz-J5qJ\
+  English transcript: drive.google.com/open?id=1LyzPkvZ…H7lfEItdcpz-J5qJ
 
-  \
 
-  Producer: Vaida Pilibaitytė \
+  Producer: Vaida Pilibaitytė
 
-  Editor: Inga Janiulytė\
+  Editor: Inga Janiulytė
 
-  Photo by Vaidas Karpavičius \
+  Photo by Vaidas Karpavičius
 
-  \
 
   First broadcast in 2017
 ---
