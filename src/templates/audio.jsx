@@ -61,7 +61,6 @@ export const categoryPageQuery = graphql`
             title
             link
             shortDescription
-            fullDescription
             image {
               childImageSharp {
                 fluid(maxWidth: 100) {

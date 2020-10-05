@@ -15,6 +15,8 @@
 * ~~Trainings/Contact => template like about (without photo, without list)~~
 * ~~add photo ownership field for posts and render in UI below photo~~
 * ~~update project info in package.json~~
+* styles for markup typography
+* fix footer column/title styles (one line vs two lines)
 * fix audio gallery label/name styling for mobile (long titles)
 * manual post sorting-dragging
 * resolution of audio list photos (pixelated)
@@ -25,7 +27,6 @@
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
 * styles for admin (multiple issues listed in cms.js)
 * localization https://github.com/netlify/netlify-cms/pull/4139
-* styles for markup typography
 * go through SEO with V. + add pageview tracking?
 * a11y
 * TS
