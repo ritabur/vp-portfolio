@@ -27,9 +27,9 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "audio-post"
-    label: "Audio Post"
-    folder: "content/audio-post"
+    label: "Audio Posts"
     create: true
+    folder: "content/audio-post"
     slug: "{{slug}}"
     editor:
       preview: false
@@ -41,7 +41,7 @@ collections:
       - { label: "Audio image", name: "image", widget: "image" }
       - { label: "Image credits", name: "imageCredits", widget: "string", required: false }
       - { label: "Short description", name: "shortDescription", widget: "string" }
-      - { label: "Full description", name: "fullDescription", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "pages"
     label: "Pages"
