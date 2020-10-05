@@ -15,7 +15,7 @@
 * ~~Trainings/Contact => template like about (without photo, without list)~~
 * ~~add photo ownership field for posts and render in UI below photo~~
 * ~~update project info in package.json~~
-* styles for markup typography
+* ~~styles for markup typography~~(?)
 * fix footer column/title styles (one line vs two lines)
 * fix audio gallery label/name styling for mobile (long titles)
 * manual post sorting-dragging

@@ -36,8 +36,6 @@ export const GlobalResetStyle = createGlobalStyle`
   small,
   strike,
   strong,
-  sub,
-  sup,
   tt,
   var,
   b,
