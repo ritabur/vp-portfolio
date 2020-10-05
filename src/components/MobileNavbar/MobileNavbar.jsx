@@ -29,22 +29,22 @@ export const MobileNavbar = () => {
         Homepage
       </StyledLink>
       <Divider />
-        <StyledLink
-            to="/stories"
-            activeClassName="isActive"
-            onClick={handleClick}
-        >
-            Stories
-        </StyledLink>
-        <Divider />
+      <StyledLink
+        to="/stories"
+        activeClassName="isActive"
+        onClick={handleClick}
+      >
+        Stories
+      </StyledLink>
+      <Divider />
       <StyledLink to="/audio/" activeClassName="isActive" onClick={handleClick}>
         Audio
       </StyledLink>
       <Divider />
-        <StyledLink to="/about" activeClassName="isActive" onClick={handleClick}>
-            About
-        </StyledLink>
-        <Divider />
+      <StyledLink to="/about" activeClassName="isActive" onClick={handleClick}>
+        About
+      </StyledLink>
+      <Divider />
       <StyledLink
         to="/contact/"
         activeClassName="isActive"

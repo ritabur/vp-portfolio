@@ -42,10 +42,16 @@ export const DesktopNavbar = () => {
       </Box>
       <Divider />
       <Box mt={35}>
-        <SocialMediaLink href="https://www.facebook.com/vaida.pilibaityte" target="_blank">
+        <SocialMediaLink
+          href="https://www.facebook.com/vaida.pilibaityte"
+          target="_blank"
+        >
           Facebook
         </SocialMediaLink>
-        <SocialMediaLink href="https://www.twitter.com/vpilibaityte" target="_blank">
+        <SocialMediaLink
+          href="https://www.twitter.com/vpilibaityte"
+          target="_blank"
+        >
           Twitter
         </SocialMediaLink>
       </Box>

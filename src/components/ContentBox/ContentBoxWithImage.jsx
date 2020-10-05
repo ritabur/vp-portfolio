@@ -23,12 +23,12 @@ const ContentFooter = styled(Box)`
 `;
 
 const ImageCredits = styled.div`
-padding-top: 2px;
-padding-right: 20px;
-font-size: ${props => props.theme.fontSizes.smMedium};
-font-style: italic;
-color: ${IMAGE_CREDITS_COLOR};
-text-align: right;
+  padding-top: 2px;
+  padding-right: 20px;
+  font-size: ${props => props.theme.fontSizes.smMedium};
+  font-style: italic;
+  color: ${IMAGE_CREDITS_COLOR};
+  text-align: right;
 `;
 
 // TODO: add validation in netlify cms for min-width 840px
@@ -37,7 +37,7 @@ export const ContentBoxWithImage = ({
   footerContent,
   image,
   alt,
-  imageCredits
+  imageCredits,
 }) => {
   return (
     <StyledContainer>

@@ -10,7 +10,11 @@ const StyledBase = styled.div`
 `;
 
 export const Base = ({ content }) => (
-  <StyledBase dangerouslySetInnerHTML={{ __html: sanitizeHtml(content, {
-          allowedTags: sanitizeHtml.defaults.allowedTags.concat([ 'sup' ])
-      }) }} />
+  <StyledBase
+    dangerouslySetInnerHTML={{
+      __html: sanitizeHtml(content, {
+        allowedTags: sanitizeHtml.defaults.allowedTags.concat(['sup']),
+      }),
+    }}
+  />
 );
