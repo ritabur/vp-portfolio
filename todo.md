@@ -14,6 +14,7 @@
 * ~~url with LT alphabet parsed by og parsers (clean accents)~~
 * ~~Trainings/Contact => template like about (without photo, without list)~~
 * ~~add photo ownership field for posts and render in UI below photo~~
+* update project info in package.json
 * fix audio gallery label/name styling for mobile (long titles)
 * manual post sorting-dragging
 * resolution of audio list photos (pixelated)
