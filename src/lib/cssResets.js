@@ -87,7 +87,7 @@ export const GlobalResetStyle = createGlobalStyle`
       padding: 0;
       border: 0;
       font-size: 100%;
-      font: inherit;
+      font-family: inherit;
       vertical-align: baseline;
       box-sizing: border-box;
     }
@@ -113,11 +113,6 @@ export const GlobalResetStyle = createGlobalStyle`
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-font-smoothing: antialiased;
-  }
-
-  ol,
-  ul {
-    list-style: none;
   }
 
   blockquote,
