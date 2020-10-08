@@ -11,21 +11,23 @@ import { media as MEDIA } from 'lib/media';
 
 const StyledH1 = styled.h1`
   padding-top: 12px;
-  padding-bottom: 26px;
-  font-size: 21px;
+  padding-bottom: 0;
   font-weight: ${props => props.theme.fontWeights.bold};
   line-height: 1.5;
-  word-spacing: 9999999px;
   text-align: center;
   text-transform: lowercase;
+  font-size: 18px;
 
   ${MEDIA.above.sm`
-    padding-top: 30px;
-    padding-bottom: 66px;
+    padding-top: 8px;
+    padding-bottom: 36px;
   `}
 
   ${MEDIA.above.md`
     padding-top: 80px;
+    padding-bottom: 26px;
+    font-size: 21px;
+    word-spacing: 9999999px; // forcing word break
   `}
 `;
 
