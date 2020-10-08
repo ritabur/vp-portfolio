@@ -18,7 +18,8 @@ const StyledImg = styled(Img)`
     opacity: 1;
     position: absolute;
     bottom: 12px;
-    left: 15px;
+    right: 0;
+    margin-left: 15px;
     padding: 4px 12px;
     color: white;
     background-color: ${props => props.theme.colors.bodyPrimary};
