@@ -7,6 +7,8 @@ const StyledBase = styled.div`
   font-size: ${props => props.theme.fontSizes.medium};
   line-height: 1.6;
   white-space: pre-line;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 `;
 
 export const Base = ({ content }) => (

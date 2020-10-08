@@ -16,8 +16,12 @@
 * ~~add photo ownership field for posts and render in UI below photo~~
 * ~~update project info in package.json~~
 * ~~styles for markup typography~~(?)
+* meta description for SEO ranking
+* fix/test file uploads as part of markdown file links
 * fix footer column/title styles (one line vs two lines)
 * fix audio gallery label/name styling for mobile (long titles)
+* hrefs in posts target=blank?
+* test on different browsers/devices
 * manual post sorting-dragging
 * resolution of audio list photos (pixelated)
 * footnotes superscript/links to footnote list and `<ol>` in footnote list
