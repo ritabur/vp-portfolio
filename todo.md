@@ -18,21 +18,21 @@
 * ~~styles for markup typography~~(?)
 * ~~fix audio gallery label/name styling for mobile (long titles)~~
 * ~~fix footer column/title styles (one line vs two lines)~~
-* story in story-list clickable on all story not just titles
-* meta description for SEO ranking
+* ~~story in story-list clickable on all story not just titles~~
+* ~~resolution of audio list photos (pixelated)~~
+* V?: meta description for SEO ranking
+* V?: hrefs in posts target=blank?
+* V?: go through SEO
 * fix/test file uploads as part of markdown file links
-* hrefs in posts target=blank?
 * test on different browsers/devices
 * manual post sorting-dragging
-* resolution of audio list photos (pixelated)
-* footnotes superscript/links to footnote list and `<ol>` in footnote list
+* add pageview tracking
 * Play icon for LRT links in post
 * iframe from LRT or audioplayer (?): fallback image for homepage (?)
 * don't render mobile navbar on desktop and desktop navbar on mobile
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
 * styles for admin (multiple issues listed in cms.js)
 * localization https://github.com/netlify/netlify-cms/pull/4139
-* go through SEO with V. + add pageview tracking?
 * a11y
 * TS
 * transitions for mobile menu and pages
