@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import { Box } from 'components/Box';
-import { graphql, useStaticQuery } from 'gatsby';
+import { media as MEDIA } from 'lib/media';
 
 const StyledFooter = styled(Box)`
   border: 1px solid ${props => props.theme.colors.divider};
@@ -16,9 +17,13 @@ const Divider = styled.div`
 `;
 
 const StyledH4 = styled.h4`
-  padding-bottom: 26px;
+  margin-bottom: 8px;
   font-weight: ${props => props.theme.fontWeights.bold};
   text-transform: uppercase;
+
+  ${MEDIA.above.sm`
+     height: 40px;
+  `}  
 `;
 
 const StyledP = styled.p`
