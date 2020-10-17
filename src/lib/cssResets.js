@@ -78,6 +78,8 @@ export const GlobalResetStyle = createGlobalStyle`
   summary,
   time,
   mark,
+  input,
+  textarea,
   audio,
   video {
     & {

@@ -9,6 +9,7 @@ import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
 import { GoBack } from 'components/GoBack';
 import { SEO } from 'components/SEO';
+import { CommentSection } from 'components/CommentSection';
 
 const Story = ({ data, location }) => {
   const {
@@ -39,6 +40,7 @@ const Story = ({ data, location }) => {
             <Heading>{title}</Heading>
             <Base content={html} />
           </ContentBoxWithImage>
+          <CommentSection pathname={location.pathname} />
         </Box>
       </Box>
     </Layout>

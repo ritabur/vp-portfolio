@@ -1,6 +1,9 @@
 import * as React from 'react';
 import dayjs from 'dayjs';
+import { Box } from 'components/Box';
+import { Button } from 'components/Button';
 import { firestore } from '../../../firebase.js';
+import { Title, StyledTextarea, StyledInput } from './StyledCommentForm';
 
 export const CommentForm = ({ pathname }) => {
   const [comment, setComment] = React.useState('');
@@ -30,19 +33,25 @@ export const CommentForm = ({ pathname }) => {
 
   return (
     <form onSubmit={handleSubmit}>
+      <Box mb={24}>
+        <label>
+          <Title>Comment</Title>
+          <StyledTextarea
+            rows="4"
+            onChange={e => setComment(e.target.value)}
+            value={comment}
+          />
+        </label>
+      </Box>
       <label>
-        Comment
-        <textarea
-          rows="4"
-          onChange={e => setComment(e.target.value)}
-          value={comment}
-        />
+        <Title>
+          Name <span>*</span>
+        </Title>
+        <StyledInput onChange={e => setName(e.target.value)} value={name} required />
       </label>
-      <label>
-        Name <span>*</span>
-        <input onChange={e => setName(e.target.value)} value={name} required />
-      </label>
-      <button type="submit">submit</button>
+      <Box mt={24}>
+        <Button>Submit</Button>
+      </Box>
     </form>
   );
 };

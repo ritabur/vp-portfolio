@@ -7,15 +7,15 @@ export const SectionDivider = styled(Box)`
 `;
 
 export const Name = styled.div`
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     font-size: ${props => props.theme.fontSizes.medium};
     font-weight: ${props => props.theme.fontWeights.bold};
 `;
 
 export const Time = styled.div`
-    padding-bottom: 16px;
+    padding-bottom: 14px;
     display: inline-block;
-    font-size: ${props => props.theme.fontSizes.small};
+    font-size: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
 `;
