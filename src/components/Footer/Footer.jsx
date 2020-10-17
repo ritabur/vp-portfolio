@@ -23,7 +23,7 @@ const StyledH4 = styled.h4`
 
   ${MEDIA.above.sm`
      height: 40px;
-  `}  
+  `}
 `;
 
 const StyledP = styled.p`

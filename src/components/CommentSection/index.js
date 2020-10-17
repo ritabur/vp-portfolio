@@ -1,1 +1,2 @@
-export * from './CommentSection';
+export { CommentSection } from './CommentSection';
+export { CommentForm } from './CommentForm';
