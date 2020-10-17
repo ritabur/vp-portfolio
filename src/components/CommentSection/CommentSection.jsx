@@ -1,6 +1,9 @@
 import * as React from 'react';
+import { Box } from 'components/Box';
+import { ContentBox } from 'components/ContentBox';
 import { firestore } from '../../../firebase.js';
 import { CommentForm } from './CommentForm';
+import { SectionDivider, Name, Time, Comment, CommentDivider } from './StyledCommentSection';
 
 export const CommentSection = ({ pathname }) => {
   const [comments, setComments] = React.useState([]);
@@ -18,21 +21,31 @@ export const CommentSection = ({ pathname }) => {
   }, [pathname]);
 
   const getComments = () => {
-    console.log('comments', comments);
     if (comments.length === 0) return null;
 
-    return comments.map(comment => (
-      <div key={comment.id}>
-        {comment.name}:{comment.content}:
-        <time>{comment.time}</time>
-      </div>
-    ));
+    return (
+      <>
+        {comments.map((comment, index) => (
+          <div key={comment.id}>
+            <Name>{comment.name}</Name>
+            <Time>
+              <time>{comment.time}</time>
+            </Time>
+            <Comment>{comment.content}</Comment>
+            {index !== (comments.length - 1) && <CommentDivider />}
+          </div>
+        ))}
+        <SectionDivider mb={30} />
+      </>
+    );
   };
 
   return (
-    <>
-      {getComments()}
-      <CommentForm pathname={pathname} />
-    </>
+    <Box mt={[20, 35, 45, 50]}>
+      <ContentBox>
+        {getComments()}
+        <CommentForm pathname={pathname} />
+      </ContentBox>
+    </Box>
   );
 };
