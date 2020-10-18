@@ -2,6 +2,7 @@ import * as React from 'react';
 import dayjs from 'dayjs';
 import { Box } from 'components/Box';
 import { ContentBox } from 'components/ContentBox';
+import { Button } from 'components/Button';
 import { firestore } from '../../../firebase.js';
 import { CommentForm } from './CommentForm';
 import {
@@ -48,6 +49,9 @@ export const CommentSection = ({ pathname }) => {
               <time>{getFormattedDate(comment.time)}</time>
             </Time>
             <Comment>{comment.content}</Comment>
+            <Box mb={30}>
+              <Button secondary>Reply</Button>
+            </Box>
             {index !== comments.length - 1 && <CommentDivider />}
           </div>
         ))}

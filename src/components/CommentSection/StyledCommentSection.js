@@ -21,7 +21,7 @@ export const Time = styled.div`
 `;
 
 export const Comment = styled.div`
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: ${props => props.theme.fontSizes.medium};
 `;
 
