@@ -24,4 +24,5 @@ export const CommentDivider = styled.div`
 export const Content = styled.div`
     margin-bottom: 16px;
     font-size: ${props => props.theme.fontSizes.medium};
+    line-height: 1.6;
 `;

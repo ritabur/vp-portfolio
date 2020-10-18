@@ -20,6 +20,8 @@
 * ~~fix footer column/title styles (one line vs two lines)~~
 * ~~story in story-list clickable on all story not just titles~~
 * ~~resolution of audio list photos (pixelated)~~
+* ~~comments inside story/training/audio entry~~
+* localization https://github.com/netlify/netlify-cms/pull/4139
 * V?: meta description for SEO ranking
 * V?: hrefs in posts target=blank?
 * V?: go through SEO
@@ -32,7 +34,6 @@
 * don't render mobile navbar on desktop and desktop navbar on mobile
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
 * styles for admin (multiple issues listed in cms.js)
-* localization https://github.com/netlify/netlify-cms/pull/4139
 * a11y
 * TS
 * transitions for mobile menu and pages
@@ -40,4 +41,4 @@
 ---
 post mvp:
 * built-in audio player
-* comments inside story/training/audio entry
+

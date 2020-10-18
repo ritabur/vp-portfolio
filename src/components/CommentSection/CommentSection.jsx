@@ -11,12 +11,17 @@ export const SectionDivider = styled(Box)`
   background-color: ${props => props.theme.colors.lightDivider};
 `;
 
+export const CommentsTitle = styled.div`
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: ${props => props.theme.fontWeights.bold};
+`;
+
 export const CommentSection = ({ pathname }) => {
   const [comments, setComments] = React.useState([]);
 
   React.useEffect(() => {
-    // TODO: unsubscribe
-    firestore
+    const unsubscribe = firestore
       .collection(`comments`)
       .orderBy('time', 'desc')
       .onSnapshot(snapshot => {
@@ -28,6 +33,9 @@ export const CommentSection = ({ pathname }) => {
 
         setComments(posts);
       });
+
+    return () => unsubscribe();
+
   }, [pathname]);
 
   const getComments = () => {
@@ -35,6 +43,7 @@ export const CommentSection = ({ pathname }) => {
 
     return (
       <>
+        <CommentsTitle>Comments</CommentsTitle>
         {commentsWithNoReplies.map((comment, index) => (
           <Comment
             comment={comment}
