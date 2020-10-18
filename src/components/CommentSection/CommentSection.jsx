@@ -1,4 +1,5 @@
 import * as React from 'react';
+import dayjs from 'dayjs';
 import { Box } from 'components/Box';
 import { ContentBox } from 'components/ContentBox';
 import { firestore } from '../../../firebase.js';
@@ -16,18 +17,24 @@ export const CommentSection = ({ pathname }) => {
 
   React.useEffect(() => {
     // TODO: unsubscribe
-    firestore.collection(`comments`).onSnapshot(snapshot => {
-      const posts = snapshot.docs
-        .filter(doc => doc.data().slug === pathname)
-        .map(doc => {
-          return { id: doc.id, ...doc.data() };
-        });
+    firestore
+      .collection(`comments`)
+      .orderBy('time', 'desc')
+      .onSnapshot(snapshot => {
+        const posts = snapshot.docs
+          .filter(doc => doc.data().slug === pathname)
+          .map(doc => {
+            return { id: doc.id, ...doc.data() };
+          });
 
-      console.log('posts', posts);
-
-      setComments(posts);
-    });
+        setComments(posts);
+      });
   }, [pathname]);
+
+  const getFormattedDate = timestamp =>
+    `${dayjs(timestamp.toDate()).format('MMMM D, YYYY')} | ${dayjs(
+      timestamp.toDate()
+    ).format('HH:mm')}`;
 
   const getComments = () => {
     if (comments.length === 0) return null;
@@ -38,7 +45,7 @@ export const CommentSection = ({ pathname }) => {
           <div key={comment.id}>
             <Name>{comment.name}</Name>
             <Time>
-              <time>{comment.time}</time>
+              <time>{getFormattedDate(comment.time)}</time>
             </Time>
             <Comment>{comment.content}</Comment>
             {index !== comments.length - 1 && <CommentDivider />}

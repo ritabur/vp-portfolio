@@ -1,5 +1,4 @@
 import * as React from 'react';
-import dayjs from 'dayjs';
 import { Box } from 'components/Box';
 import { Button } from 'components/Button';
 import { firestore } from '../../../firebase.js';
@@ -12,18 +11,13 @@ export const CommentForm = ({ pathname }) => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    const date = dayjs();
-    const formattedDate = `${date.format('MMMM D, YYYY')} | ${date.format(
-      'HH:mm'
-    )}`;
-
     firestore
       .collection('comments')
       .add({
         content: comment,
         name,
         slug: pathname,
-        time: formattedDate,
+        time: new Date(),
       })
       .catch(error => console.log('add comment error:', error));
 
@@ -47,7 +41,11 @@ export const CommentForm = ({ pathname }) => {
         <Title>
           Name <span>*</span>
         </Title>
-        <StyledInput onChange={e => setName(e.target.value)} value={name} required />
+        <StyledInput
+          onChange={e => setName(e.target.value)}
+          value={name}
+          required
+        />
       </label>
       <Box mt={24}>
         <Button>Submit</Button>

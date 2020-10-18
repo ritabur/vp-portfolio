@@ -10,6 +10,7 @@ export const StyledTextarea = styled.textarea`
   width: 100%;
   padding: 7px;
   border: 1px solid ${props => props.theme.colors.divider};
+  resize:vertical;
 `;
 
 export const StyledInput = styled.input`
