@@ -19,10 +19,18 @@ const SecondaryButton = styled(BaseButton)`
   font-size: ${props => props.theme.fontSizes.small};
 `;
 
-export const Button = ({ children, secondary = false }) => {
+export const Button = ({ children, secondary = false, onClick, type }) => {
   if (secondary) {
-    return <SecondaryButton type="submit">{children}</SecondaryButton>;
+    return (
+      <SecondaryButton type={type} onClick={onClick}>
+        {children}
+      </SecondaryButton>
+    );
   }
 
-  return <BaseButton type="submit">{children}</BaseButton>;
+  return (
+    <BaseButton type={type} onClick={onClick}>
+      {children}
+    </BaseButton>
+  );
 };

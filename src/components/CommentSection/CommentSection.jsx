@@ -1,17 +1,15 @@
 import * as React from 'react';
-import dayjs from 'dayjs';
+import styled from 'styled-components';
 import { Box } from 'components/Box';
 import { ContentBox } from 'components/ContentBox';
-import { Button } from 'components/Button';
 import { firestore } from '../../../firebase.js';
 import { CommentForm } from './CommentForm';
-import {
-  SectionDivider,
-  Name,
-  Time,
-  Comment,
-  CommentDivider,
-} from './StyledCommentSection';
+import { Comment } from './Comment';
+
+export const SectionDivider = styled(Box)`
+  height: 1px;
+  background-color: ${props => props.theme.colors.lightDivider};
+`;
 
 export const CommentSection = ({ pathname }) => {
   const [comments, setComments] = React.useState([]);
@@ -32,28 +30,19 @@ export const CommentSection = ({ pathname }) => {
       });
   }, [pathname]);
 
-  const getFormattedDate = timestamp =>
-    `${dayjs(timestamp.toDate()).format('MMMM D, YYYY')} | ${dayjs(
-      timestamp.toDate()
-    ).format('HH:mm')}`;
-
   const getComments = () => {
-    if (comments.length === 0) return null;
+    const commentsWithNoReplies = comments.filter(comment => !comment.parentId);
 
     return (
       <>
-        {comments.map((comment, index) => (
-          <div key={comment.id}>
-            <Name>{comment.name}</Name>
-            <Time>
-              <time>{getFormattedDate(comment.time)}</time>
-            </Time>
-            <Comment>{comment.content}</Comment>
-            <Box mb={30}>
-              <Button secondary>Reply</Button>
-            </Box>
-            {index !== comments.length - 1 && <CommentDivider />}
-          </div>
+        {commentsWithNoReplies.map((comment, index) => (
+          <Comment
+            comment={comment}
+            comments={comments}
+            showDivider={index !== commentsWithNoReplies.length - 1}
+            key={comment.id}
+            pathname={pathname}
+          />
         ))}
         <SectionDivider mb={30} />
       </>
@@ -63,7 +52,7 @@ export const CommentSection = ({ pathname }) => {
   return (
     <Box mt={[20, 35, 45, 50]}>
       <ContentBox>
-        {getComments()}
+        {comments.length > 0 && getComments()}
         <CommentForm pathname={pathname} />
       </ContentBox>
     </Box>

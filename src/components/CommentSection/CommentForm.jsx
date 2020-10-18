@@ -4,7 +4,12 @@ import { Button } from 'components/Button';
 import { firestore } from '../../../firebase.js';
 import { Title, StyledTextarea, StyledInput } from './StyledCommentForm';
 
-export const CommentForm = ({ pathname }) => {
+export const CommentForm = ({
+  pathname,
+  isReply = false,
+  parentId,
+  onSubmit,
+}) => {
   const [comment, setComment] = React.useState('');
   const [name, setName] = React.useState('');
 
@@ -18,9 +23,11 @@ export const CommentForm = ({ pathname }) => {
         name,
         slug: pathname,
         time: new Date(),
+        parentId: parentId || null,
       })
       .catch(error => console.log('add comment error:', error));
 
+    onSubmit && onSubmit();
     setComment('');
     setName('');
   };
@@ -48,7 +55,7 @@ export const CommentForm = ({ pathname }) => {
         />
       </label>
       <Box mt={24}>
-        <Button>Submit</Button>
+        <Button type="submit">{isReply ? 'Submit reply' : 'Submit'}</Button>
       </Box>
     </form>
   );
