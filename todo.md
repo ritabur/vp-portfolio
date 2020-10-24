@@ -38,7 +38,14 @@
 * TS
 * transitions for mobile menu and pages
 * add more e2e tests
+* rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa
 ---
-post mvp:
 * built-in audio player
-
+---
+after domain change:
+* update siteUrl in:
+    * gatsby-config
+    * functions/index.js
+---
+for "release":
+* change sender email and pass in firebase (more info in functions/.env)

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import dayjs from 'dayjs';
+import sanitizeHtml from 'sanitize-html';
 import { Button } from 'components/Button';
 import { Box } from 'components/Box';
 import { CommentDivider, Name, Time, Content } from './StyledComment';
@@ -28,11 +29,15 @@ export const Comment = ({ comment, comments, showDivider, pathname }) => {
 
   const getCommentBody = (name, time, content) => (
     <>
-      <Name>{name}</Name>
+      <Name dangerouslySetInnerHTML={{
+          __html: sanitizeHtml(name),
+      }} />
       <Time>
         <time>{getFormattedDate(time)}</time>
       </Time>
-      <Content>{content}</Content>
+      <Content dangerouslySetInnerHTML={{
+          __html: sanitizeHtml(content),
+      }} />
     </>
   );
 
