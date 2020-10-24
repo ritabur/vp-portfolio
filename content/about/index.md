@@ -4,7 +4,7 @@ path: /about
 title: About me
 mainImage:
   image: /img/2020_krastai_fieldrep.jpg
-  alt: In the field. Photo by Rugilė Trumpytė
+  imageCredits: "In the field. Photo by Rugilė Trumpytė"
 ---
 I am award-winning radio producer and experienced audio storyteller with special focus on how humans are trying to save this beautiful planet while destroying it simultaneously.
 

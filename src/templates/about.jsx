@@ -14,7 +14,7 @@ const About = ({ data, location }) => {
     markdownRemark: {
       frontmatter: {
         title,
-        mainImage: { image, alt },
+        mainImage: { image, imageCredits },
       },
       html,
     },
@@ -29,7 +29,7 @@ const About = ({ data, location }) => {
       />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
-          <ContentBoxWithImage image={image.childImageSharp.fluid} alt={alt}>
+          <ContentBoxWithImage image={image.childImageSharp.fluid} imageCredits={imageCredits}>
             <Heading>{title}</Heading>
             <Base content={html} />
           </ContentBoxWithImage>
@@ -52,7 +52,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         mainImage {
-          alt
+          imageCredits
           image {
             childImageSharp {
               fluid(maxWidth: 850) {
