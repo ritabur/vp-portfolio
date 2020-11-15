@@ -129,7 +129,7 @@ collections:
     widget: "object"
     fields:
       - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
-      - { label: "Title", name: "title", widget: "hidden", default: "Footer" }
+      - { label: "Title", name: "title", widget: "string", default: "Footer" }
       - label: "Column-1"
         name: "column1"
         widget: "object"
