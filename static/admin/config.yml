@@ -43,42 +43,6 @@ collections:
       - { label: "Short description", name: "shortDescription", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "test"
-    i18n: true
-    label: "test desc"
-    folder: "content/test"
-    fields:
-      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "test" }
-      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
-      - { label: "Title", name: "title", widget: "string", i18n: true }
-      - { label: "Body", name: "body", widget: "markdown", i18n: true }
-
-  - name: "footer"
-    i18n: true
-    label: "Footer"
-    folder: "content/footer"
-    widget: "object"
-    fields:
-      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
-      - { label: "Title", name: "title", widget: "string", default: "footer", i18n: true }
-      - label: "Column-1"
-        name: "column1"
-        widget: "object"
-        fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
-          - { label: "Body", name: "body", widget: "markdown", i18n: true }
-      - label: "Column-2"
-        name: "column2"
-        widget: "object"
-        fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
-          - { label: "Body", name: "body", widget: "markdown", i18n: true }
-      - label: "Column-3"
-        name: "column3"
-        widget: "object"
-        fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
-          - { label: "Body", name: "body", widget: "markdown", i18n: true }
 
   - name: "pages"
     label: "Pages"
@@ -157,3 +121,30 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "footer"
+    i18n: true
+    label: "Footer"
+    folder: "content/footer"
+    widget: "object"
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
+      - { label: "Title", name: "title", widget: "hidden", default: "Footer" }
+      - label: "Column-1"
+        name: "column1"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      - label: "Column-2"
+        name: "column2"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      - label: "Column-3"
+        name: "column3"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - { label: "Body", name: "body", widget: "markdown", i18n: true }
