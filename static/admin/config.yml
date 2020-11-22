@@ -91,6 +91,14 @@ collections:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
       - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
       - { label: "Headline-Left", name: "headlineLeft", widget: "string", i18n: true }
+      - label: "Test relation widget"
+        name: "test"
+        widget: "relation"
+        collection: "story"
+        file: "story"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        value_field: "title"
       - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio-posts/stories", i18n: true, types:
         [
         {
