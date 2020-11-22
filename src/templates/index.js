@@ -71,8 +71,8 @@ Index.propTypes = {
 export default Index;
 
 export const pageQuery = graphql`
-  query IndexTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
+  query IndexTemplate($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         headlineLeft
         featuredEntries {

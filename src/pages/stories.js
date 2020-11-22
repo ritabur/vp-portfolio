@@ -38,7 +38,7 @@ const StyledHeading = styled(Heading)`
   }
 `;
 
-const Stories = ({ data, location }) => {
+const Stories = ({ pageContext, data, location }) => {
   const {
     allMarkdownRemark: { edges: posts },
   } = data;
@@ -53,20 +53,22 @@ const Stories = ({ data, location }) => {
       />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
-          {posts.map(({ node: post }) => (
-            <StyledLink to={post.fields.slug} key={post.frontmatter.title}>
-              <Box mb={[30, 40, 70]}>
-                <ContentBoxWithImage
-                  image={post.frontmatter.image.childImageSharp.fluid}
-                  alt={post.frontmatter.title}
-                  footerContent={post.frontmatter.date}
-                >
-                  <StyledHeading>{post.frontmatter.title}</StyledHeading>
-                  <Base content={post.excerpt} />
-                </ContentBoxWithImage>
-              </Box>
-            </StyledLink>
-          ))}
+          {posts.map(({ node: post }) => {
+            return (
+                <StyledLink to={post.fields.slug} key={post.frontmatter.title}>
+                  <Box mb={[30, 40, 70]}>
+                    <ContentBoxWithImage
+                        image={post.frontmatter.image.childImageSharp.fluid}
+                        alt={post.frontmatter.title}
+                        footerContent={post.frontmatter.date}
+                    >
+                      <StyledHeading>{post.frontmatter.title}</StyledHeading>
+                      <Base content={post.excerpt} />
+                    </ContentBoxWithImage>
+                  </Box>
+                </StyledLink>
+            )
+          })}
         </Box>
       </Box>
     </Layout>
@@ -75,12 +77,12 @@ const Stories = ({ data, location }) => {
 
 export default Stories;
 
-export const blogListQuery = graphql`
-  query BlogList {
+export const storyListQuery = graphql`
+  query StoryList($language: String) {
     allMarkdownRemark(
       limit: 1000
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "story" } } }
+        filter: {frontmatter: {templateKey: {eq: "story"}, language: {eq: $language}}}
     ) {
       edges {
         node {

@@ -35,7 +35,6 @@ export const CommentSection = ({ pathname }) => {
       });
 
     return () => unsubscribe();
-
   }, [pathname]);
 
   const getComments = () => {

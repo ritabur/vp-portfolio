@@ -29,15 +29,19 @@ export const Comment = ({ comment, comments, showDivider, pathname }) => {
 
   const getCommentBody = (name, time, content) => (
     <>
-      <Name dangerouslySetInnerHTML={{
+      <Name
+        dangerouslySetInnerHTML={{
           __html: sanitizeHtml(name),
-      }} />
+        }}
+      />
       <Time>
         <time>{getFormattedDate(time)}</time>
       </Time>
-      <Content dangerouslySetInnerHTML={{
+      <Content
+        dangerouslySetInnerHTML={{
           __html: sanitizeHtml(content),
-      }} />
+        }}
+      />
     </>
   );
 
