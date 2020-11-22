@@ -1,4 +1,5 @@
 ---
+language: en
 templateKey: about
 path: /about
 title: About me

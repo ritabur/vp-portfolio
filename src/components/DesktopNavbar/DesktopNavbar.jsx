@@ -1,6 +1,8 @@
 import * as React from 'react';
 
 import { Box } from 'components/Box';
+import { useAppContext } from 'context/AppContext';
+import { getLocalizedPath, goHome } from 'utils';
 import {
   StyledBox,
   StyledTitleLink,
@@ -12,30 +14,32 @@ import {
 } from './StyledDesktopNavbar';
 
 export const DesktopNavbar = () => {
+  const { selectedLanguage } = useAppContext();
+
   return (
     <StyledBox position="relative" pt={40} ml={30} data-cy="desktop-navbar">
-      <StyledTitleLink to="/" activeClassName="isActive">
+      <StyledTitleLink to={goHome(selectedLanguage)} activeClassName="isActive">
         <StyledH2>Vaida Pilibaitytė</StyledH2>
       </StyledTitleLink>
       <Divider />
       <Box my={35}>
         <LinkWrapper>
-          <StyledLink to="/stories/" activeClassName="isActive">
+          <StyledLink to={getLocalizedPath('stories', selectedLanguage)} activeClassName="isActive">
             Stories
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/audio/" activeClassName="isActive">
+          <StyledLink to={getLocalizedPath('audio', selectedLanguage)} activeClassName="isActive">
             Audio
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/about/" activeClassName="isActive">
+          <StyledLink to={getLocalizedPath('about', selectedLanguage)} activeClassName="isActive">
             About
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to="/contact/" activeClassName="isActive">
+          <StyledLink to={getLocalizedPath('contact', selectedLanguage)} activeClassName="isActive">
             Contact
           </StyledLink>
         </LinkWrapper>

@@ -6,6 +6,11 @@ local_backend: true
 media_folder: static/img
 public_folder: /img
 
+i18n:
+  structure: multiple_files
+  locales: [lt, en]
+  default_locale: lt
+
 slug:
   encoding: "ascii"
   clean_accents: true
@@ -15,11 +20,12 @@ collections:
     label: "Stories"
     folder: "content/story"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{title}}"
     editor:
       preview: false
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "story" }
+      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Story image", name: "image", widget: "image" }
@@ -35,6 +41,7 @@ collections:
       preview: false
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio-post" }
+      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"] }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Link", name: "link", widget: "string" }
@@ -43,84 +50,90 @@ collections:
       - { label: "Short description", name: "shortDescription", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
 
+  - name: "about"
+    i18n: true
+    label: "About page"
+    folder: "content/about"
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
+      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Main-image", i18n: true, name: "mainImage", widget: "object", fields: [{label: "Image", name: "image", widget: "image", i18n: duplicate}, { label: "Image credits", name: "imageCredits", widget: "string", required: false, i18n: true }] }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
 
-  - name: "pages"
-    label: "Pages"
+  - name: "contact"
+    i18n: true
+    label: "Contact page"
+    folder: "content/contact"
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact" }
+      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+
+  - name: "audio"
+    i18n: true
+    label: "Audio page description"
+    folder: "content/audio"
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio" }
+      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+
+  - name: "homepage"
+    label: "Homepage"
+    i18n: true
     editor:
       preview: false
-    files:
-      - file: "content/index.md"
-        label: "Homepage"
-        name: "index"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
-          - { label: "Headline-Left", name: "headlineLeft", widget: "string" }
-          - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio-posts/stories", types:
+    folder: "content"
+    fields:
+      - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
+      - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
+      - { label: "Headline-Left", name: "headlineLeft", widget: "string", i18n: true }
+      - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio-posts/stories", i18n: true, types:
+        [
+        {
+          label: "Audio Post",
+          name: "audio-post",
+          widget: "object",
+          fields:
             [
             {
               label: "Audio Post",
-              name: "audio-post",
-              widget: "object",
-              fields:
-                [
-                {
-                  label: "Audio Post",
-                  name: "items",
-                  widget: "relation",
-                  collection: "audio-post",
-                  file: "audio-post",
-                  valueField: "title",
-                  searchFields: ["title"],
-                  displayFields: ["title"],
-                  multiple: true,
-                  required: false,
-                }
-                ]
-            },
+              name: "items",
+              widget: "relation",
+              collection: "audio-post",
+              file: "audio-post",
+              value_field: "title",
+              search_fields: ["title"],
+              display_fields: ["title"],
+              multiple: true,
+              required: false,
+            }
+            ]
+        },
+        {
+          label: "Story",
+          name: "story",
+          widget: "object",
+          fields:
+            [
             {
               label: "Story",
-              name: "story",
-              widget: "object",
-              fields:
-                [
-                {
-                  label: "Story",
-                  name: "items",
-                  widget: "relation",
-                  collection: "story",
-                  file: "story",
-                  valueField: "title",
-                  searchFields: ["title"],
-                  displayFields: ["title"],
-                  multiple: true,
-                  required: false,
-                }
-                ]
+              name: "items",
+              widget: "relation",
+              collection: "story",
+              file: "story",
+              value_field: "title",
+              search_fields: ["title"],
+              display_fields: ["title"],
+              multiple: true,
+              required: false,
             }
-            ] }
-          - { label: "Footer", name: "footer", widget: "object", fields: [{label: "Column-1", name: "column1", widget: "object", fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Body", name: "body", widget: "markdown" }]}, {label: "Column-2", name: "column2", widget: "object", fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Body", name: "body", widget: "markdown" }]}, {label: "Column-3", name: "column3", widget: "object", fields: [{ label: "Title", name: "title", widget: "string" }, { label: "Body", name: "body", widget: "markdown" }]}] }
-      - file: "content/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Main-image", name: "mainImage", widget: "object", fields: [{label: "Image", name: "image", widget: "image"}, { label: "Image credits", name: "imageCredits", widget: "string", required: false }] }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "content/contact/index.md"
-        label: "Contact"
-        name: "contact"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
-      - file: "content/audio/index.md"
-        label: "Audio"
-        name: "audio"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "audio" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+            ]
+        }
+        ] }
 
   - name: "footer"
     i18n: true
@@ -129,20 +142,23 @@ collections:
     widget: "object"
     fields:
       - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
-      - { label: "Title", name: "title", widget: "string", default: "Footer" }
+      - { label: "Title", name: "title", widget: "string", i18n: duplicate }
       - label: "Column-1"
+        i18n: true
         name: "column1"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string", i18n: true }
           - { label: "Body", name: "body", widget: "markdown", i18n: true }
       - label: "Column-2"
+        i18n: true
         name: "column2"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string", i18n: true }
           - { label: "Body", name: "body", widget: "markdown", i18n: true }
       - label: "Column-3"
+        i18n: true
         name: "column3"
         widget: "object"
         fields:

@@ -22,8 +22,9 @@
 * ~~resolution of audio list photos (pixelated)~~
 * ~~comments inside story/training/audio entry~~
 * localization https://github.com/netlify/netlify-cms/pull/4139
+* translate strings
 * V?: meta description for SEO ranking
-* V?: hrefs in posts target=blank?
+* V: hrefs in posts target=blank
 * V?: go through SEO
 * fix/test file uploads as part of markdown file links
 * test on different browsers/devices
@@ -40,7 +41,9 @@
 * add more e2e tests
 * rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa
 ---
+post-release:
 * built-in audio player
+* consider migrating to other cms
 ---
 after domain change:
 * update siteUrl in:
@@ -49,3 +52,4 @@ after domain change:
 ---
 for "release":
 * change sender email and pass in firebase (more info in functions/.env)
+* report new page to google (manually?)
