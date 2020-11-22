@@ -5,8 +5,10 @@
  */
 
 const path = require('path');
-const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+
+const languages = ['en', 'lt'];
+const baseLang = 'lt';
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
@@ -22,6 +24,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               templateKey
+              language
             }
           }
         }
@@ -36,31 +39,57 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(edge => {
-      const { id } = edge.node;
+      const { id, fields: { slug }, frontmatter } = edge.node;
+
+      const getNodeDir = () => {
+        if (slug === "/en/" || slug === "/lt/" || slug === '/') {
+          return 'index';
+        }
+        if (slug.startsWith('/en/')) {
+          return slug.replace('/en/', '').replace('/', '');
+        }
+
+        return slug.replace(/^\/([^\/]*).*$/, '$1');
+      };
+
+      // cms doesn't support i18n in file collections, therefore extracting footer to separate file
+      // but no extra page is needed for it
+      // https://github.com/netlify/netlify-cms/pull/4487
+      if (getNodeDir() === 'footer') {
+        return;
+      }
+
       createPage({
-        path: edge.node.fields.slug,
+        path: slug,
         component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.jsx`
+          `src/templates/${String(getNodeDir())}.js`
         ),
-        // additional data can be passed via context
+        // additional data passed via context
         context: {
           id,
+          language: frontmatter.language
         },
       });
     });
   });
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
-  fmImagesToRelative(node); // convert image paths for gatsby images
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    });
-  }
+  deletePage(page);
+  languages.forEach((lang) => {
+    createPage({
+      ...page,
+      path: lang !== baseLang ? `/${lang}${page.path}` : page.path,
+      context: {
+        ...page.context,
+        language: lang,
+      },
+    })
+  });
+};
+
+exports.onCreateNode = ({ node }) => {
+  fmImagesToRelative(node); // convert image paths for gatsby images
 };

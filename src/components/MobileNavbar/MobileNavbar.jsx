@@ -2,6 +2,8 @@ import React from 'react';
 import { Transition } from 'react-transition-group';
 
 import { Box } from 'components/Box';
+import { useAppContext } from 'context/AppContext';
+import { getLocalizedPath, goHome } from 'utils';
 import MenuIcon from 'assets/menu.svg';
 import {
   StyledOverlay,
@@ -18,35 +20,37 @@ import {
 
 export const MobileNavbar = () => {
   const [isOverlayOpen, setOverlayOpen] = React.useState(false);
+  const { selectedLanguage } = useAppContext();
 
   const handleClick = () => {
     setOverlayOpen(!isOverlayOpen);
   };
 
+  // TODO: add lang switch
   const LinkContainer = () => (
     <StyledLinkContainer m="0 auto" maxWidth={[270, null, 400]}>
-      <StyledLink to="/" activeClassName="isActive" onClick={handleClick}>
+      <StyledLink to={goHome(selectedLanguage)} activeClassName="isActive" onClick={handleClick}>
         Homepage
       </StyledLink>
       <Divider />
       <StyledLink
-        to="/stories"
+        to={getLocalizedPath('stories', selectedLanguage)}
         activeClassName="isActive"
         onClick={handleClick}
       >
         Stories
       </StyledLink>
       <Divider />
-      <StyledLink to="/audio/" activeClassName="isActive" onClick={handleClick}>
+      <StyledLink to={getLocalizedPath('audio', selectedLanguage)} activeClassName="isActive" onClick={handleClick}>
         Audio
       </StyledLink>
       <Divider />
-      <StyledLink to="/about" activeClassName="isActive" onClick={handleClick}>
+      <StyledLink to={getLocalizedPath('about', selectedLanguage)} activeClassName="isActive" onClick={handleClick}>
         About
       </StyledLink>
       <Divider />
       <StyledLink
-        to="/contact/"
+        to={getLocalizedPath('contact', selectedLanguage)}
         activeClassName="isActive"
         onClick={handleClick}
       >

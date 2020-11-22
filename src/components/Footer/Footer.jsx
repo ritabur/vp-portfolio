@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 import { Box } from 'components/Box';
 import { media as MEDIA } from 'lib/media';
+import { useAppContext } from 'context/AppContext';
 
 const StyledFooter = styled(Box)`
   border: 1px solid ${props => props.theme.colors.divider};
@@ -31,35 +32,55 @@ const StyledP = styled.p`
   line-height: 1.6;
 `;
 
+// TODO: fetching both langs until footer can be part of homepage: https://github.com/netlify/netlify-cms/pull/4487
 export const Footer = () => {
   const data = useStaticQuery(graphql`
     query FooterQuery {
-      markdownRemark(frontmatter: { templateKey: { eq: "index" } }) {
+      enFooterContent: markdownRemark(fields: { slug: { eq: "/en/footer/" } }) {
         frontmatter {
-          footer {
-            column1 {
-              title
-              body
-            }
-            column3 {
-              title
-              body
-            }
-            column2 {
-              title
-              body
-            }
+          title
+          language
+          column1 {
+            body
+            title
+          }
+          column2 {
+            body
+            title
+          }
+          column3 {
+            body
+            title
+          }
+        }
+      }
+      ltFooterContent: markdownRemark(fields: { slug: { eq: "/footer/" } }) {
+        frontmatter {
+          title
+          language
+          column1 {
+            body
+            title
+          }
+          column2 {
+            body
+            title
+          }
+          column3 {
+            body
+            title
           }
         }
       }
     }
   `);
 
-  const {
-    markdownRemark: {
-      frontmatter: { footer },
-    },
-  } = data;
+  const { selectedLanguage } = useAppContext();
+  const { ltFooterContent, enFooterContent } = data;
+
+  const content = selectedLanguage === 'en'
+      ? enFooterContent.frontmatter
+      : ltFooterContent.frontmatter;
 
   return (
     <StyledFooter
@@ -70,19 +91,19 @@ export const Footer = () => {
       data-cy="footer"
     >
       <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
-        <StyledH4>{footer.column1.title}</StyledH4>
+        <StyledH4>{content.column1.title}</StyledH4>
         <Divider />
-        <StyledP>{footer.column1.body}</StyledP>
+        <StyledP>{content.column1.body}</StyledP>
       </Box>
       <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
-        <StyledH4>{footer.column2.title}</StyledH4>
+        <StyledH4>{content.column2.title}</StyledH4>
         <Divider />
-        <StyledP>{footer.column2.body}</StyledP>
+        <StyledP>{content.column2.body}</StyledP>
       </Box>
       <Box as="section" flex={1}>
-        <StyledH4>{footer.column3.title}</StyledH4>
+        <StyledH4>{content.column3.title}</StyledH4>
         <Divider />
-        <StyledP>{footer.column3.body}</StyledP>
+        <StyledP>{content.column3.body}</StyledP>
       </Box>
     </StyledFooter>
   );

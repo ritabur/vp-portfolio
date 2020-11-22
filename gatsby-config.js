@@ -87,6 +87,16 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-i18n`,
+      options: {
+        langKeyDefault: 'lt',
+        langKeyForNull: 'lt',
+        prefixDefault: false,
+        useLangKeyLayout: false,
+        pagesPaths: [`${__dirname}/content`, `${__dirname}/pages`]
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
     {

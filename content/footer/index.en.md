@@ -1,7 +1,7 @@
 ---
-templateKey: footer
-path: /footer
+language: en
 title: Footer
+path: /footer
 column1:
   title: Science and environment reporting
   body: Specialized science and environment reporter and co-host of an award-winning weekly programme on environment on the LRT RADIO.

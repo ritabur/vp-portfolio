@@ -40,7 +40,7 @@ export default Audio;
 
 // TODO: fix image max width/how gatsby-image works?
 export const categoryPageQuery = graphql`
-  query AudioPage($id: String!) {
+  query AudioPage($id: String!, $language: String) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
@@ -50,7 +50,7 @@ export const categoryPageQuery = graphql`
     allMarkdownRemark(
       limit: 1000
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "audio-post" } } }
+      filter: {frontmatter: {templateKey: {eq: "audio-post"}, language: {eq: $language}}}
     ) {
       edges {
         node {

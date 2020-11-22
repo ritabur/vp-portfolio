@@ -1,4 +1,5 @@
 ---
+language: en
 templateKey: index
 title: Homepage
 headlineLeft: Stories about humans and the planet

@@ -11,7 +11,7 @@ import { GoBack } from 'components/GoBack';
 import { SEO } from 'components/SEO';
 import { CommentSection } from 'components/CommentSection';
 
-const Story = ({ data, location }) => {
+const Story = ({ pageContext, data, location }) => {
   const {
     markdownRemark: {
       frontmatter: { title, date, image, imageCredits },
