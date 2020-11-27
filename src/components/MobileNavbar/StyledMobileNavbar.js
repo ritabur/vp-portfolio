@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { Link } from 'gatsby';
 
 import { Box } from 'components/Box';
+import { Button } from 'components/Button';
 import CloseIcon from 'assets/close.svg';
 
 export const duration = 200;
@@ -80,4 +81,8 @@ export const StyledLinkContainer = styled(Box)`
 export const StyledCloseIcon = styled(CloseIcon)`
   margin-top: 10px;
   margin-right: 10px;
+`;
+
+export const StyledButton = styled(Button)`
+  padding: 10px 18px;
 `;

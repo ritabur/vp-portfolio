@@ -5,18 +5,18 @@ import EnTranslations from 'translations/en.json';
 import LtTranslations from 'translations/lt.json';
 
 const translations = {
-    en: EnTranslations,
-    lt: LtTranslations,
+  en: EnTranslations,
+  lt: LtTranslations,
 };
 
-export const t = (key) => {
-    const { selectedLanguage } = useAppContext();
+export const t = key => {
+  const { selectedLanguage } = useAppContext();
 
-    if (selectedLanguage) {
-        const translation = translations[selectedLanguage][key];
-        if (translation) {
-            return translation
-        }
-        return key;
+  if (selectedLanguage) {
+    const translation = translations[selectedLanguage][key];
+    if (translation) {
+      return translation;
     }
+    return key;
+  }
 };

@@ -2,7 +2,6 @@ import React from 'react';
 import { Transition } from 'react-transition-group';
 
 import { Box } from 'components/Box';
-import { Button } from 'components/Button';
 import { useAppContext } from 'context/AppContext';
 import { getLocalizedPath, goHome, routeToPage } from 'utils/routing';
 import { t } from 'utils/translations';
@@ -16,6 +15,7 @@ import {
   GlobaStyle,
   StyledCloseIcon,
   StyledHeaderLink,
+  StyledButton,
   duration,
   defaultStyle,
   transitionStyles,
@@ -25,12 +25,14 @@ export const MobileNavbar = () => {
   const [isOverlayOpen, setOverlayOpen] = React.useState(false);
   const { selectedLanguage, setLanguage } = useAppContext();
 
-  const languagesToSelect = Object.values(languages).filter(language => language !== selectedLanguage);
+  const languagesToSelect = Object.values(languages).filter(
+    language => language !== selectedLanguage
+  );
 
-  const handleLanguageSwitch = (lang) => {
-      setLanguage(lang);
-      handleClick();
-      routeToPage(lang);
+  const handleLanguageSwitch = lang => {
+    setLanguage(lang);
+    handleClick();
+    routeToPage(lang);
   };
 
   const handleClick = () => {
@@ -44,7 +46,7 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-          {t('homepage')}
+        {t('homepage')}
       </StyledLink>
       <Divider />
       <StyledLink
@@ -60,7 +62,7 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-          {t('audio')}
+        {t('audio')}
       </StyledLink>
       <Divider />
       <StyledLink
@@ -68,7 +70,7 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-          {t('about')}
+        {t('about')}
       </StyledLink>
       <Divider />
       <StyledLink
@@ -76,14 +78,20 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-          {t('contact')}
+        {t('contact')}
       </StyledLink>
       <Divider />
-        <Box pt={25}>
-            {languagesToSelect.map(lang => (
-                <Button secondary onClick={() => handleLanguageSwitch(lang)} key={lang}>{(lang).toUpperCase()}</Button>
-            ))}
-        </Box>
+      <Box pt={25}>
+        {languagesToSelect.map(lang => (
+          <StyledButton
+            secondary
+            onClick={() => handleLanguageSwitch(lang)}
+            key={lang}
+          >
+            {lang.toUpperCase()}
+          </StyledButton>
+        ))}
+      </Box>
     </StyledLinkContainer>
   );
 

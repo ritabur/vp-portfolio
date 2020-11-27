@@ -12,24 +12,27 @@ export const getLocalizedPath = (path, selectedLanguage) => {
     : `/${path}`;
 };
 
-export const routeToPage = (language) => {
+export const routeToPage = language => {
   const isLocalizedUrl = Object.values(languages).includes(
-      location.pathname.split('/')[1]
+    location.pathname.split('/')[1]
   );
 
   const splitPaths = location.pathname.split('/').filter(Boolean);
 
   const navigateToLocalizedPath = () => {
-    splitPaths.splice(0,1);
+    splitPaths.splice(0, 1);
     // case: url is already with a lang prefix
     if (isLocalizedUrl) {
-      splitPaths.splice(0,1);
+      splitPaths.splice(0, 1);
       const pathWithoutLang = splitPaths.join('/');
-      return navigate(`/${language}/${pathWithoutLang}`)
+      return navigate(`/${language}/${pathWithoutLang}`);
     }
     // https://github.com/netlify/netlify-cms/issues/857
-    if (location.pathname.includes('/audio-post/') ||location.pathname.includes('/story/')) {
-      return navigate('/')
+    if (
+      location.pathname.includes('/audio-post/') ||
+      location.pathname.includes('/story/')
+    ) {
+      return navigate('/');
     }
     return navigate(`/${language}${location.pathname}`);
   };
@@ -37,16 +40,16 @@ export const routeToPage = (language) => {
   const navigateToBaseLangPath = () => {
     // remove language and go to path e.g. /en/contact -> /contact/
     if (isLocalizedUrl) {
-      splitPaths.splice(0,1);
+      splitPaths.splice(0, 1);
       const pathWithoutLang = splitPaths.join('/');
-      return navigate(`/${pathWithoutLang}`)
+      return navigate(`/${pathWithoutLang}`);
     }
 
     // or story||audio -> homepage
-    return navigate('/')
+    return navigate('/');
   };
 
   language === BASE_LANGUAGE
-      ? navigateToBaseLangPath()
-      : navigateToLocalizedPath();
+    ? navigateToBaseLangPath()
+    : navigateToLocalizedPath();
 };

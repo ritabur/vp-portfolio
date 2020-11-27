@@ -12,9 +12,7 @@ import { t } from 'utils/translations';
 
 const Audio = ({ data, location }) => {
   const {
-    markdownRemark: {
-      html,
-    },
+    markdownRemark: { html },
     allMarkdownRemark: { edges: thumbnailList },
   } = data;
 
@@ -28,7 +26,9 @@ const Audio = ({ data, location }) => {
             <Base content={html} />
           </ContentBox>
           <Box mt={[30, 40]}>
-            { thumbnailList.length > 0 && <ThumbnailList contentList={thumbnailList} />}
+            {thumbnailList.length > 0 && (
+              <ThumbnailList contentList={thumbnailList} />
+            )}
           </Box>
         </Box>
       </Box>

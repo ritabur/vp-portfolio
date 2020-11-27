@@ -19,17 +19,17 @@ const SecondaryButton = styled(BaseButton)`
   font-size: ${props => props.theme.fontSizes.small};
 `;
 
-export const Button = ({ children, secondary = false, onClick, type }) => {
+export const Button = ({ children, secondary = false, onClick, type, className }) => {
   if (secondary) {
     return (
-      <SecondaryButton type={type} onClick={onClick}>
+      <SecondaryButton type={type} onClick={onClick} className={className}>
         {children}
       </SecondaryButton>
     );
   }
 
   return (
-    <BaseButton type={type} onClick={onClick}>
+    <BaseButton type={type} onClick={onClick} className={className}>
       {children}
     </BaseButton>
   );
