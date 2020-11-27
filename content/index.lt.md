@@ -1,6 +1,6 @@
 ---
-language: lt
 templateKey: index
+language: lt
 title: Homepage
 headlineLeft: --translate
 featuredEntries:
