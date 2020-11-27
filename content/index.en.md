@@ -1,20 +1,20 @@
 ---
-language: en
 templateKey: index
+language: en
 title: Homepage
 headlineLeft: Stories about humans and the planet
 featuredEntries:
   - type: audio-post
     items:
-      - Suprasti debesis / The Cloud Study [LT]
-      - Medžio pusėn stojęs žmogus/ Siding With the Trees [LT]
-      - Širdies formos pėdsakai / Heart-shaped Footprints [LT]
+      - Test (EN)
       - Arsenas iš giedro dangaus / Arsenic From the Clear Sky [LT]
   - type: story
     items:
       - Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety
         in Times of Catastrophe [LT]
       - Story 1
+      - Story 3
+      - Story 2
 footer:
   column1:
     title: Science and environment reporting
