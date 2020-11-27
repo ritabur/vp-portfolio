@@ -17,7 +17,7 @@ slug:
 
 collections:
   - name: "story"
-    label: "Storie Posts"
+    label: "Story Posts"
     folder: "content/story"
     create: true
     slug: "{{title}}"
