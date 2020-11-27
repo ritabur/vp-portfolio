@@ -39,10 +39,14 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach(edge => {
-      const { id, fields: { slug }, frontmatter } = edge.node;
+      const {
+        id,
+        fields: { slug },
+        frontmatter,
+      } = edge.node;
 
       const getNodeDir = () => {
-        if (slug === "/en/" || slug === "/lt/" || slug === '/') {
+        if (slug === '/en/' || slug === '/lt/' || slug === '/') {
           return 'index';
         }
         if (slug.startsWith('/en/')) {
@@ -61,13 +65,11 @@ exports.createPages = ({ actions, graphql }) => {
 
       createPage({
         path: slug,
-        component: path.resolve(
-          `src/templates/${String(getNodeDir())}.js`
-        ),
+        component: path.resolve(`src/templates/${String(getNodeDir())}.js`),
         // additional data passed via context
         context: {
           id,
-          language: frontmatter.language
+          language: frontmatter.language,
         },
       });
     });
@@ -78,7 +80,7 @@ exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
 
   deletePage(page);
-  languages.forEach((lang) => {
+  languages.forEach(lang => {
     createPage({
       ...page,
       path: lang !== baseLang ? `/${lang}${page.path}` : page.path,
@@ -86,7 +88,7 @@ exports.onCreatePage = ({ page, actions }) => {
         ...page.context,
         language: lang,
       },
-    })
+    });
   });
 };
 

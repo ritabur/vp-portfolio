@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Box } from 'components/Box';
 import { ContentBox } from 'components/ContentBox';
-import { firestore } from '../../../firebase.js';
+import { firestore } from '../../../firebase';
 import { CommentForm } from './CommentForm';
 import { Comment } from './Comment';
 

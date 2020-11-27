@@ -24,22 +24,34 @@ export const DesktopNavbar = () => {
       <Divider />
       <Box my={35}>
         <LinkWrapper>
-          <StyledLink to={getLocalizedPath('stories', selectedLanguage)} activeClassName="isActive">
+          <StyledLink
+            to={getLocalizedPath('stories', selectedLanguage)}
+            activeClassName="isActive"
+          >
             Stories
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to={getLocalizedPath('audio', selectedLanguage)} activeClassName="isActive">
+          <StyledLink
+            to={getLocalizedPath('audio', selectedLanguage)}
+            activeClassName="isActive"
+          >
             Audio
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to={getLocalizedPath('about', selectedLanguage)} activeClassName="isActive">
+          <StyledLink
+            to={getLocalizedPath('about', selectedLanguage)}
+            activeClassName="isActive"
+          >
             About
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
-          <StyledLink to={getLocalizedPath('contact', selectedLanguage)} activeClassName="isActive">
+          <StyledLink
+            to={getLocalizedPath('contact', selectedLanguage)}
+            activeClassName="isActive"
+          >
             Contact
           </StyledLink>
         </LinkWrapper>

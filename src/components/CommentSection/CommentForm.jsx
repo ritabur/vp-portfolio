@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box } from 'components/Box';
 import { Button } from 'components/Button';
-import { firestore } from '../../../firebase.js';
+import { firestore } from '../../../firebase';
 import { Title, StyledTextarea, StyledInput } from './StyledCommentForm';
 
 export const CommentForm = ({
@@ -25,9 +25,11 @@ export const CommentForm = ({
         time: new Date(),
         parentId: parentId || null,
       })
-      .catch(error => console.log('add comment error:', error));
+      .catch(error => console.log('add comment error:', error)); // eslint-disable-line no-console
 
-    onSubmit && onSubmit();
+    if (onSubmit) {
+      onSubmit();
+    }
     setComment('');
     setName('');
   };
@@ -35,20 +37,22 @@ export const CommentForm = ({
   return (
     <form onSubmit={handleSubmit}>
       <Box mb={24}>
-        <label>
+        <label htmlFor="text">
           <Title>Comment</Title>
           <StyledTextarea
+            id="text"
             rows="4"
             onChange={e => setComment(e.target.value)}
             value={comment}
           />
         </label>
       </Box>
-      <label>
+      <label htmlFor="name">
         <Title>
           Name <span>*</span>
         </Title>
         <StyledInput
+          id="name"
           onChange={e => setName(e.target.value)}
           value={name}
           required

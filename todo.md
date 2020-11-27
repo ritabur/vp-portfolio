@@ -23,6 +23,7 @@
 * ~~comments inside story/training/audio entry~~
 * localization https://github.com/netlify/netlify-cms/pull/4139
 * translate strings
+* translate meta keywords according to lang
 * V?: meta description for SEO ranking
 * V: hrefs in posts target=blank
 * V?: go through SEO
@@ -39,6 +40,7 @@
 * TS
 * transitions for mobile menu and pages
 * add more e2e tests
+* sourcemaps
 * rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa
 ---
 post-release:

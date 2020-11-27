@@ -5,7 +5,6 @@ import { graphql } from 'gatsby';
 import { Box } from 'components/Box';
 import { Layout } from 'components/Layout';
 import { ContentBoxWithImage } from 'components/ContentBox';
-import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
 import { SEO } from 'components/SEO';
 
@@ -13,7 +12,6 @@ const About = ({ data, location }) => {
   const {
     markdownRemark: {
       frontmatter: {
-        title,
         mainImage: { image, imageCredits },
       },
       html,
@@ -29,8 +27,10 @@ const About = ({ data, location }) => {
       />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
-          <ContentBoxWithImage image={image.childImageSharp.fluid} imageCredits={imageCredits}>
-            <Heading>{title}</Heading>
+          <ContentBoxWithImage
+            image={image.childImageSharp.fluid}
+            imageCredits={imageCredits}
+          >
             <Base content={html} />
           </ContentBoxWithImage>
         </Box>

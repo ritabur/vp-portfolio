@@ -94,7 +94,7 @@ module.exports = {
         langKeyForNull: 'lt',
         prefixDefault: false,
         useLangKeyLayout: false,
-        pagesPaths: [`${__dirname}/content`, `${__dirname}/pages`]
+        pagesPaths: [`${__dirname}/content`, `${__dirname}/pages`],
       },
     },
     `gatsby-plugin-styled-components`,

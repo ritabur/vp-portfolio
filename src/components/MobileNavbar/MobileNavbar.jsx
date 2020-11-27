@@ -2,8 +2,10 @@ import React from 'react';
 import { Transition } from 'react-transition-group';
 
 import { Box } from 'components/Box';
+import { Button } from 'components/Button';
 import { useAppContext } from 'context/AppContext';
-import { getLocalizedPath, goHome } from 'utils';
+import { getLocalizedPath, goHome, routeToPage } from 'utils';
+import { languages } from 'const';
 import MenuIcon from 'assets/menu.svg';
 import {
   StyledOverlay,
@@ -20,16 +22,27 @@ import {
 
 export const MobileNavbar = () => {
   const [isOverlayOpen, setOverlayOpen] = React.useState(false);
-  const { selectedLanguage } = useAppContext();
+  const { selectedLanguage, setLanguage } = useAppContext();
+
+  const languagesToSelect = Object.values(languages).filter(language => language !== selectedLanguage);
+
+  const handleLanguageSwitch = (lang) => {
+      setLanguage(lang);
+      handleClick();
+      routeToPage(lang);
+  };
 
   const handleClick = () => {
     setOverlayOpen(!isOverlayOpen);
   };
 
-  // TODO: add lang switch
   const LinkContainer = () => (
     <StyledLinkContainer m="0 auto" maxWidth={[270, null, 400]}>
-      <StyledLink to={goHome(selectedLanguage)} activeClassName="isActive" onClick={handleClick}>
+      <StyledLink
+        to={goHome(selectedLanguage)}
+        activeClassName="isActive"
+        onClick={handleClick}
+      >
         Homepage
       </StyledLink>
       <Divider />
@@ -41,11 +54,19 @@ export const MobileNavbar = () => {
         Stories
       </StyledLink>
       <Divider />
-      <StyledLink to={getLocalizedPath('audio', selectedLanguage)} activeClassName="isActive" onClick={handleClick}>
+      <StyledLink
+        to={getLocalizedPath('audio', selectedLanguage)}
+        activeClassName="isActive"
+        onClick={handleClick}
+      >
         Audio
       </StyledLink>
       <Divider />
-      <StyledLink to={getLocalizedPath('about', selectedLanguage)} activeClassName="isActive" onClick={handleClick}>
+      <StyledLink
+        to={getLocalizedPath('about', selectedLanguage)}
+        activeClassName="isActive"
+        onClick={handleClick}
+      >
         About
       </StyledLink>
       <Divider />
@@ -57,6 +78,11 @@ export const MobileNavbar = () => {
         Contact
       </StyledLink>
       <Divider />
+        <Box pt={25}>
+            {languagesToSelect.map(lang => (
+                <Button secondary onClick={() => handleLanguageSwitch(lang)}>{(lang).toUpperCase()}</Button>
+            ))}
+        </Box>
     </StyledLinkContainer>
   );
 

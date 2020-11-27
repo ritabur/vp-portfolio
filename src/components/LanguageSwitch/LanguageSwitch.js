@@ -1,56 +1,71 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {navigate} from "gatsby"
 
-import {Box} from 'components/Box';
-import {useAppContext} from 'context/AppContext';
-import {BASE_LANGUAGE, languages} from 'const';
+import { Box } from 'components/Box';
+import { useAppContext } from 'context/AppContext';
+import { languages } from 'const';
+import { routeToPage } from 'utils';
 
 const StyledLanguageContainer = styled.div`
-    background-color: ${props => props.theme.colors.contentBackground};
+  background-color: ${props => props.theme.colors.contentBackground};
 `;
 
 const Language = styled.div`
+  position: relative;
   color: ${props => props.theme.colors.bodyPrimary};
   cursor: pointer;
+  &:after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    background-color: ${props => props.theme.colors.bodyPrimary};
+  }
 
-  ${props => props.isActive && `
-    text-decoration: underline;
-    pointer-events: none;
+  ${props =>
+    props.isActive &&
+    `
+    pointer-events: none;    
+  `}
+
+  ${props =>
+    !props.isActive &&
+    `
+    &:after {
+        content: none;
+    }
   `}
 `;
 
-export const LanguageSwitch = ({className}) => {
-    const {selectedLanguage, setLanguage} = useAppContext();
+export const LanguageSwitch = ({ className }) => {
+  const { selectedLanguage, setLanguage } = useAppContext();
 
-    const handleClick = (language) => {
-        setLanguage(language);
-        const isLocalizedUrl = Object.values(languages).includes(location.pathname.split('/')[1]);
-        const pathWithoutLang = location.pathname.split('/')[2];
+  const handleClick = language => {
+    setLanguage(language);
+    routeToPage(language);
+  };
 
-        language === BASE_LANGUAGE
-            ? navigate(`/${location.pathname.split('/')[2]}`)
-            : navigate(isLocalizedUrl ? `/${language}${pathWithoutLang}` : `/${language}${location.pathname}`)
-    };
-
-    return (
-        <StyledLanguageContainer className={className}>
-            <Box py={8} pr={4} pl={8} display="inline-block">
-                <Language
-                    onClick={() => handleClick(languages.en)}
-                    isActive={selectedLanguage === languages.en}
-                >
-                    {languages.en.toUpperCase()}
-                </Language>
-            </Box>
-            <Box py={8} pr={8} pl={4} display="inline-block">
-                <Language
-                    onClick={() => handleClick(languages.lt)}
-                    isActive={selectedLanguage === languages.lt}
-                >
-                    {languages.lt.toUpperCase()}
-                </Language>
-            </Box>
-        </StyledLanguageContainer>
-    )
+  return (
+    <StyledLanguageContainer className={className}>
+      <Box py={8} pr={4} pl={8} display="inline-block">
+        <Language
+          onClick={() => handleClick(languages.en)}
+          isActive={selectedLanguage === languages.en}
+        >
+          {languages.en.toUpperCase()}
+        </Language>
+      </Box>
+      <Box py={8} pr={8} pl={4} display="inline-block">
+        <Language
+          onClick={() => handleClick(languages.lt)}
+          isActive={selectedLanguage === languages.lt}
+        >
+          {languages.lt.toUpperCase()}
+        </Language>
+      </Box>
+    </StyledLanguageContainer>
+  );
 };

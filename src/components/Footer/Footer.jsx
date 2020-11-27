@@ -78,7 +78,8 @@ export const Footer = () => {
   const { selectedLanguage } = useAppContext();
   const { ltFooterContent, enFooterContent } = data;
 
-  const content = selectedLanguage === 'en'
+  const content =
+    selectedLanguage === 'en'
       ? enFooterContent.frontmatter
       : ltFooterContent.frontmatter;
 

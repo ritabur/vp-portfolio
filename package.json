@@ -54,7 +54,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "eslint": "eslint src/**/*.jsx",
-    "eslint:fix": "eslint --ext .jsx --fix ./ --ignore-path .gitignore",
+    "eslint:fix": "eslint --ext .jsx,.js --fix ./ --ignore-path .gitignore",
     "cy:run": "cypress run",
     "cy:open": "cypress open"
   },

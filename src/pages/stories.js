@@ -55,19 +55,19 @@ const Stories = ({ pageContext, data, location }) => {
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           {posts.map(({ node: post }) => {
             return (
-                <StyledLink to={post.fields.slug} key={post.frontmatter.title}>
-                  <Box mb={[30, 40, 70]}>
-                    <ContentBoxWithImage
-                        image={post.frontmatter.image.childImageSharp.fluid}
-                        alt={post.frontmatter.title}
-                        footerContent={post.frontmatter.date}
-                    >
-                      <StyledHeading>{post.frontmatter.title}</StyledHeading>
-                      <Base content={post.excerpt} />
-                    </ContentBoxWithImage>
-                  </Box>
-                </StyledLink>
-            )
+              <StyledLink to={post.fields.slug} key={post.frontmatter.title}>
+                <Box mb={[30, 40, 70]}>
+                  <ContentBoxWithImage
+                    image={post.frontmatter.image.childImageSharp.fluid}
+                    alt={post.frontmatter.title}
+                    footerContent={post.frontmatter.date}
+                  >
+                    <StyledHeading>{post.frontmatter.title}</StyledHeading>
+                    <Base content={post.excerpt} />
+                  </ContentBoxWithImage>
+                </Box>
+              </StyledLink>
+            );
           })}
         </Box>
       </Box>
@@ -82,7 +82,12 @@ export const storyListQuery = graphql`
     allMarkdownRemark(
       limit: 1000
       sort: { order: DESC, fields: [frontmatter___date] }
-        filter: {frontmatter: {templateKey: {eq: "story"}, language: {eq: $language}}}
+      filter: {
+        frontmatter: {
+          templateKey: { eq: "story" }
+          language: { eq: $language }
+        }
+      }
     ) {
       edges {
         node {

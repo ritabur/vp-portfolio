@@ -15,15 +15,15 @@ export const GlobaStyle = createGlobalStyle`
 `;
 
 export const defaultStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
-    opacity: 0,
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
 };
 
 export const transitionStyles = {
-    entering: { opacity: 1, zIndex: 1 },
-    entered:  { opacity: 1, zIndex: 1 },
-    exiting:  { opacity: 0, zIndex: -1 },
-    exited:  { opacity: 0, zIndex: -1 },
+  entering: { opacity: 1, zIndex: 1 },
+  entered: { opacity: 1, zIndex: 1 },
+  exiting: { opacity: 0, zIndex: -1 },
+  exited: { opacity: 0, zIndex: -1 },
 };
 
 export const Divider = styled(Box)`

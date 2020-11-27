@@ -6,35 +6,35 @@ const host = 'https://brave-hypatia-40862b.netlify.app';
 
 admin.initializeApp();
 
-const {senderemail, senderpass, receiveremail} = functions.config().mailer;
+const { senderemail, senderpass, receiveremail } = functions.config().mailer;
 
 exports.sendEmailNotification = functions.firestore
-    .document('comments/{docId}')
-    .onCreate((snap, context) => {
-        const record = snap.data();
-        const emailPlainText = `${record.name} wrote: ${record.content}`;
-        const articleUrl = `${host}${record.slug}`;
+  .document('comments/{docId}')
+  .onCreate((snap, context) => {
+    const record = snap.data();
+    const emailPlainText = `${record.name} wrote: ${record.content}`;
+    const articleUrl = `${host}${record.slug}`;
 
-        const emailHtmlText =
-            `<span style='font-weight:bold'>${record.name}</span> wrote: <div style="margin-top:8px; background-color:#f8f8f8; padding: 8px;">${record.content}</div><div style="margin-top:8px;">Article: <a href="${articleUrl}">${articleUrl}</a></div>`;
+    const emailHtmlText = `<span style='font-weight:bold'>${record.name}</span> wrote: <div style="margin-top:8px; background-color:#f8f8f8; padding: 8px;">${record.content}</div><div style="margin-top:8px;">Article: <a href="${articleUrl}">${articleUrl}</a></div>`;
 
-        const authData = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
-            secure: true,
-            auth: {
-                user: senderemail,
-                pass: senderpass
-            }
-        });
-
-        return authData.sendMail({
-            from: 'comments@kimchi.com',
-            to: receiveremail,
-            subject: '😺 New comment',
-            text: emailPlainText,
-            html: emailHtmlText
-        })
-            .then(() => console.log(`Email sent to ${receiveremail} successfully`))
-            .catch(error => console.log(`---ERROR: ${error}`));
+    const authData = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: senderemail,
+        pass: senderpass,
+      },
     });
+
+    return authData
+      .sendMail({
+        from: 'comments@kimchi.com',
+        to: receiveremail,
+        subject: '😺 New comment',
+        text: emailPlainText,
+        html: emailHtmlText,
+      })
+      .then(() => console.log(`Email sent to ${receiveremail} successfully`))
+      .catch(error => console.log(`---ERROR: ${error}`));
+  });
