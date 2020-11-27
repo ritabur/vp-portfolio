@@ -31,7 +31,6 @@ const ImageCredits = styled.div`
   text-align: right;
 `;
 
-// TODO: add validation in netlify cms for min-width 840px
 export const ContentBoxWithImage = ({
   children,
   footerContent,

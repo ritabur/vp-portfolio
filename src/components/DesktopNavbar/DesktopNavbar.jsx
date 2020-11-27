@@ -2,7 +2,8 @@ import * as React from 'react';
 
 import { Box } from 'components/Box';
 import { useAppContext } from 'context/AppContext';
-import { getLocalizedPath, goHome } from 'utils';
+import { getLocalizedPath, goHome } from 'utils/routing';
+import { t } from 'utils/translations';
 import {
   StyledBox,
   StyledTitleLink,
@@ -28,7 +29,7 @@ export const DesktopNavbar = () => {
             to={getLocalizedPath('stories', selectedLanguage)}
             activeClassName="isActive"
           >
-            Stories
+            {t('stories')}
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
@@ -36,7 +37,7 @@ export const DesktopNavbar = () => {
             to={getLocalizedPath('audio', selectedLanguage)}
             activeClassName="isActive"
           >
-            Audio
+            {t('audio')}
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
@@ -44,7 +45,7 @@ export const DesktopNavbar = () => {
             to={getLocalizedPath('about', selectedLanguage)}
             activeClassName="isActive"
           >
-            About
+            {t('about')}
           </StyledLink>
         </LinkWrapper>
         <LinkWrapper>
@@ -52,7 +53,7 @@ export const DesktopNavbar = () => {
             to={getLocalizedPath('contact', selectedLanguage)}
             activeClassName="isActive"
           >
-            Contact
+            {t('contact')}
           </StyledLink>
         </LinkWrapper>
       </Box>

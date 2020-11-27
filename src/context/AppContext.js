@@ -11,7 +11,7 @@ export const AppContextProvider = ({ children }) => {
     const splitPath = location.pathname.split('/');
     const isLocalizedPath = Object.values(languages).includes(splitPath[1]);
     setLanguage(isLocalizedPath ? splitPath[1] : BASE_LANGUAGE);
-  }, [setLanguage]);
+  }, [setLanguage]);   // TODO: refactor?
 
   const setLanguage = (selectedLanguage => {
     setState({

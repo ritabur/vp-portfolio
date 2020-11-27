@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import { useAppContext } from 'context/AppContext';
+import { t } from 'utils/translations';
 
 export const SEO = ({ description, title, image, path }) => {
   const { site } = useStaticQuery(
@@ -19,7 +20,6 @@ export const SEO = ({ description, title, image, path }) => {
   );
 
   const { selectedLanguage } = useAppContext();
-
   const url = site.siteMetadata.siteUrl;
   const metaTitle = title
     ? `${title} | ${site.siteMetadata.title}`
@@ -40,8 +40,7 @@ export const SEO = ({ description, title, image, path }) => {
       {image && <meta property="og:image" content={`${url}${image}`} />}
       {description && <meta property="og:description" content={description} />}
       {description && <meta name="description" content={description} />}
-      {/*TODO: translate keywords*/}
-      <meta name="keywords" content="audio, documentary, radio, training" />
+      <meta name="keywords" content={t('seoKeywords')} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </Helmet>
   );

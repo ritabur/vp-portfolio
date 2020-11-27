@@ -8,6 +8,7 @@ import { Box } from 'components/Box';
 import { ContentBoxWithImage } from 'components/ContentBox';
 import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
+import { t } from 'utils/translations';
 
 const StyledLink = styled(Link)`
   color: ${props => props.theme.colors.bodyPrimary};
@@ -38,7 +39,7 @@ const StyledHeading = styled(Heading)`
   }
 `;
 
-const Stories = ({ pageContext, data, location }) => {
+const Stories = ({ data, location }) => {
   const {
     allMarkdownRemark: { edges: posts },
   } = data;
@@ -47,7 +48,7 @@ const Stories = ({ pageContext, data, location }) => {
   return (
     <Layout>
       <SEO
-        title="Stories"
+        title={t('stories')}
         image={posts[0].node.frontmatter.image.childImageSharp.fluid.src}
         path={location.pathname}
       />
@@ -97,7 +98,7 @@ export const storyListQuery = graphql`
           }
           frontmatter {
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMMM DD, YYYY", locale: $language)
             image {
               childImageSharp {
                 fluid(maxWidth: 850) {

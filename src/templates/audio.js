@@ -8,11 +8,11 @@ import { ThumbnailList } from 'components/ThumbnailList';
 import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
 import { SEO } from 'components/SEO';
+import { t } from 'utils/translations';
 
 const Audio = ({ data, location }) => {
   const {
     markdownRemark: {
-      frontmatter: { title },
       html,
     },
     allMarkdownRemark: { edges: thumbnailList },
@@ -20,15 +20,15 @@ const Audio = ({ data, location }) => {
 
   return (
     <Layout>
-      <SEO title="Audio" path={location.pathname} />
+      <SEO title={t('audio')} path={location.pathname} />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]}>
           <ContentBox>
-            <Heading>{title}</Heading>
+            <Heading>{t('audio')}</Heading>
             <Base content={html} />
           </ContentBox>
           <Box mt={[30, 40]}>
-            <ThumbnailList contentList={thumbnailList} />
+            { thumbnailList.length > 0 && <ThumbnailList contentList={thumbnailList} />}
           </Box>
         </Box>
       </Box>
@@ -38,14 +38,10 @@ const Audio = ({ data, location }) => {
 
 export default Audio;
 
-// TODO: fix image max width/how gatsby-image works?
 export const categoryPageQuery = graphql`
   query AudioPage($id: String!, $language: String) {
     markdownRemark(id: { eq: $id }) {
       html
-      frontmatter {
-        title
-      }
     }
     allMarkdownRemark(
       limit: 1000

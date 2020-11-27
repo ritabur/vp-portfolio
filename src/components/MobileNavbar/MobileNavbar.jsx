@@ -4,7 +4,8 @@ import { Transition } from 'react-transition-group';
 import { Box } from 'components/Box';
 import { Button } from 'components/Button';
 import { useAppContext } from 'context/AppContext';
-import { getLocalizedPath, goHome, routeToPage } from 'utils';
+import { getLocalizedPath, goHome, routeToPage } from 'utils/routing';
+import { t } from 'utils/translations';
 import { languages } from 'const';
 import MenuIcon from 'assets/menu.svg';
 import {
@@ -43,7 +44,7 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-        Homepage
+          {t('homepage')}
       </StyledLink>
       <Divider />
       <StyledLink
@@ -51,7 +52,7 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-        Stories
+        {t('stories')}
       </StyledLink>
       <Divider />
       <StyledLink
@@ -59,7 +60,7 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-        Audio
+          {t('audio')}
       </StyledLink>
       <Divider />
       <StyledLink
@@ -67,7 +68,7 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-        About
+          {t('about')}
       </StyledLink>
       <Divider />
       <StyledLink
@@ -75,12 +76,12 @@ export const MobileNavbar = () => {
         activeClassName="isActive"
         onClick={handleClick}
       >
-        Contact
+          {t('contact')}
       </StyledLink>
       <Divider />
         <Box pt={25}>
             {languagesToSelect.map(lang => (
-                <Button secondary onClick={() => handleLanguageSwitch(lang)}>{(lang).toUpperCase()}</Button>
+                <Button secondary onClick={() => handleLanguageSwitch(lang)} key={lang}>{(lang).toUpperCase()}</Button>
             ))}
         </Box>
     </StyledLinkContainer>

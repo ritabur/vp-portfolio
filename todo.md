@@ -21,9 +21,9 @@
 * ~~story in story-list clickable on all story not just titles~~
 * ~~resolution of audio list photos (pixelated)~~
 * ~~comments inside story/training/audio entry~~
+* ~~translate strings~~
+* ~~translate meta keywords according to lang~~
 * localization https://github.com/netlify/netlify-cms/pull/4139
-* translate strings
-* translate meta keywords according to lang
 * V?: meta description for SEO ranking
 * V: hrefs in posts target=blank
 * V?: go through SEO

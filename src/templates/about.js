@@ -7,6 +7,7 @@ import { Layout } from 'components/Layout';
 import { ContentBoxWithImage } from 'components/ContentBox';
 import { Base } from 'components/Base';
 import { SEO } from 'components/SEO';
+import { t } from 'utils/translations';
 
 const About = ({ data, location }) => {
   const {
@@ -21,7 +22,7 @@ const About = ({ data, location }) => {
   return (
     <Layout>
       <SEO
-        title="About"
+        title={t('about')}
         image={image.childImageSharp.fluid.src}
         path={location.pathname}
       />

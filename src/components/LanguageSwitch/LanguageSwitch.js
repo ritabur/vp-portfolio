@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Box } from 'components/Box';
 import { useAppContext } from 'context/AppContext';
 import { languages } from 'const';
-import { routeToPage } from 'utils';
+import { routeToPage } from 'utils/routing';
 
 const StyledLanguageContainer = styled.div`
   background-color: ${props => props.theme.colors.contentBackground};
