@@ -17,7 +17,7 @@ slug:
 
 collections:
   - name: "story"
-    label: "Stories"
+    label: "Storie Posts"
     folder: "content/story"
     create: true
     slug: "{{title}}"
@@ -52,7 +52,7 @@ collections:
 
   - name: "about"
     i18n: true
-    label: "About page"
+    label: "About page description"
     folder: "content/about"
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about" }
@@ -63,7 +63,7 @@ collections:
 
   - name: "contact"
     i18n: true
-    label: "Contact page"
+    label: "Contact page description"
     folder: "content/contact"
     fields:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact" }
@@ -91,14 +91,6 @@ collections:
       - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page" }
       - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
       - { label: "Headline-Left", name: "headlineLeft", widget: "string", i18n: true }
-      - label: "Test relation widget"
-        name: "test"
-        widget: "relation"
-        collection: "story"
-        file: "story"
-        search_fields: ["title"]
-        display_fields: ["title"]
-        value_field: "title"
       - { label: "Featured entries", name: "featuredEntries", widget: "list", hint: "Select 6 entries from audio-posts/stories", i18n: true, types:
         [
         {

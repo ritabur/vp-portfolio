@@ -7,6 +7,7 @@ export const goHome = selectedLanguage => {
 };
 
 export const getLocalizedPath = (path, selectedLanguage) => {
+  // console warnings: https://github.com/gatsbyjs/gatsby/issues/11243
   return selectedLanguage !== BASE_LANGUAGE
     ? `/${selectedLanguage}/${path}`
     : `/${path}`;
