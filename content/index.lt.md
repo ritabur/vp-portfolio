@@ -2,7 +2,7 @@
 templateKey: index
 language: lt
 title: Homepage
-headlineLeft: --translate
+headlineLeft: Istorijos apie žmones ir Žemę
 featuredEntries:
   - type: audio-post
     items:
