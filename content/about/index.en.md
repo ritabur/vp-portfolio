@@ -1,8 +1,8 @@
 ---
-language: en
 templateKey: about
+language: en
 path: /about
-title: About me
+title: "About "
 mainImage:
   image: /img/2020_krastai_fieldrep.jpg
   imageCredits: In the field. Photo by Rugilė Trumpytė

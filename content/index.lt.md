@@ -2,7 +2,7 @@
 templateKey: index
 language: lt
 title: Homepage
-headlineLeft: --translate
+headlineLeft: Pasakojimai apie žmones ir planetą
 featuredEntries:
   - type: audio-post
     items:
