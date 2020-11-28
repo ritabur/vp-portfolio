@@ -14,7 +14,7 @@ import { CommentSection } from 'components/CommentSection';
 const Story = ({ pageContext, data, location }) => {
   const {
     markdownRemark: {
-      frontmatter: { title, date, image, imageCredits },
+      frontmatter: { title, date, image, imageCredits, shortDescription },
       html,
     },
   } = data;
@@ -24,7 +24,7 @@ const Story = ({ pageContext, data, location }) => {
     <Layout>
       <SEO
         title={title}
-        description={html}
+        description={shortDescription}
         image={image.childImageSharp.fluid.src}
         path={location.pathname}
       />
@@ -61,6 +61,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        shortDescription
         imageCredits
         date(formatString: "MMMM DD, YYYY")
         image {

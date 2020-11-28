@@ -23,8 +23,8 @@
 * ~~comments inside story/training/audio entry~~
 * ~~translate strings~~
 * ~~translate meta keywords according to lang~~
-* localization https://github.com/netlify/netlify-cms/pull/4139
-* V?: meta description for SEO ranking
+* ~~localization https://github.com/netlify/netlify-cms/pull/4139~~
+* V?: add meta description for audio and stories SEO ranking
 * V: hrefs in posts target=blank
 * V?: go through SEO
 * fix/test file uploads as part of markdown file links

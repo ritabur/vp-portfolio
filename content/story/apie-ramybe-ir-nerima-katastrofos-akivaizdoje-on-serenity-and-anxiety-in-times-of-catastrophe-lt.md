@@ -6,6 +6,7 @@ title: Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety 
 date: 2020-09-27T07:30:00.000Z
 image: /img/20200813_moletai_v.pilibaityte.jpg
 imageCredits: ""
+shortDescription: "--translate: An essay written during international writers' residency program Writing@Molėtai in August 2020, in Lithuanian."
 ---
 An essay written during international writers' residency program Writing@Molėtai in August 2020, in Lithuanian.
 
