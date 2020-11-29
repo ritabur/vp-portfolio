@@ -14,7 +14,7 @@ const StyledBase = styled.div`
 export const Base = ({ content }) => (
   <StyledBase
     dangerouslySetInnerHTML={{
-      __html: sanitizeHtml(content, {
+      __html: sanitizeHtml(content.replace(/href/g, "target='_blank' href"), {
         allowedTags: sanitizeHtml.defaults.allowedTags.concat(['sup']),
       }),
     }}
