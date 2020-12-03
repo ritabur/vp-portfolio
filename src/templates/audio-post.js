@@ -10,6 +10,8 @@ import { GoBack } from 'components/GoBack';
 import { SEO } from 'components/SEO';
 import { CommentSection } from 'components/CommentSection';
 
+console.log('test');
+
 const AudioPost = ({ data, location }) => {
   const {
     markdownRemark: {
