@@ -27,15 +27,16 @@
 * V?: add meta description for audio and stories SEO ranking
 * V: hrefs in posts target=blank
 * V?: go through SEO
+* remove homepage mobile horizontal overflow
 * fix/test file uploads as part of markdown file links
-* test on different browsers/devices
-* manual post sorting-dragging
 * add pageview tracking
+* test on different browsers/devices
+* don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * Play icon for LRT links in post
 * iframe from LRT or audioplayer (?): fallback image for homepage (?)
-* don't render mobile navbar on desktop and desktop navbar on mobile
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
 * styles for admin (multiple issues listed in cms.js)
+* manual post sorting-dragging
 * a11y
 * TS
 * transitions for mobile menu and pages
