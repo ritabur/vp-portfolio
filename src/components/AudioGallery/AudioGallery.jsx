@@ -41,7 +41,7 @@ const StyledImg = styled(Img)`
 `;
 
 export const AudioGallery = ({ galleryList }) => (
-  <Box display="flex" flexWrap="wrap" mx={-12} data-cy="audio-gallery">
+  <Box display="flex" flexWrap="wrap" mx={[null, -12]} data-cy="audio-gallery">
     {galleryList.map((galleryItem, index) => {
       return (
         <Box
@@ -52,7 +52,7 @@ export const AudioGallery = ({ galleryList }) => (
             `${PORTRAIT_INDICES.includes(index) ? '30%' : '70%'}`,
           ]}
           maxHeight={300}
-          px={12}
+          px={[null, 12]}
         >
           <Link to={galleryItem.slug}>
             <StyledImg
