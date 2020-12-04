@@ -1,13 +1,13 @@
 ---
-language: lt
 templateKey: audio-post
+language: lt
 title: Arsenas iš giedro dangaus / Arsenic From the Clear Sky [LT]
 date: 2020-08-01T11:21:25.201Z
 image: /img/sienlaukio_vandenviete.v.pilibaitytes_lrt-2-.jpg
 imageCredits: ""
-shortDescription: "Two-part radio documentary series about arsenic pollution in
-  drinking water in Lithuania.  Awarded investigative journalism prize by the
-  Vilnius Institute for Policy Analysis in 2018. "
+shortDescription: "--translate: Two-part radio documentary series about arsenic
+  pollution in drinking water in Lithuania.  Awarded investigative journalism
+  prize by the Vilnius Institute for Policy Analysis in 2018. "
 ---
 
 Žmonės pasakoja, kad arsenas Raseinių rajono geriamame vandenyje pernai atsirado netikėtai, kaip perkūnas iš giedro dangaus. „Sakydavo, kad vanduo idealus čia pas mus, Ražaitėliuose,“ – prisimena šio nedidelio kaimo senbuvis Česlovas.
