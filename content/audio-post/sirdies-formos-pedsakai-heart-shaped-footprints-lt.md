@@ -1,12 +1,13 @@
 ---
-language: lt
 templateKey: audio-post
+language: lt
 title: Širdies formos pėdsakai / Heart-shaped Footprints [LT]
 date: 2017-11-26T12:21:25.201Z
 image: /img/2017_vilkas_v.karpavičius.jpg
 imageCredits: ""
-shortDescription: "Five stories about encounters with wolves.  Nominated for the
-  PRIX EUROPA, Best Radio Documentary category in 2018.  "
+shortDescription: "--translate: Five stories about encounters with
+  wolves.  Nominated for the PRIX EUROPA, Best Radio Documentary category in
+  2018.  "
 ---
 
 Mažai, kas jį matė. Vieni jau daug metų svajoja sutikti. Kitiems ir pėdsakų gana, kad pasijustų nejaukiai. Penkios istorijos apie susitikimus su plėšrūnais, kurie nepalieka abejingų. 
