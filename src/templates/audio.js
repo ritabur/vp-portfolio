@@ -64,7 +64,6 @@ export const categoryPageQuery = graphql`
           }
           frontmatter {
             title
-            link
             shortDescription
             image {
               childImageSharp {

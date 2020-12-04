@@ -14,7 +14,7 @@ const AudioPost = ({ data, location }) => {
   const {
     markdownRemark: {
       html,
-      frontmatter: { title, link, shortDescription, image, imageCredits },
+      frontmatter: { title, shortDescription, image, imageCredits },
     },
   } = data;
 
@@ -37,9 +37,6 @@ const AudioPost = ({ data, location }) => {
           >
             <Heading>{title}</Heading>
             <Base content={html} />
-            <Box pt={16}>
-              <Base content={`<a href="${link}" target="_blank">${link}</a>`} />
-            </Box>
           </ContentBoxWithImage>
           <CommentSection pathname={location.pathname} />
         </Box>
@@ -57,7 +54,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         imageCredits
-        link
         shortDescription
         image {
           childImageSharp {
