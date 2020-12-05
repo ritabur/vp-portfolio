@@ -27,6 +27,7 @@
 * ~~V: hrefs in posts target=blank~~
 * ~~remove homepage mobile horizontal overflow~~
 * V?: add meta description for audio and stories SEO ranking
+* V?: add default image for homepage og:image
 * V?: go through SEO
 * fix/test file uploads as part of markdown file links
 * add pageview tracking
