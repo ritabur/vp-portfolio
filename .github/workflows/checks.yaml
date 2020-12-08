@@ -19,3 +19,5 @@ jobs:
           build: npm run build
           start: npm run serve
           wait-on: http://localhost:9000
+        env:
+          CYPRESS_baseUrl: 'http://localhost:9000'
