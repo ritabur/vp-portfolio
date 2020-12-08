@@ -26,6 +26,10 @@
 * ~~localization https://github.com/netlify/netlify-cms/pull/4139~~
 * ~~V: hrefs in posts target=blank~~
 * ~~remove homepage mobile horizontal overflow~~
+* fix font weight for FF
+* add more e2e tests for language switching
+* update deps
+* sourcemaps
 * V?: add meta description for audio and stories SEO ranking
 * V?: add default image for homepage og:image
 * V?: go through SEO
@@ -41,8 +45,6 @@
 * a11y
 * TS
 * transitions for mobile menu and pages
-* add more e2e tests
-* sourcemaps
 * rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa
 ---
 post-release:
