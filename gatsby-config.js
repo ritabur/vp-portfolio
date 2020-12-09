@@ -91,10 +91,10 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-external-links",
-          }
-        ]
-      }
+            resolve: 'gatsby-remark-external-links',
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-i18n`,

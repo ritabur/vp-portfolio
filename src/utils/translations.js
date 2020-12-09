@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useAppContext } from 'context/AppContext';
 
 import EnTranslations from 'translations/en.json';
