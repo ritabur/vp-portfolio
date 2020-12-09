@@ -113,6 +113,7 @@ export const GlobalResetStyle = createGlobalStyle`
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   blockquote,

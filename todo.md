@@ -28,9 +28,9 @@
 * ~~remove homepage mobile horizontal overflow~~
 * ~~add twitter tags~~
 * ~~update deps~~
+* ~~fix font weight for FF~~
 * fix firebase rules
 * fix AppContext and translations.js
-* fix font weight for FF
 * don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * fix rel=canonical for SEO score
 * add lint staged
