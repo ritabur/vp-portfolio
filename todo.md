@@ -29,10 +29,10 @@
 * ~~add twitter tags~~
 * ~~update deps~~
 * ~~fix font weight for FF~~
+* ~~fix rel=canonical for SEO score~~
 * fix firebase rules
 * fix AppContext and translations.js
 * don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
-* fix rel=canonical for SEO score
 * add lint staged
 * fix eslints
 * add more e2e tests for language switching
