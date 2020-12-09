@@ -26,17 +26,19 @@
 * ~~localization https://github.com/netlify/netlify-cms/pull/4139~~
 * ~~V: hrefs in posts target=blank~~
 * ~~remove homepage mobile horizontal overflow~~
-* fix font weight for FF
-* add more e2e tests for language switching
+* ~~add twitter tags~~
 * update deps
+* fix font weight for FF
+* don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
+* fix rel=canonical for SEO score
+* add more e2e tests for language switching
 * sourcemaps
-* V?: add meta description for audio and stories SEO ranking
-* V?: add default image for homepage og:image
+* V?: add meta description for audio, stories and index SEO ranking
+* V?: add default image for homepage og:image & twitter tag
 * V?: go through SEO
 * fix/test file uploads as part of markdown file links
 * add pageview tracking
 * test on different browsers/devices
-* don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * Play icon for LRT links in post
 * iframe from LRT or audioplayer (?): fallback image for homepage (?)
 * move single pages e.g. about from templates to pages https://youtu.be/Y8PXMbr0Kqo?t=524
