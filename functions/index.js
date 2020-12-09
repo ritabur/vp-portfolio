@@ -36,5 +36,5 @@ exports.sendEmailNotification = functions.firestore
         html: emailHtmlText,
       })
       .then(() => console.log(`Email sent to ${receiveremail} successfully`))
-      .catch(error => console.log(`---ERROR: ${error}`));
+      .catch((error) => console.log(`---ERROR: ${error}`));
   });

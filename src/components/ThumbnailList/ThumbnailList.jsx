@@ -10,8 +10,8 @@ const H2 = styled.h2`
   position: relative;
   display: inline-block;
   margin-bottom: 12px;
-  font-size: ${props => props.theme.fontSizes.medium};
-  font-weight: ${props => props.theme.fontWeights.bold};
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
 
   // TODO: extract together with stories hover effect
   &:after {
@@ -21,7 +21,7 @@ const H2 = styled.h2`
     height: 1px;
     bottom: -4px;
     left: 0;
-    background-color: ${props => props.theme.colors.bodyPrimary};
+    background-color: ${(props) => props.theme.colors.bodyPrimary};
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
@@ -35,13 +35,13 @@ const H2 = styled.h2`
 `;
 
 const Thumbnails = styled(Box)`
-  background-color: ${props => props.theme.colors.contentBackground};
+  background-color: ${(props) => props.theme.colors.contentBackground};
 `;
 
 const StyledLink = styled(Link)`
   display: inline-block;
   width: 100%;
-  color: ${props => props.theme.colors.bodyPrimary};
+  color: ${(props) => props.theme.colors.bodyPrimary};
   text-decoration: none;
 `;
 

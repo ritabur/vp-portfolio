@@ -7,7 +7,7 @@ import { Box } from 'components/Box';
 const IMAGE_CREDITS_COLOR = '#373737';
 
 const StyledContainer = styled(Box)`
-  background-color: ${props => props.theme.colors.contentBackground};
+  background-color: ${(props) => props.theme.colors.contentBackground};
 `;
 
 const StyledImg = styled(Img)`
@@ -16,8 +16,8 @@ const StyledImg = styled(Img)`
 `;
 
 const ContentFooter = styled(Box)`
-  background-color: ${props => props.theme.colors.contentFooter};
-  font-size: ${props => props.theme.fontSizes.small};
+  background-color: ${(props) => props.theme.colors.contentFooter};
+  font-size: ${(props) => props.theme.fontSizes.small};
   text-transform: uppercase;
   text-align: center;
 `;
@@ -25,7 +25,7 @@ const ContentFooter = styled(Box)`
 const ImageCredits = styled.div`
   padding-top: 2px;
   padding-right: 20px;
-  font-size: ${props => props.theme.fontSizes.smMedium};
+  font-size: ${(props) => props.theme.fontSizes.smMedium};
   font-style: italic;
   color: ${IMAGE_CREDITS_COLOR};
   text-align: right;

@@ -8,13 +8,13 @@ import { Comment } from './Comment';
 
 export const SectionDivider = styled(Box)`
   height: 1px;
-  background-color: ${props => props.theme.colors.lightDivider};
+  background-color: ${(props) => props.theme.colors.lightDivider};
 `;
 
 export const CommentsTitle = styled.div`
   margin-bottom: 30px;
   font-size: 16px;
-  font-weight: ${props => props.theme.fontWeights.bold};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
 `;
 
 export const CommentSection = ({ pathname }) => {
@@ -24,10 +24,10 @@ export const CommentSection = ({ pathname }) => {
     const unsubscribe = firestore
       .collection(`comments`)
       .orderBy('time', 'desc')
-      .onSnapshot(snapshot => {
+      .onSnapshot((snapshot) => {
         const posts = snapshot.docs
-          .filter(doc => doc.data().slug === pathname)
-          .map(doc => {
+          .filter((doc) => doc.data().slug === pathname)
+          .map((doc) => {
             return { id: doc.id, ...doc.data() };
           });
 
@@ -38,7 +38,9 @@ export const CommentSection = ({ pathname }) => {
   }, [pathname]);
 
   const getComments = () => {
-    const commentsWithNoReplies = comments.filter(comment => !comment.parentId);
+    const commentsWithNoReplies = comments.filter(
+      (comment) => !comment.parentId
+    );
 
     return (
       <>

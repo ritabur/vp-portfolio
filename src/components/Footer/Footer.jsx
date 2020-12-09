@@ -7,19 +7,19 @@ import { media as MEDIA } from 'lib/media';
 import { useAppContext } from 'context/AppContext';
 
 const StyledFooter = styled(Box)`
-  border: 1px solid ${props => props.theme.colors.divider};
-  font-size: ${props => props.theme.fontSizes.smMedium};
+  border: 1px solid ${(props) => props.theme.colors.divider};
+  font-size: ${(props) => props.theme.fontSizes.smMedium};
 `;
 
 const Divider = styled.div`
   height: 1px;
   width: 100%;
-  background-color: ${props => props.theme.colors.lightDivider};
+  background-color: ${(props) => props.theme.colors.lightDivider};
 `;
 
 const StyledH4 = styled.h4`
   margin-bottom: 8px;
-  font-weight: ${props => props.theme.fontWeights.bold};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
   text-transform: uppercase;
 
   ${MEDIA.above.sm`

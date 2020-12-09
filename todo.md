@@ -27,10 +27,14 @@
 * ~~V: hrefs in posts target=blank~~
 * ~~remove homepage mobile horizontal overflow~~
 * ~~add twitter tags~~
-* update deps
+* ~~update deps~~
+* fix firebase rules
+* fix AppContext and translations.js
 * fix font weight for FF
 * don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * fix rel=canonical for SEO score
+* add lint staged
+* fix eslints
 * add more e2e tests for language switching
 * sourcemaps
 * V?: add meta description for audio, stories and index SEO ranking

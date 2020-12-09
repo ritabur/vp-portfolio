@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import { Layout } from 'components/Layout';
@@ -11,7 +10,7 @@ import { GoBack } from 'components/GoBack';
 import { SEO } from 'components/SEO';
 import { CommentSection } from 'components/CommentSection';
 
-const Story = ({ pageContext, data, location }) => {
+const Story = ({ data, location }) => {
   const {
     markdownRemark: {
       frontmatter: { title, date, image, imageCredits, shortDescription },
@@ -45,12 +44,6 @@ const Story = ({ pageContext, data, location }) => {
       </Box>
     </Layout>
   );
-};
-
-Story.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
 };
 
 export default Story;

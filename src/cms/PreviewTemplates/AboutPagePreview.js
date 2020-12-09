@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React from 'react';
 import About from 'templates/about';
 
-const AboutPagePreview = props => {
+const AboutPagePreview = (props) => {
   const bla = props.entry.getIn(['data']).toJS();
 
   // var image = props.entry.getIn(['data', 'mainImage', 'image']);

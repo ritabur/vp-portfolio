@@ -7,12 +7,12 @@ import { languages } from 'const';
 import { routeToPage } from 'utils/routing';
 
 const StyledLanguageContainer = styled.div`
-  background-color: ${props => props.theme.colors.contentBackground};
+  background-color: ${(props) => props.theme.colors.contentBackground};
 `;
 
 const Language = styled.div`
   position: relative;
-  color: ${props => props.theme.colors.bodyPrimary};
+  color: ${(props) => props.theme.colors.bodyPrimary};
   cursor: pointer;
   &:after {
     content: '';
@@ -22,16 +22,16 @@ const Language = styled.div`
     left: 0;
     right: 0;
     bottom: -2px;
-    background-color: ${props => props.theme.colors.bodyPrimary};
+    background-color: ${(props) => props.theme.colors.bodyPrimary};
   }
 
-  ${props =>
+  ${(props) =>
     props.isActive &&
     `
     pointer-events: none;    
   `}
 
-  ${props =>
+  ${(props) =>
     !props.isActive &&
     `
     &:after {
@@ -43,7 +43,7 @@ const Language = styled.div`
 export const LanguageSwitch = ({ className }) => {
   const { selectedLanguage, setLanguage } = useAppContext();
 
-  const handleClick = language => {
+  const handleClick = (language) => {
     setLanguage(language);
     routeToPage(language);
   };

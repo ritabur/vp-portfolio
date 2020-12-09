@@ -5,12 +5,12 @@ import { Box } from 'components/Box';
 import ArrowIcon from 'assets/arrow.svg';
 
 const GoBackWrapper = styled(Box)`
-  background-color: ${props => props.theme.colors.contentBackground};
+  background-color: ${(props) => props.theme.colors.contentBackground};
 `;
 
 const GoBackContent = styled(Box)`
-  font-size: ${props => props.theme.fontSizes.medium};
-  font-weight: ${props => props.theme.fontWeights.bold};
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
   letter-spacing: 0.5px;
   cursor: pointer;
 `;

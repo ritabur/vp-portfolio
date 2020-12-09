@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { AudioGallery } from './AudioGallery';
 
 export const AudioGalleryWithData = ({ featuredEntries }) => {
-  const featuredEntryNames = featuredEntries.map(item => [...item.items]);
+  const featuredEntryNames = featuredEntries.map((item) => [...item.items]);
   const itemsToFetch = [].concat(...featuredEntryNames);
 
   // TODO: gatsby useStaticQuery doesn't accept variables: https://github.com/gatsbyjs/gatsby/issues/10482,
@@ -43,8 +43,8 @@ export const AudioGalleryWithData = ({ featuredEntries }) => {
     allMarkdownRemark: { edges },
   } = data;
 
-  const galleryEntries = edges.filter(item => {
-    return itemsToFetch.find(title => title === item.node.frontmatter.title);
+  const galleryEntries = edges.filter((item) => {
+    return itemsToFetch.find((title) => title === item.node.frontmatter.title);
   });
 
   const galleryEntriesFormatted = galleryEntries.map(({ node }) => {

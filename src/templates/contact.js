@@ -11,10 +11,7 @@ import { t } from 'utils/translations';
 
 const Contact = ({ data, location }) => {
   const {
-    markdownRemark: {
-      frontmatter: { title },
-      html,
-    },
+    markdownRemark: { html },
   } = data;
 
   return (
@@ -38,9 +35,6 @@ export const contactPageQuery = graphql`
   query ContactPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
-      frontmatter {
-        title
-      }
     }
   }
 `;

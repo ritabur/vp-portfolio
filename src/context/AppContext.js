@@ -6,19 +6,20 @@ const AppContext = React.createContext({});
 
 export const useAppContext = () => React.useContext(AppContext);
 
+// TODO: rethink context setting (check eslint)
 export const AppContextProvider = ({ children }) => {
   React.useEffect(() => {
-    const splitPath = location.pathname.split('/');
+    const splitPath = window.location.pathname.split('/');
     const isLocalizedPath = Object.values(languages).includes(splitPath[1]);
     setLanguage(isLocalizedPath ? splitPath[1] : BASE_LANGUAGE);
   }, []); // eslint-disable-line
 
-  const setLanguage = (selectedLanguage => {
+  const setLanguage = (selectedLanguage) => {
     setState({
       ...state,
       selectedLanguage,
     });
-  });
+  };
 
   const initialState = {
     selectedLanguage: '',

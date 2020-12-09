@@ -2,7 +2,7 @@ import { breakpoints as BREAKPOINTS } from 'lib/breakpoints';
 
 const { sm, md, lg, xl } = BREAKPOINTS;
 
-const breakpoints = [sm.min, md.min, lg.min, xl.min].map(b => `${b / 16}em`);
+const breakpoints = [sm.min, md.min, lg.min, xl.min].map((b) => `${b / 16}em`);
 
 const theme = {
   breakpoints,

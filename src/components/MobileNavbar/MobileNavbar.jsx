@@ -26,17 +26,17 @@ export const MobileNavbar = () => {
   const { selectedLanguage, setLanguage } = useAppContext();
 
   const languagesToSelect = Object.values(languages).filter(
-    language => language !== selectedLanguage
+    (language) => language !== selectedLanguage
   );
-
-  const handleLanguageSwitch = lang => {
-    setLanguage(lang);
-    handleClick();
-    routeToPage(lang);
-  };
 
   const handleClick = () => {
     setOverlayOpen(!isOverlayOpen);
+  };
+
+  const handleLanguageSwitch = (lang) => {
+    setLanguage(lang);
+    handleClick();
+    routeToPage(lang);
   };
 
   const LinkContainer = () => (
@@ -82,7 +82,7 @@ export const MobileNavbar = () => {
       </StyledLink>
       <Divider />
       <Box pt={25}>
-        {languagesToSelect.map(lang => (
+        {languagesToSelect.map((lang) => (
           <StyledButton
             secondary
             onClick={() => handleLanguageSwitch(lang)}
@@ -107,7 +107,7 @@ export const MobileNavbar = () => {
           <h1>Vaida Pilibaitytė</h1>
         </StyledHeaderLink>
         <Transition in={isOverlayOpen} timeout={duration}>
-          {state => (
+          {(state) => (
             <StyledOverlay
               style={{
                 ...defaultStyle,

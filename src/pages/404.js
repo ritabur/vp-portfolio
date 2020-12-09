@@ -15,8 +15,8 @@ import SignalIcon from 'assets/signal.svg';
 const StyledLink = styled(Link)`
   display: inline-block;
   padding: 20px;
-  color: ${props => props.theme.colors.bodyPrimary};
-  font-size: ${props => props.theme.fontSizes.medium};
+  color: ${(props) => props.theme.colors.bodyPrimary};
+  font-size: ${(props) => props.theme.fontSizes.medium};
 `;
 
 const NotFoundPage = () => {

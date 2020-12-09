@@ -6,7 +6,7 @@ import { Box } from 'components/Box';
 import { media as MEDIA } from 'lib/media';
 
 const StyledContainer = styled(Box)`
-  background-color: ${props => props.theme.colors.contentBackground};
+  background-color: ${(props) => props.theme.colors.contentBackground};
 `;
 
 const StyledImg = styled(Img)`

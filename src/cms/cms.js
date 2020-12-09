@@ -1,3 +1,4 @@
+/* eslint-disable */
 import CMS from 'netlify-cms-app';
 
 import withStyled from './withSC';

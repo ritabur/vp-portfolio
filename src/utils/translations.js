@@ -8,7 +8,8 @@ const translations = {
   lt: LtTranslations,
 };
 
-export const t = key => {
+export const t = (key) => {
+  // TODO: don't use hooks here
   const { selectedLanguage } = useAppContext();
 
   if (selectedLanguage) {
@@ -18,4 +19,5 @@ export const t = key => {
     }
     return key;
   }
+  return null;
 };

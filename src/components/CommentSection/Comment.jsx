@@ -8,10 +8,10 @@ import { CommentForm } from './CommentForm';
 
 export const Comment = ({ comment, comments, showDivider, pathname }) => {
   const [isReplyFormOpen, setReplyFormOpen] = React.useState(false);
-  const childComments = comments.filter(item => item.parentId === comment.id);
+  const childComments = comments.filter((item) => item.parentId === comment.id);
   const hasChildComments = childComments.length > 0;
 
-  const getFormattedDate = timestamp =>
+  const getFormattedDate = (timestamp) =>
     `${dayjs(timestamp.toDate()).format('MMMM D, YYYY')} | ${dayjs(
       timestamp.toDate()
     ).format('HH:mm')}`;
@@ -46,7 +46,7 @@ export const Comment = ({ comment, comments, showDivider, pathname }) => {
   );
 
   const getChildComments = () =>
-    childComments.map(item => (
+    childComments.map((item) => (
       <Box ml={50} mb={30} key={item.id}>
         {getCommentBody(item.name, item.time, item.content)}
       </Box>

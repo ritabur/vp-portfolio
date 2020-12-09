@@ -11,7 +11,7 @@ import { Base } from 'components/Base';
 import { t } from 'utils/translations';
 
 const StyledLink = styled(Link)`
-  color: ${props => props.theme.colors.bodyPrimary};
+  color: ${(props) => props.theme.colors.bodyPrimary};
   text-decoration: none;
 `;
 
@@ -26,7 +26,7 @@ const StyledHeading = styled(Heading)`
     height: 1px;
     bottom: -4px;
     left: 0;
-    background-color: ${props => props.theme.colors.bodyPrimary};
+    background-color: ${(props) => props.theme.colors.bodyPrimary};
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;

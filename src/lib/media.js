@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { css } from 'styled-components';
 import { breakpoints, sizes } from './breakpoints';
 
@@ -37,18 +38,18 @@ const betweenCss = (minPx, maxPx, ...args) =>
           }
         `;
 
-const from = fromPx => {
+const from = (fromPx) => {
   const fromFn = (...args) => minCss(fromPx, ...args);
-  fromFn.to = toPx => (...css) => betweenCss(fromPx, toPx, ...css);
+  fromFn.to = (toPx) => (...css) => betweenCss(fromPx, toPx, ...css);
   return fromFn;
 };
-const to = toPx => {
+const to = (toPx) => {
   const toFn = (...args) => maxCss(toPx, ...args);
-  toFn.from = fromPx => (...css) => betweenCss(fromPx, toPx, ...css);
+  toFn.from = (fromPx) => (...css) => betweenCss(fromPx, toPx, ...css);
   return toFn;
 };
 
-sizes.forEach(size => {
+sizes.forEach((size) => {
   const { min, max } = breakpoints[size];
 
   const fromFn = (...args) => minCss(min, ...args);
@@ -57,7 +58,7 @@ sizes.forEach(size => {
   fromFn.to = {};
   toFn.from = {};
 
-  sizes.forEach(size => {
+  sizes.forEach((size) => {
     fromFn.to[size] = (...css) =>
       betweenCss(min, breakpoints[size].max, ...css);
     toFn.from[size] = (...css) =>

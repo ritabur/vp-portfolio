@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 import { Layout } from 'components/Layout';
@@ -12,7 +11,7 @@ import { media as MEDIA } from 'lib/media';
 const StyledH1 = styled.h1`
   padding-top: 12px;
   padding-bottom: 0;
-  font-weight: ${props => props.theme.fontWeights.bold};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
   line-height: 1.5;
   text-align: center;
   text-transform: lowercase;
@@ -57,14 +56,6 @@ const Index = ({ data }) => {
       </Box>
     </Layout>
   );
-};
-
-Index.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
 };
 
 export default Index;

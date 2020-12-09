@@ -13,7 +13,7 @@ const StyledImg = styled(Img)`
   position: relative;
 
   &:after {
-    content: "${props => props.title}";
+    content: '${(props) => props.title}';
     display: block;
     opacity: 1;
     position: absolute;
@@ -22,8 +22,8 @@ const StyledImg = styled(Img)`
     margin-left: 15px;
     padding: 4px 12px;
     color: white;
-    background-color: ${props => props.theme.colors.bodyPrimary};
-    transition: opacity .2s;
+    background-color: ${(props) => props.theme.colors.bodyPrimary};
+    transition: opacity 0.2s;
   }
 
   ${MEDIA.above.md`

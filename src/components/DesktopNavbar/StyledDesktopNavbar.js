@@ -5,15 +5,15 @@ import { Box } from 'components/Box';
 
 export const StyledH2 = styled.h2`
   margin-bottom: 35px;
-  font-size: ${props => props.theme.fontSizes.large};
-  font-weight: ${props => props.theme.fontWeights.bold};
+  font-size: ${(props) => props.theme.fontSizes.large};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
   text-transform: uppercase;
 `;
 
 export const Divider = styled.div`
   height: 1px;
   width: 230px;
-  background-color: ${props => props.theme.colors.divider};
+  background-color: ${(props) => props.theme.colors.divider};
 `;
 
 export const LinkWrapper = styled.div`
@@ -21,29 +21,29 @@ export const LinkWrapper = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-  color: ${props => props.theme.colors.bodySecondary};
-  font-size: ${props => props.theme.fontSizes.medium};
-  font-weight: ${props => props.theme.fontWeights.bold};
+  color: ${(props) => props.theme.colors.bodySecondary};
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.5px;
 
-  &.${props => props.activeClassName} {
-    color: ${props => props.theme.colors.bodyPrimary};
+  &.${(props) => props.activeClassName} {
+    color: ${(props) => props.theme.colors.bodyPrimary};
   }
 `;
 
 export const StyledTitleLink = styled(Link)`
-  color: ${props => props.theme.colors.bodyPrimary};
+  color: ${(props) => props.theme.colors.bodyPrimary};
   text-decoration: none;
 `;
 
 export const SocialMediaLink = styled.a`
-  font-size: ${props => props.theme.fontSizes.small};
-  font-weight: ${props => props.theme.fontWeights.bold};
+  font-size: ${(props) => props.theme.fontSizes.small};
+  font-weight: ${(props) => props.theme.fontWeights.bold};
   text-transform: uppercase;
   text-decoration: none;
-  color: ${props => props.theme.colors.bodyPrimary};
+  color: ${(props) => props.theme.colors.bodyPrimary};
 
   &:not(:last-child):after {
     content: '/';

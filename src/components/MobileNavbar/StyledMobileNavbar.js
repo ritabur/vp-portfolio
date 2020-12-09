@@ -11,7 +11,7 @@ export const GlobaStyle = createGlobalStyle`
   html,
   body,
   #root {
-    overflow: ${props => (props.isOverlayOpen ? 'hidden' : 'auto')};
+    overflow: ${(props) => (props.isOverlayOpen ? 'hidden' : 'auto')};
   };
 `;
 
@@ -29,11 +29,11 @@ export const transitionStyles = {
 
 export const Divider = styled(Box)`
   height: 1px;
-  background-color: ${props => props.theme.colors.divider};
+  background-color: ${(props) => props.theme.colors.divider};
 `;
 
 export const StyledOverlay = styled.div`
-  background: ${props => props.theme.colors.contentBackground};
+  background: ${(props) => props.theme.colors.contentBackground};
   position: fixed;
   top: 0;
   bottom: 0;
@@ -44,12 +44,12 @@ export const StyledOverlay = styled.div`
 export const StyledLink = styled(Link)`
   display: inline-block;
   padding: 15px 0;
-  color: ${props => props.theme.colors.bodyPrimary};
+  color: ${(props) => props.theme.colors.bodyPrimary};
   font-size: 28px;
   text-decoration: none;
   letter-spacing: 0.5px;
 
-  &.${props => props.activeClassName} {
+  &.${(props) => props.activeClassName} {
     position: relative;
 
     &:after {
@@ -57,7 +57,7 @@ export const StyledLink = styled(Link)`
       position: absolute;
       width: 100%;
       height: 70%;
-      background: ${props => props.theme.colors.lightDivider};
+      background: ${(props) => props.theme.colors.lightDivider};
       left: 0;
       top: 50%;
       transform: translateY(-50%);
@@ -69,7 +69,7 @@ export const StyledLink = styled(Link)`
 
 export const StyledHeaderLink = styled(Link)`
   text-decoration: none;
-  color: ${props => props.theme.colors.bodyPrimary};
+  color: ${(props) => props.theme.colors.bodyPrimary};
 `;
 
 export const StyledLinkContainer = styled(Box)`

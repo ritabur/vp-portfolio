@@ -2,7 +2,7 @@ import { navigate } from 'gatsby';
 
 import { BASE_LANGUAGE, languages } from 'const';
 
-export const goHome = selectedLanguage => {
+export const goHome = (selectedLanguage) => {
   return selectedLanguage !== BASE_LANGUAGE ? `/${selectedLanguage}/` : `/`;
 };
 
@@ -13,12 +13,12 @@ export const getLocalizedPath = (path, selectedLanguage) => {
     : `/${path}`;
 };
 
-export const routeToPage = language => {
+export const routeToPage = (language) => {
   const isLocalizedUrl = Object.values(languages).includes(
-    location.pathname.split('/')[1]
+    window.location.pathname.split('/')[1]
   );
 
-  const splitPaths = location.pathname.split('/').filter(Boolean);
+  const splitPaths = window.location.pathname.split('/').filter(Boolean);
 
   const navigateToLocalizedPath = () => {
     splitPaths.splice(0, 1);
@@ -30,12 +30,12 @@ export const routeToPage = language => {
     }
     // https://github.com/netlify/netlify-cms/issues/857
     if (
-      location.pathname.includes('/audio-post/') ||
-      location.pathname.includes('/story/')
+      window.location.pathname.includes('/audio-post/') ||
+      window.location.pathname.includes('/story/')
     ) {
       return navigate('/');
     }
-    return navigate(`/${language}${location.pathname}`);
+    return navigate(`/${language}${window.location.pathname}`);
   };
 
   const navigateToBaseLangPath = () => {
