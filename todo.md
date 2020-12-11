@@ -30,10 +30,10 @@
 * ~~update deps~~
 * ~~fix font weight for FF~~
 * ~~fix rel=canonical for SEO score~~
-* ~~don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)~~
 * fix firebase rules
 * optimize images for mobile (check lighthouse)
 * fix AppContext and translations.js
+* don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * add lint staged
 * fix eslints
 * add more e2e tests for language switching
