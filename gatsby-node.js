@@ -5,6 +5,7 @@
  */
 
 const path = require('path');
+const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
 const languages = ['en', 'lt'];
 const baseLang = 'lt';

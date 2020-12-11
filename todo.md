@@ -31,7 +31,6 @@
 * ~~fix font weight for FF~~
 * ~~fix rel=canonical for SEO score~~
 * fix firebase rules
-* optimize images for mobile (check lighthouse)
 * fix AppContext and translations.js
 * don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * add lint staged
