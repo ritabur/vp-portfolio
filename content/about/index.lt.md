@@ -11,6 +11,8 @@ mainImage:
 
 Jau beveik du dešimtmečius dirbu LRT RADIJUJE, kur rengiu laidą apie aplinkosaugą „Vienkartinė planeta“ ir kuriu radijo dokumentikas. Man patinka dirbti su žodžiu ir garsu - fiksuoti, karpyti, dėlioti ir sluoksniuoti, pastebint naujas prasmes ir kuriant emociškai paveikias patirtis tiems, kurie klausosi.
 
+Dabar rašau knygą apie Lietuvą klimato krizės akivaizdoje.
+
 **Daugiau:**\
 LRT.lt portale: https://www.lrt.lt/tema/vaida-pilibaityte
 [Reabilitavusios emociją. Nara tinklalaidės epizodas](https://nara.lt/lt/articles-lt/reabilitavusios-emocija-interviu-su-lrt-radijo-dokumentikos-kurejomis)

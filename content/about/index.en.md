@@ -11,6 +11,8 @@ I am award-winning radio producer and experienced audio storyteller with special
 
 I work for the Lithuanian national broadcaster LRT, where I produce and co-host a weekly radio programme on environment and radio documentaries – layered, in depth crafted non-fiction stories where a combination of voice and soundscapes helps create a special space for human mind and soul to wonder, feel, understand and discover.
 
+I am also working on a book about Lithuania in the face on climate crisis.
+
 **Awards** 
 
 * PRIX EUROPA nomination in Best European Radio Documentary category, 2018  
