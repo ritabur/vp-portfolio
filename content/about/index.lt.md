@@ -9,7 +9,7 @@ mainImage:
 ---
 Esu radijo prodiuserė, dažniausiai pasakojanti istorijas apie žmones, kurie bando išsaugoti mūsų planetą. \
 \
-Jau beveik du dešimtmečius dirbu LRT RADIJUJE, kur drauge su kolegėmis rengiame laidą apie aplinkosaugą „Vienkartinė planeta“ ir dokumentines radijo laidas. Man patinka dirbti su žodžiu ir garsu - fiksuoti, karpyti, dėlioti ir sluoksniuoti, pastebint naujas prasmes ir kuriant emociškai paveikias patirtis.
+Jau beveik du dešimtmečius dirbu LRT RADIJUJE, kur rengiu laidą apie aplinkosaugą „Vienkartinė planeta“ irkuriu radijo dokumentikas. Man patinka dirbti su žodžiu ir garsu - fiksuoti, karpyti, dėlioti ir sluoksniuoti, pastebint naujas prasmes ir kuriant emociškai paveikias patirtis tiems, kurie klausosi.
 
 **Daugiau mano darbų:**
 
