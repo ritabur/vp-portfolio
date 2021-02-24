@@ -4,8 +4,8 @@ language: lt
 path: /about
 title: "Apie "
 mainImage:
-  image: /img/2017_j.-ovadnevaite_macehead.jpg
-  imageCredits: Mace Head atmosferos tyrimų stotyje Airijoje. Jurgitos Ovadnevaitės nuotrauka
+  image: /img/20201114_140034.jpg
+  imageCredits: ""
 ---
 Esu radijo prodiuserė, dažniausiai pasakojanti istorijas apie žmones, kurie bando išsaugoti mūsų planetą. \
 \

@@ -4,8 +4,8 @@ language: en
 path: /about
 title: "About "
 mainImage:
-  image: /img/2017_j.-ovadnevaite_macehead.jpg
-  imageCredits: In the field. Photo by Jurgita Ovadenvaitė
+  image: /img/20201114_140034.jpg
+  imageCredits: ""
 ---
 I am award-winning radio producer and experienced audio storyteller with special focus on how humans are trying to save this beautiful planet.
 
