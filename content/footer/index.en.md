@@ -3,7 +3,7 @@ language: en
 title: Footer
 path: /footer
 column1:
-  title: Journalism
+  title: Science journalism
   body: I am specialized reporter and co-host of an award-winning weekly public
     radio programme on environment.
 column2:
