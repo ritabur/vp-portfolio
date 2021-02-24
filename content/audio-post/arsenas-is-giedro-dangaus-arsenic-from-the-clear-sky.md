@@ -4,7 +4,7 @@ language: lt
 title: Arsenas iš giedro dangaus (2018)
 date: 2020-08-01T11:21:25.201Z
 image: /img/sienlaukio_vandenviete.v.pilibaitytes_lrt-2-.jpg
-imageCredits: ""
+imageCredits: Šienlaukio vandenvietė. Vaidos Pilibaitytės nutrauka
 shortDescription: Dviejų dalių radijo dokumentika apie geriamojo vandens taršą
   arsenu Raseinių r. 2018 m. pelnė Vilniaus politikos ir analizės instituto
   tiriamosios žurnalistikos premiją.
