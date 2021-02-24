@@ -7,7 +7,7 @@ mainImage:
   image: /img/20201114_140034.jpg
   imageCredits: ""
 ---
-<https://www.facebook.com/radijoklausykla>Esu radijo prodiuserė. Dažniausiai pasakoju istorijas apie žmones, kurie bando išsaugoti mūsų planetą. 
+[](https://www.facebook.com/radijoklausykla)Esu radijo prodiuserė. Dažniausiai pasakoju istorijas apie žmones, kurie bando išsaugoti mūsų planetą. 
 
 Jau beveik du dešimtmečius dirbu LRT RADIJUJE, kur rengiu laidą apie aplinkosaugą „Vienkartinė planeta“ ir kuriu radijo dokumentikas. Man patinka dirbti su žodžiu ir garsu - fiksuoti, karpyti, dėlioti ir sluoksniuoti, pastebint naujas prasmes ir kuriant emociškai paveikias patirtis tiems, kurie klausosi.
 
