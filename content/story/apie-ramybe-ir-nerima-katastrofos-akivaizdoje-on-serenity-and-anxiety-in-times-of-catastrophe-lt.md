@@ -13,8 +13,6 @@ shortDescription: Vieną rytą akis užkliūva už antraštės, kad vakar JAV,
   vos virš horizonto pakilusi saulė jau svilindavo, o dieną oro temperatūrai
   perkopus 38 °C kaitra imdavo kelti paniką.
 ---
-An essay written during international writers' residency program Writing@Molėtai in August 2020, in Lithuanian.
-
 *Molėtų r., 2020 m. rugpjūtis*
 
 Rugpjūtį Molėtų krašte gali pasijusti tarsi Claude Monet paveiksle. Šiltą pavakarę, saulei leidžiantis, žvejų valtys ežere sudvigubėja, kaip ir miškas horizonte, juodalksniais apaugusi nedidelė sala, vėjo šiūruojami nendrynai ir tingiai tarp jų šmirinėjančios antys. Visiškai užsimiršti neleidžia tik kitapus krante vis ritmingai sudunksintis greitkelis, gretimoje sodyboje amsintis šuva ar perpildytos nuotekų duobės išsiurbti atvažiavęs cisternos operatorius.
