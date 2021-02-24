@@ -8,9 +8,9 @@ imageCredits: Photo by Darius Petrulis
 shortDescription: "Two women struggle to protect trees and fail. A story of one
   civil movement and many green public places in Lithuania. "
 ---
-Two women struggle to protect trees and fail. A story of one civil movement and many green public places in Lithuania. Awarded first prize for environmental reporting in Lithuania in2020.
+Two women struggle to protect trees and fail. A story of one civil movement and many green public places in Lithuania. 
 
-*Awarded first prize for environmental reporting in Lithuania in 2020.
+*Awarded first prize for environmental reporting in Lithuania in 2020*
 
 First broadcast in 2020
 
