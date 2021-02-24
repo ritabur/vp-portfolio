@@ -4,4 +4,4 @@ language: lt
 path: /audio
 title: Audio
 ---
-Mano garso pasakojimų rinkinys aplinkosaugos ir mokslo temomis, skambėjęs per LRT RADIJĄ.
+Atrinkti mano garso pasakojimai, kuriuos trasliavo LRT RADIJAS.
