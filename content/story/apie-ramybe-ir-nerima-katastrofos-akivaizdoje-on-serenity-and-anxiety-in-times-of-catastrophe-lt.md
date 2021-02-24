@@ -1,12 +1,17 @@
 ---
-language: lt
 templateKey: story
-title: Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety in
-  Times of Catastrophe [LT]
+language: lt
+title: Apie ramybę ir nerimą katastrofos akivaizdoje
 date: 2020-09-27T07:30:00.000Z
 image: /img/20200813_moletai_v.pilibaityte.jpg
-imageCredits: ""
-shortDescription: "--translate: An essay written during international writers' residency program Writing@Molėtai in August 2020, in Lithuanian."
+imageCredits: Photo by Vaida Pilibaityė
+shortDescription: Vieną rytą akis užkliūva už antraštės, kad vakar JAV,
+  Kalifornijos valstijoje, Mirties slėnio nacionaliniame parke (angl. Death
+  Valley National Park) termometras rodė 54,4°C. Jei klimatologai patvirtins,
+  tai bus aukščiausia „patikimai užfiksuota“ temperatūra Žemėje<sup>1</sup>.
+  Žiūriu į tuos skaičius ir mintimis grįžtu į pernai metų birželį Berlyne, kai
+  vos virš horizonto pakilusi saulė jau svilindavo, o dieną oro temperatūrai
+  perkopus 38 °C kaitra imdavo kelti paniką.
 ---
 An essay written during international writers' residency program Writing@Molėtai in August 2020, in Lithuanian.
 
