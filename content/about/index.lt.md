@@ -7,13 +7,14 @@ mainImage:
   image: /img/20201114_140034.jpg
   imageCredits: ""
 ---
-Esu radijo prodiuserė. Dažniausiai pasakoju istorijas apie žmones, kurie bando išsaugoti mūsų planetą. 
+<https://www.facebook.com/radijoklausykla>Esu radijo prodiuserė. Dažniausiai pasakoju istorijas apie žmones, kurie bando išsaugoti mūsų planetą. 
 
 Jau beveik du dešimtmečius dirbu LRT RADIJUJE, kur rengiu laidą apie aplinkosaugą „Vienkartinė planeta“ ir kuriu radijo dokumentikas. Man patinka dirbti su žodžiu ir garsu - fiksuoti, karpyti, dėlioti ir sluoksniuoti, pastebint naujas prasmes ir kuriant emociškai paveikias patirtis tiems, kurie klausosi.
 
-**Daugiau:**[\
-Reabilitavusios emociją. Nara tinklalaidės epizodas ](https://nara.lt/lt/articles-lt/reabilitavusios-emocija-interviu-su-lrt-radijo-dokumentikos-kurejomis)\
+**Daugiau:**\
 LRT.lt portale: https://www.lrt.lt/tema/vaida-pilibaityte
+[Reabilitavusios emociją. Nara tinklalaidės epizodas](https://nara.lt/lt/articles-lt/reabilitavusios-emocija-interviu-su-lrt-radijo-dokumentikos-kurejomis)
+[Radijo klausykla. Garso pasakojimų entuziastų bendruomenė](https://www.facebook.com/radijoklausykla)
 
 **Įvertinimai**
 
