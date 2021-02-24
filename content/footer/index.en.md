@@ -3,11 +3,11 @@ language: en
 title: Footer
 path: /footer
 column1:
-  title: Science and environment reporting
-  body: Specialized  reporter and co-host of an award-winning weekly public radio
-    programme on environment.
+  title: Journalism
+  body: I am specialized reporter and co-host of an award-winning weekly public
+    radio programme on environment.
 column2:
-  title: Crafted radio documentaries
+  title: Radio documentaries
   body: Author of 30+ radio features on history, culture, science and nature since
     2006.
 column3:
