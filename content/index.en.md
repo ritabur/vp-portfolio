@@ -10,7 +10,6 @@ featuredEntries:
         in Times of Catastrophe [LT]
       - Story 1
       - Story 3
-      - Story 2
   - type: audio-post
     items:
       - Siding with the Trees
