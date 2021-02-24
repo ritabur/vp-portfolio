@@ -1,11 +1,11 @@
 ---
 templateKey: story
-language: en
+language: lt
 title: "Klimato krizės paradoksai: kai skirtumas tarp žodžių ir darbų gyvybiškai
   svarbus"
 date: 2021-02-10T11:00:00.000Z
 image: /img/20200927_155109.jpg
-imageCredits: Photo by Vaida Pilibaitytė
+imageCredits: Vaidos Pilibaitytės nuotrauka
 shortDescription: "Tyrimai rodo, kad žmonių, suvokiančių pasaulį ištikusios
   klimato krizės esmę, Lietuvoje daugėja. Bet dažnas mano, kad mūsų tai
   nepaveiks ir kad kažkas kitas turi imtis sprendimų. Iš kur ta praraja tarp
@@ -15,17 +15,18 @@ shortDescription: "Tyrimai rodo, kad žmonių, suvokiančių pasaulį ištikusio
 
 „Aš iš tiesų labai sutrinku, jeigu manęs paklausia „ar tu tiki klimato kaita“, – prisipažįsta  Kauno technologijos universiteto (KTU) profesorė Audronė Telešienė. – „Aš žinau, kad ji vyksta. Tikėti reikia dalykais, kurie yra transcendentiniai ir jų egzistavimui \[pagrįsti] faktų neturime.“
 
-Lietuvos aplinkosaugos diskursą – tai, kaip apie šiuos reiškinius kalbame ir kaip juos suvokiame – sociologė tyrinėja jau beveik du dešimtmečius . Ji žino, kokia yra svarbi klausimų formuluotė sociologinėse apklausose: „Mes sąmoningai vartojame žodį „manau“, – profesorė pažymi, kad dėl žodyno mokslininkai kartais diskutuoja ne vieną valandą, – čia psichologiniai dalykai – kaip žmogaus paklausi, kokias asociacijas jam sukels.“
+Lietuvos aplinkosaugos diskursą – tai, kaip apie šiuos reiškinius kalbame ir kaip juos suvokiame – sociologė tyrinėja jau beveik du [dešimtmečius](<https://www.lituanistika.lt/content/10487 >) . Ji žino, kokia yra svarbi klausimų formuluotė sociologinėse apklausose: „Mes sąmoningai vartojame žodį „manau“, – profesorė pažymi, kad dėl žodyno mokslininkai kartais diskutuoja ne vieną valandą, – čia psichologiniai dalykai – kaip žmogaus paklausi, kokias asociacijas jam sukels.“
 
-Bet kasdienėje kalboje žodžiai skraido kaip žvirbliai ir girdime klausimus apie „tikėjimą“ klimato kaita, naujo viruso pandemija ar net mokslu. „Man tai atrodo tas pats, kas klausti, ar \[tiki, kad] saulė pateka ryte, o vakare nusileidžia“, – palygina doc. Justas Kažys iš Vilniaus universiteto (VU) Klimato kaitos grupės.
-Atrodytų, koks skirtumas – ar klausimai dvasinio , ar mokslinio pobūdžio, dauguma Lietuvos gyventojų šiandien supranta, kad klimato kaita vyksta, ir tai kelia jiems nerimą. Daugiau ar mažiau dėl to nerimaujantys prisipažįsta 8 iš 10 žmonių (81 proc.) . 7 iš 10 (72 proc.) sako, kad tai „labai rimta“ problema.
+Bet kasdienėje kalboje žodžiai skraido kaip žvirbliai ir girdime klausimus apie „tikėjimą“ klimato kaita, naujo viruso pandemija ar net mokslu. „Man tai atrodo tas pats, kas klausti, ar \[tiki, kad] saulė pateka ryte, o vakare nusileidžia“, – palygina doc. Justas Kažys iš Vilniaus universiteto (VU) Klimato kaitos grupės.\
 
-Nors šis skaičius vos mažesnis už Europos Sąjungos (ES) vidurkį (79 proc.) ir nepalyginamas su pasaulio klimato mokslininkų šimtaprocentiniu sutarimu, dėl ko planeta kaista , bet turėtų būti pakankamas, kad skubėtume prisidėti prie šitos žmoniją ištikusios egzistencinės krizės sprendimo. \
+Atrodytų, koks skirtumas – ar klausimai [dvasinio](https://www.lrt.lt/naujienos/lietuvoje/2/1306481/apklausa-atskleide-lietuvos-zmoniu-poziuri-i-klimato-kaita-dauguma-tiki-bet-ekspertai-ragina-imtis-ir-veiksmu), ar mokslinio pobūdžio, dauguma Lietuvos gyventojų šiandien supranta, kad klimato kaita vyksta, ir tai kelia jiems nerimą. Daugiau ar mažiau dėl to [nerimaujantys prisipažįsta](<https://www.ebooks.ktu.lt/eb/1519/lietuvos-gyventoju-poziuriai-i-klimato-kaita-ir-energijos-gamybos-saltinius-trumpoji-tyrimo-rezultatu-ataskaita/ >) 8 iš 10 žmonių (81 proc.). 7 iš 10 (72 proc.) sako, kad tai [„labai rimta“ problema](<https://ec.europa.eu/clima/sites/clima/files/support/docs/report_2019_en.pdf >).
+
+Nors šis skaičius vos mažesnis už Europos Sąjungos (ES) vidurkį (79 proc.) ir nepalyginamas su pasaulio klimato mokslininkų [šimtaprocentiniu sutarimu](<https://journals.sagepub.com/doi/10.1177/0270467619886266 >), dėl ko planeta kaista, bet turėtų būti pakankamas, kad skubėtume prisidėti prie šitos žmoniją ištikusios egzistencinės krizės sprendimo. 
 
 Bet, kaip žinome, žodžiai ir darbai kartais skiriasi. Tik šiuo atveju tas neatitikimas gali būti gyvybiškai svarbus. 
 \
 **Kodėl reikia skubėti?**
-2018 m. Jungtinių tautų Tarpvyriausybinė klimato kaitos komisija (angl. *Intergovernmental Panel for Climate Change – IPCC*) perspėjo, kad užkirsti kelią nevaldomai klimato katastrofai liko vos 12 metų – taip savo antraštėje apibendrino britų „The Guardian“ . „Nors pasakyta gero linkint, vis vien tai – nesąmonė“, –  nukirto klimato mokslininkė iš JAV Kate Marvel . Pasak jos, laiko liko daugiau, ir kartu nebeliko visai. „Klimato kaita nėra skardis, nuo kurio nukrisime, o šlaitas, kuriuo slystame.“ Ji norėtų, kad bent jau sutartume apsisukti ir iš visų jėgų keberiotis aukštyn.\
+2018 m. Jungtinių tautų Tarpvyriausybinė klimato kaitos komisija (angl. *Intergovernmental Panel for Climate Change – IPCC*) perspėjo, kad užkirsti kelią nevaldomai klimato katastrofai liko vos 12 metų – taip savo antraštėje [apibendrino ](<https://www.theguardian.com/environment/2018/oct/08/global-warming-must-not-exceed-15c-warns-landmark-un-report >)britų „The Guardian“. „Nors pasakyta gero linkint, vis vien tai – nesąmonė“, –  [nukirto ](<https://blogs.scientificamerican.com/hot-planet/thinking-about-climate-on-a-dark-dismal-morning/ >)klimato mokslininkė iš JAV Kate Marvel. Pasak jos, laiko liko daugiau, ir kartu nebeliko visai. „Klimato kaita nėra skardis, nuo kurio nukrisime, o šlaitas, kuriuo slystame.“ Ji norėtų, kad bent jau sutartume apsisukti ir iš visų jėgų keberiotis aukštyn.\
 
 Pasaulio klimato mokslininkus vienijanti grupė savo ataskaitoje rašo, kad, siekiant stabilizuoti padėtį, būtina stabdyti globalų atšilimą ties 1,5 °C riba, maždaug perpus sumažinant šiltnamio dujų išmetimus iki 2030 . Be jokios abejonės, tai nereiškia, kad, praleidus tą terminą, jau po dešimtmečio ateis pasaulio pabaiga. Juk nors klimato krizė globali, jos poveikis įvairiose šalyse nevienodas. Tai tiesiog reiškia, kad, jei nieko nedarysime, arba taršą šiltnamio dujomis mažinsime per lėtai, planeta taps vis mažiau tinkama dabartinei bioįvairovei ir žmonėms. \
 
@@ -34,7 +35,7 @@ Pasaulio klimato mokslininkus vienijanti grupė savo ataskaitoje rašo, kad, sie
 2021-ųjų sausio pabaigoje, kai apie tai kalbamės nuotoliniu būdu, beveik visą Lietuvą užklupusi ne tik pandemija, bet ir išsiilgta, balta žiema. Vietomis fiksuojami nauji per parą iškritusio sniego rekordai . Daugiabučių kiemuose būriuojasi sniego seniai, iš parduotuvių lentynų šluojami sniego kastuvai, slidės, rogutės ir „katės“ batams. Sniego tiek, kad neatlaikę svorio pokšėdami masiškai lūžta medžiai, nutraukia laidus ir be elektros kelioms paroms palieka apie 290 tūkst. ESO klientų. Bandydami pasiekti gedimų vietas, klimpsta į pagalbą pasitelkti seniūnijų traktoriai ir ugniagesių automobiliai. \
 
 Tokiame kontekste nesunku trumpam pamiršti faktą, kad vidutinė metinė oro temperatūra Lietuvoje didėja pastarąjį pusšimtį metų . Faktas yra ir tai, kad ką tik pasibaigę metai buvo šilčiausi per visą stebėjimų istoriją. Lietuvos hidrometeorologijos tarnybos duomenimis, 2020-aisiais ji pirmą kartą peržengė 9 °C ribą, o praėjęs dešimtmetis tapo pačiu šilčiausiu dešimtmečiu nuo matavimų pradžios 18 a. . Šylant klimatui, mokslininkai prognozuoja, kad ateityje Lietuvoje galime tikėtis daugiau šiltesnių žiemų ir kritulių, dažnesnių ekstremalių karščio bangų ir sausringų vasarų.\
- 
+
 Pasak klimatologų, tai nereiškia, kad snieguotas žiemas galime pamiršti. Kaip LRT RADIJUI prognozavo VU profesorius Arūnas Bukantis, galbūt ir ateityje jų sulauksime kartą ar du per dešimtmetį: „Kadangi šilta atmosfera gali išlaikyti daugiau drėgmės, vasarą būna intensyvesnių liūčių, o žiemą, nors ir trumpalaikių, bet intensyvaus snygio atvejų.“ 
 \
 Ekstremalėjant orams, Lietuvos civilinės saugos specialistai jau ragina turėti pasiruošus maisto atsargų, o gyvenantiems sodybose pasirūpinti autonominiais energijos šaltiniais – ne tik malkomis kūrenama krosnimi, bet ir atsarginiu elektros generatoriumi, kad, vėluojant pagalbai, neliktų pavojingai atkirsti nuo pasaulio.
@@ -104,7 +105,7 @@ Psichologas taip pat pabrėžia infrastruktūros svarbą: „Neturėtume tikėti
 A. Telešienė pateikia pavyzdį apie atliekų rūšiavimą: „Viena yra kalbėti apie rūšiavimą jei kieme stovi tam pritaikyti konteineriai, ir kita – jeigu jie yra už poros kilometrų arba jų išvis nėra.“ Pasak sociologės, tai susiję su pastangomis. Nesant infrastruktūros, net labai stiprios ekologinės vertybės neduos rezultatų. Ir atvirkščiai, sudarius sąlygas, žmonių elgesys keisis greičiau – jei bus patogu ir paprasta tai daryti, atliekų rūšiavimas, naudojimasis visuomeniniu transportu ir kiti aplinkos tausojimo būdai populiarės.\
 
 Ekologinės etikos tyrinėtojo VU filosofo Česlovo Kalendos manymu, tokie motyvai kaip patogumas, ekonominė paskata ir greitai matomas rezultatas (pvz., depozitinės taros surinkimo sistema) tikrai padeda spręsti paprastesnes ekologines problemas. Bet motyvacija prisidėti sprendžiant kompleksines, ilgalaikes krizes, tokias kaip klimato kaita, atsiranda iš altruistinių vertybių, toliaregiško požiūrio ir gilaus savo atsakomybės suvokimo. Ribotą lietuvių aplinkosauginę savimonę jis sieja su istorija – baudžiava, sovietine kolektyvizacija ir melioracija, dėl kurių jau seniai praradome ne tik nuosavybę, bet ryšį su pažįstama gamta .\
- 
+
 Šiuo požiūriu daugelyje šalių, taip pat ir Lietuvoje – sociologai pastebi skirtumą tarp kartų. Apklausos rodo, kad labiau dėl klimato krizės nerimauja jaunesni ir aukštąjį išsilavinimą turintys žmonės – dažniau moterys. Aplinkosauginėmis nuostatomis išsiskiria jaunieji miestų gyventojai. \
 
 **Ko bijo jaunimas?**
