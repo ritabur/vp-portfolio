@@ -1,7 +1,7 @@
 ---
 templateKey: audio-post
 language: en
-title: Heart-shaped Footprints (2017)
+title: Heart-shaped Footprints
 date: 2021-02-24T11:33:27.484Z
 image: /img/2017_vilkas_v.karpavičius.jpg
 imageCredits: Photo by Vaidas Karpavičius
