@@ -12,7 +12,7 @@ Very few people have seen them. Some have been trying to meet them for years and
 
 *Nominated for the Prix Europa 2018, Berlin* *Presented at the 44TH International Feature Conference, May 20-24, 2018, Prague*
 
-English transcript: https://drive.google.com/drive/u/0/folders/14O0OwIzF3ULP8nH8kQvNKlV_u589TMqM
+English transcript: https://drive.google.com/file/d/1LyzPkvZC7LeP8zqrH7lfEItdcpz-J5qJ/view?usp=sharing
 
 Producer: Vaida Pilibaitytė Editor: Inga Janiulytė
 Photo by Vaidas Karpavičius
