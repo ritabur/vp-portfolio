@@ -1,6 +1,6 @@
 ---
-language: en
 templateKey: contact
+language: en
 path: /contact
 title: Contact
 ---
