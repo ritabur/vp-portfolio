@@ -18,6 +18,8 @@ Nuo liepos iki spalio bendrovė „Raseinių vandenys“ maistui jiems vežiojo 
 
 Bet ar tikrai šioje istorijoje jau galima dėti tašką, jei taršos šaltinis taip ir nebuvo nustatytas? Ar ši istorija nepasikartos kitur Lietuvoje?
 
+*2018 m. pelnė Vilniaus politikos ir analizės instituto tiriamosios žurnalistikos premiją*
+
 2018
 
 I dalis: https://www.lrt.lt/mediateka/irasas/1013690493/radijo-dokumentika-arsenas-is-giedro-dangaus-i
