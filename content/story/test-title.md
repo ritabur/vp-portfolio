@@ -142,7 +142,7 @@ Iš dalies dėl to, kad pasigedo įvairesnių klausimų iš žurnalistų, taip p
 
 Naujausiame [savo įraše](<http://www.klimatogrupe.vu.lt/2021/02/05/apklausos-ir-klimato-kaita-ekonomines-ir-politines-grimasos-ii-dalis/ >) jis analizuoja visuomenės nuomonės tyrimus iš politinės ir socioekonominės perspektyvos.  Klimatologas svarsto, kad vertėtų klimato krizę matyti kaip moralinį, etinį klausimą: kol neišmoksime veikti ir mąstyti kaip bendruomenės, o ne tik kaip individai, negalime tikėtis, kad klimato krizės sprendimai išjudės iš mirties taško. „Tik atrodo, kad moralė labai sunkiai įsijungia šioje srityje“, – apgailestauja J. Kažys. „Visi ieško naudos sau, savo draugui, savo šeimai. Nematome bendro dalyko. Aišku tai nėra vien Lietuvos problema, jokiu būdu – visur susiduriame su tokiu žmogišku požiūriu.“
 
-*[Tekstas publikuotas www.lrt.lt](<https://www.lrt.lt/naujienos/nuomones/3/1341114/vaida-pilibaityte-klimato-krizes-paradoksai-kai-skirtumas-tarp-zodziu-ir-darbu-gyvybiskai-svarbus >)*\
+*[Tekstas publikuotas www.lrt.lt](<https://www.lrt.lt/naujienos/nuomones/3/1341114/vaida-pilibaityte-klimato-krizes-paradoksai-kai-skirtumas-tarp-zodziu-ir-darbu-gyvybiskai-svarbus >)*
 \
 *Taip pat šia tema klausykitės LRT RADIJO [laidos įrašo.](https://www.lrt.lt/mediateka/irasas/2000138877/vienkartine-planeta-klimato-kaitos-suvokimo-paradoksai)*
 \
