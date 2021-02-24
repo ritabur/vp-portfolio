@@ -12,6 +12,6 @@ column2:
     2006.
 column3:
   title: Training and mentoring
-  body: I share my experience in workshops, teach a course in radio feature
-    production and mentor audio producers at the start of their career.
+  body: I conduct workshops, teach a course in radio feature production and mentor
+    audio producers at the start of their career.
 ---
