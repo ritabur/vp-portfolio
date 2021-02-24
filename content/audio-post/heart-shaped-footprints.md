@@ -4,6 +4,7 @@ language: en
 title: Heart-shaped Footprints
 date: 2021-02-24T11:33:27.484Z
 image: /img/2017_vilkas_v.karpavičius.jpg
+imageCredits: Photo by Vaidas Karpavičius
 shortDescription: Five stories about encounters with one of the most
   controversial wild predators in Lithuania. Nominated for the Prix Europa 2018.
 ---
