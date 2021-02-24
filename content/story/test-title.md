@@ -17,50 +17,51 @@ shortDescription: "Tyrimai rodo, kad žmonių, suvokiančių pasaulį ištikusio
 
 Lietuvos aplinkosaugos diskursą – tai, kaip apie šiuos reiškinius kalbame ir kaip juos suvokiame – sociologė tyrinėja jau beveik du [dešimtmečius](<https://www.lituanistika.lt/content/10487 >) . Ji žino, kokia yra svarbi klausimų formuluotė sociologinėse apklausose: „Mes sąmoningai vartojame žodį „manau“, – profesorė pažymi, kad dėl žodyno mokslininkai kartais diskutuoja ne vieną valandą, – čia psichologiniai dalykai – kaip žmogaus paklausi, kokias asociacijas jam sukels.“
 
-Bet kasdienėje kalboje žodžiai skraido kaip žvirbliai ir girdime klausimus apie „tikėjimą“ klimato kaita, naujo viruso pandemija ar net mokslu. „Man tai atrodo tas pats, kas klausti, ar \[tiki, kad] saulė pateka ryte, o vakare nusileidžia“, – palygina doc. Justas Kažys iš Vilniaus universiteto (VU) Klimato kaitos grupės.\
+Bet kasdienėje kalboje žodžiai skraido kaip žvirbliai ir girdime klausimus apie „tikėjimą“ klimato kaita, naujo viruso pandemija ar net mokslu. „Man tai atrodo tas pats, kas klausti, ar \[tiki, kad] saulė pateka ryte, o vakare nusileidžia“, – palygina doc. Justas Kažys iš Vilniaus universiteto (VU) Klimato kaitos grupės.
 
 Atrodytų, koks skirtumas – ar klausimai [dvasinio](https://www.lrt.lt/naujienos/lietuvoje/2/1306481/apklausa-atskleide-lietuvos-zmoniu-poziuri-i-klimato-kaita-dauguma-tiki-bet-ekspertai-ragina-imtis-ir-veiksmu), ar mokslinio pobūdžio, dauguma Lietuvos gyventojų šiandien supranta, kad klimato kaita vyksta, ir tai kelia jiems nerimą. Daugiau ar mažiau dėl to [nerimaujantys prisipažįsta](<https://www.ebooks.ktu.lt/eb/1519/lietuvos-gyventoju-poziuriai-i-klimato-kaita-ir-energijos-gamybos-saltinius-trumpoji-tyrimo-rezultatu-ataskaita/ >) 8 iš 10 žmonių (81 proc.). 7 iš 10 (72 proc.) sako, kad tai [„labai rimta“ problema](<https://ec.europa.eu/clima/sites/clima/files/support/docs/report_2019_en.pdf >).
 
 Nors šis skaičius vos mažesnis už Europos Sąjungos (ES) vidurkį (79 proc.) ir nepalyginamas su pasaulio klimato mokslininkų [šimtaprocentiniu sutarimu](<https://journals.sagepub.com/doi/10.1177/0270467619886266 >), dėl ko planeta kaista, bet turėtų būti pakankamas, kad skubėtume prisidėti prie šitos žmoniją ištikusios egzistencinės krizės sprendimo. 
 
 Bet, kaip žinome, žodžiai ir darbai kartais skiriasi. Tik šiuo atveju tas neatitikimas gali būti gyvybiškai svarbus. 
-\
+
 **Kodėl reikia skubėti?**
 2018 m. Jungtinių tautų Tarpvyriausybinė klimato kaitos komisija (angl. *Intergovernmental Panel for Climate Change – IPCC*) perspėjo, kad užkirsti kelią nevaldomai klimato katastrofai liko vos 12 metų – taip savo antraštėje [apibendrino ](<https://www.theguardian.com/environment/2018/oct/08/global-warming-must-not-exceed-15c-warns-landmark-un-report >)britų „The Guardian“. „Nors pasakyta gero linkint, vis vien tai – nesąmonė“, –  [nukirto ](<https://blogs.scientificamerican.com/hot-planet/thinking-about-climate-on-a-dark-dismal-morning/ >)klimato mokslininkė iš JAV Kate Marvel. Pasak jos, laiko liko daugiau, ir kartu nebeliko visai. „Klimato kaita nėra skardis, nuo kurio nukrisime, o šlaitas, kuriuo slystame.“ Ji norėtų, kad bent jau sutartume apsisukti ir iš visų jėgų keberiotis aukštyn.
 
 Pasaulio klimato mokslininkus vienijanti grupė savo ataskaitoje [rašo](https://www.ipcc.ch/site/assets/uploads/sites/2/2018/07/SR15_SPM_version_stand_alone_LR.pdf), kad, siekiant stabilizuoti padėtį, būtina stabdyti globalų atšilimą ties 1,5 °C riba, maždaug perpus sumažinant šiltnamio dujų išmetimus iki 2030. Be jokios abejonės, tai nereiškia, kad, praleidus tą terminą, jau po dešimtmečio ateis pasaulio pabaiga. Juk nors klimato krizė globali, jos poveikis įvairiose šalyse nevienodas. Tai tiesiog reiškia, kad, jei nieko nedarysime, arba taršą šiltnamio dujomis mažinsime per lėtai, planeta taps vis mažiau tinkama dabartinei bioįvairovei ir žmonėms. 
 
 „Aš nematau to niūrumo. Priimu tai kaip būtį, kuri tikrai mus ištiks“, – su gamtos mokslų atstovams būdinga ramybe apokaliptines žiniasklaidos antraštes komentuoja J. Kažys. Kartu jis patvirtina, kad jos nėra visiškai klaidinančios, ypač jei sugebi matyti tolimesnę perspektyvą. „Manau, kad per šimtą metų žmonija tikrai neišnyks dėl klimato kaitos poveikio, bet kartu ateina daug baisesni dalykai – tokie kaip badas ir karas. Paryžiaus klimato susitarimo tikslų nepavyks įgyvendinti, mes šilsime daugiau kaip 2 °C, o tai reiškia, kad egzistuosime, bet turėsime gyventi kitokiame pasaulyje.“ 
-\
+
 2021-ųjų sausio pabaigoje, kai apie tai kalbamės nuotoliniu būdu, beveik visą Lietuvą užklupusi ne tik pandemija, bet ir išsiilgta, balta žiema. Vietomis fiksuojami nauji per parą iškritusio sniego [rekordai](<http://www.meteo.lt/lt/naujienos/-/asset_publisher/RrOmWx3nFPCR/content/2021-01-29-ar-siu-metu-sniego-danga-rekordine-?inheritRedirect=false&redirect=http%3A%2F%2F >). Daugiabučių kiemuose būriuojasi sniego seniai, iš parduotuvių lentynų šluojami sniego kastuvai, slidės, rogutės ir „katės“ batams. Sniego tiek, kad neatlaikę svorio pokšėdami masiškai lūžta medžiai, nutraukia laidus ir be elektros kelioms paroms palieka apie 290 tūkst. [ESO klientų](<https://www.eso.lt/lt/ziniasklaida/rekordinis-snygis-svarbiausi-faktai.html >). Bandydami pasiekti gedimų vietas, klimpsta į pagalbą pasitelkti seniūnijų traktoriai ir ugniagesių automobiliai.
 
 Tokiame kontekste nesunku trumpam pamiršti faktą, kad vidutinė metinė oro temperatūra Lietuvoje [didėja ](<http://www.meteo.lt/lt/naujienos/-/asset_publisher/RrOmWx3nFPCR/content/2021-01-05-2020-m-lietuvoje-buvo-silciausi-per-visa-meteorologiniu-stebejimu-istorija-?inheritRedirect=false&redirect=http%3A%2F%2F >)pastarąjį pusšimtį metų. Faktas yra ir tai, kad ką tik pasibaigę metai buvo šilčiausi per visą stebėjimų istoriją. Lietuvos hidrometeorologijos tarnybos duomenimis, 2020-aisiais ji pirmą kartą peržengė 9 °C ribą, o praėjęs dešimtmetis tapo pačiu šilčiausiu dešimtmečiu nuo matavimų pradžios 18 a. . Šylant klimatui, mokslininkai [prognozuoja](<https://am.lrv.lt/uploads/am/documents/files/KLIMATO%20KAITA/Studijos%2C%20metodin%C4%97%20med%C5%BEiaga/2019%20m_%20100%20kl_apie%20klimato.pdf >), kad ateityje Lietuvoje galime tikėtis daugiau šiltesnių žiemų ir kritulių, dažnesnių ekstremalių karščio bangų ir sausringų vasarų.
 
 Pasak klimatologų, tai nereiškia, kad snieguotas žiemas galime pamiršti. Kaip LRT RADIJUI [prognozavo ](<https://www.lrt.lt/mediateka/irasas/2000139212/10-12-nuo-elektros-generatoriu-iki-konservu-kaip-pasiruosti-ekstremalioms-situacijoms >)VU profesorius Arūnas Bukantis, galbūt ir ateityje jų sulauksime kartą ar du per dešimtmetį: „Kadangi šilta atmosfera gali išlaikyti daugiau drėgmės, vasarą būna intensyvesnių liūčių, o žiemą, nors ir trumpalaikių, bet intensyvaus snygio atvejų.“ 
-\
+
 Ekstremalėjant orams, Lietuvos civilinės saugos specialistai jau ragina turėti pasiruošus maisto atsargų, o gyvenantiems sodybose pasirūpinti autonominiais energijos šaltiniais – ne tik malkomis kūrenama krosnimi, bet ir atsarginiu elektros generatoriumi, kad, vėluojant pagalbai, neliktų pavojingai atkirsti nuo pasaulio.
+
 Kadangi dramatiški pokyčiai neišvengiami, britų profesorius Jemas Bendellis siūlo „giliojo prisitaikymo“ [strategiją](<https://jembendell.com/2019/05/15/deep-adaptation-versions/?fbclid=IwAR1SYiRh2T1Ta-tJtiQTGdi8TdQzJJoT7hMCglj9TJ2vR5cT1usluZb43a0 >). Jis ragina susitelkti į visuomenės atsparumo didinimą, atsisakyti visko, kas blogina padėtį, – daiktų, įpročių ar įsitikinimų, imtis atkurti pažeistas ekosistemas ir susitaikyti su tuo, kad bandydami išlikti galime patirti nesėkmę. 
-\
+
 Panašiai mąsto ir J. Kažys, akcentuojantis bendruomeniškumo svarbą ir tai, kad veikti reikia pradėti jau dabar. Priešingu atveju ateityje teks mokėti kur kas didesnę kainą – tiek ekonomine, tiek žmonių gyvybių prasme. „Gamta ras kelių būti labai įvairiomis sąlygomis. Klausimas, kiek mes norėsime joje būti. Ar gamta benorės mus matyti, ar kas dieną siųs ekstremalų orų pliūpsnį? Tam tikros gyvybės formos visada išlieka, bet kad įvairovė būtų panašesnė į dabartinę, mums reikia daug padaryti.“
-\
+
 **Tyrinėti ne tik gamtą**
 Ryšį tarp žmonių deginamo iškastinio kuro ir sparčiai šylančio klimato pasaulio mokslininkai kaip problemą [įvardijo ](<https://www.ipcc.ch/report/ar2/wg1/ >)jau prieš beveik trisdešimt metų. Lietuvos klimato savybes – oro temperatūros, kritulių kiekio, sniego ir ekstremalių reiškinių pokyčius ateityje – VU klimatologai [tiria ](<https://am.lrv.lt/uploads/am/documents/files/KLIMATO%20KAITA/Studijos%2C%20metodin%C4%97%20med%C5%BEiaga/2019%20m_%20100%20kl_apie%20klimato.pdf >)daugiau kaip du dešimtmečius .  Iki šiol buvo įprasta, kad apie klimato kaitą kalba būtent jie – gamtos mokslų atstovai, aiškinantys priežastis, poveikį aplinkai bei siūlantys technologinius sprendimus.  Dabar aiškėja, kad svarbu mokėti modeliuoti ne tik klimatą, bet ir žmonių elgseną.
 
 „Tai turės pasekmių mūsų visuomenės sveikatai, gerovei, skurdui, migracijai ir taip toliau“, – sako KTU sociologė A. Telešienė. Pasak jos, auga suvokimas, kad klimato kaita nėra tik ekologinė problema ir kad į jos sprendimų paiešką reikia įtraukti ir socialinių bei humanitarinių mokslų atstovus. „Teisingą“ transformaciją tvarumo linkme žada ir Europos Komisija, 2019 m. pasukusi vadinamojo Žaliojo [kurso keliu](<https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal_en >). ES deklaruoja kilnų [siekį](https://ec.europa.eu/info/strategy/priorities-2019-2024/european-green-deal/actions-being-taken-eu/just-transition-mechanism_en) kovoje su klimato kaita nepakenkti, nepalikti užribyje pažeidžiamų visuomenės grupių.
 
 „Tebeturime didelę skirtį tarp to, ką nuveikė gamtos mokslai, ir kaip tai pateikiama komunikacijoje ir socialiniuose tyrimuose“, – antrina J. Kažys. Tai buvo viena iš priežasčių, kodėl prieš keletą metų jis nusprendė atidėti į šoną savo gamtos mokslų tyrimus ir pats imtis sociologijos bei komunikacijos temų. 
-\
+
 „Supratau, kad tik skaičiuodamas ir nemokėdamas komunikuoti tų žinių, arba nesuprasdamas, ko žmonėms reikia, daug nepasieksi“, – pasakoja mokslininkas. Dabar jį vis labiau domina ne tik politiniai, bet ir socialiniai bei filosofiniai klimato krizės aspektai. „Kodėl pakankamai žinome kaip mokslininkai, kad būtų pradėti veiksmai, o taip mažai nuveikta?“ – klausia jis. 
-\
+
 Pasirodo, atsakymo į šitą klausimą tebeieško ir aplinkos sociologai, ir psichologai.
-\
+
 **Klimatas ir kitos problemos** 
-Bandydami suprasti, kaip žmonės klimato kaitą mato kitų problemų kontekste, sociologai paprastai užduoda atvirą klausimą arba paprašo išsirinkti iš pateikto sąrašo. Pavyzdžiui, 2016 m. Kardifo universiteto mokslininkų vadovaujama grupė Jungtinės Karalystės, Vokietijos, Prancūzijos ir Norvegijos gyventojų [klausė](https://orca.cf.ac.uk/98660/7/EPCC.pdf), apie tai, kokią problemą jie mano būsiant svarbiausią šaliai per ateinančius 20 metų. \
-\
+Bandydami suprasti, kaip žmonės klimato kaitą mato kitų problemų kontekste, sociologai paprastai užduoda atvirą klausimą arba paprašo išsirinkti iš pateikto sąrašo. Pavyzdžiui, 2016 m. Kardifo universiteto mokslininkų vadovaujama grupė Jungtinės Karalystės, Vokietijos, Prancūzijos ir Norvegijos gyventojų [klausė](https://orca.cf.ac.uk/98660/7/EPCC.pdf), apie tai, kokią problemą jie mano būsiant svarbiausią šaliai per ateinančius 20 metų. 
+
 Klimato kaita Prancūzijoje ir Norvegijoje tada pateko į pirmąjį penketą, kurio viršuje atsidūrė nedarbas, aplinkos tarša ir imigracija. Vokietijoje bei Jungtinėje Karalystėje klimato kaita liko dešimtuko apačioje. KTU sociologai pagal tą pačią metodiką 2018 m. [panašų tyrimą](<https://www.ebooks.ktu.lt/eb/1519/lietuvos-gyventoju-poziuriai-i-klimato-kaita-ir-energijos-gamybos-saltinius-trumpoji-tyrimo-rezultatu-ataskaita/ >) atliko Lietuvoje. Rezultatai parodė, kad mūsų šalies gyventojams svarbiausi išlieka ekonominiai klausimai – nedarbo, kainų, pajamų. 
 
-„Aplinkosaugos, ypač klimato kaitos, problemos Lietuvoje tikrai nepatenka tarp dažniausiai įvardijamų. Tuo metu Skandinavijos šalyse taip atvirai paklausus, klimato kaita atsiras trejetuke, mažų mažiausiai – penketuke“, – sako  A.Telešienė. \
-\
+„Aplinkosaugos, ypač klimato kaitos, problemos Lietuvoje tikrai nepatenka tarp dažniausiai įvardijamų. Tuo metu Skandinavijos šalyse taip atvirai paklausus, klimato kaita atsiras trejetuke, mažų mažiausiai – penketuke“, – sako  A.Telešienė. 
+
 2004-aisiais, kai prie ES prisijungė 10 naujų narių, tarp jų ir Lietuva, buvo tiriamos gyventojų [aplinkosauginės nuostatos](<https://ec.europa.eu/commfrontoffice/publicopinion/archives/ebs/ebs_217_en.pdf >). Įdomu tai, kad jau tada Bendrijos senbuvės ir naujokės skirtingai vertino klimato kaitos grėsmes. Senosiose narėse kone kas antras tai įvardijo kaip didžiausią aplinkosaugos problemą (47 proc.), o tarp naujųjų narių taip manančių buvo apie trečdalį (34 proc). Lietuviai tuomet iš visos ES išsiskyrė didžiausiu susirūpinimu dėl oro taršos, o klimato kaita už mus mažiau svarbi buvo tik kaimynams latviams. 
 
 Atsivertę naujausią 2019 m. Eurobarometro [apklausą ](<https://ec.europa.eu/clima/sites/clima/files/support/docs/report_2019_en.pdf >)apie klimato kaitą, Lietuvą vis dar rastume tarp tokių ES šalių kaip Bulgarija, Latvija, Graikija, Kroatija, Rumunija, Slovakija ir Kipras, kur mažiausiai žmonių tai laiko svarbiausia problema (10–14 proc.). 
@@ -86,17 +87,17 @@ Tokie sociologinių tyrimų rezultatai VU Klimato kaitos grupės tyrėjo J. Kaž
 Pasak klimatologo, tai, kad nerimaujančiųjų dėl klimato žodžiai nevirsta darbais, rodo, kad per visus tuos dešimtmečius taip ir neprisikapstėme iki esmės. „Pats terminas jau tiek nuvalkiotas, tiek bando aprėpti ir kartu nieko nebesako. Tai ir veiksmai tampa beprasmiai“, – todėl J. Kažys siūlo gana drastišką sprendimą: nustoti minėti klimato kaitą išvis ir tiesiog imtis sprendimų – atsisakykime iškastinio kuro, rinkimės mažiau taršų transportą, plėskime žaliąsias erdves. 
 
 „Visi nori gyventi švariame mieste, tai ir nekiškime čia klimato kaitos. Niekas nesupyks, jei nebus pasakyta, kad tai padaryta dėl klimato“, – klimatologas mano, kad tai būtų veiksmingiau už popierines politines deklaracijas, vis netampančias realybe. Kaip pavyzdį jis pacituoja 2019 m. Klimato savaitės konferencijoje prezidento Gitano Nausėdos sakytą [kalbą](<https://www.lrp.lt/lt/lietuvos-respublikos-prezidento-gitano-nausedos-kalba-klimato-savaites-konferencijoje/33499 >): „Pasakymas, kad „mūsų gerovė neturi būti paaukota klimato kaitos sąskaita“, skamba absurdiškai ir baisiai. Žinant, kad mūsų prezidento nuomonė tokia ribota, ko tikėtis iš daugelio Lietuvos žmonių?“ 
-\
+
 **Sąmoningųjų portretai** 
 Sociologai aiškina, kad aplinkosauginį sąmoningumą pirmiausia lemia vertybės, o mūsuose jos labiau materialistinės ir konservatyvios. Pasak A. Telešienės, tai patvirtina Europos vertybių tyrimai: „Iš tikrųjų tuo stipriai skiriamės nuo kitų Europos šalių.“ 
 
 Be to, yra nemažai vidinių pasaulėžiūros elementų, kurie iš pirmo žvilgsnio gali pasirodyti su aplinkosauga nesusiję. Pavyzdžiui, pasitikėjimas kitais, šalies valdžia ir politinėmis institucijomis taip pat savo pilietinės galios pajautimas irgi turi įtakos žmonių elgsenai. „Lietuviai tikrai nėra linkę pasitikėti kitais, tikrai yra linkę nuvertinti atskiro individo elgsenos reikšmę, todėl ir nesiima aplinkai draugiškų veiksmų.“ 
 
 Kad galėtume keisti savo kasdienius įpročius, svarbus ir bendruomeniškumo jausmas, kai teigiamai atsakome sau į klausimą „ar žmonės aplink mane galvoja panašiai, ar su savo ekologiniais sprendimais galėsiu pritapti?“ 
-Psichologai tai vadina ekologine arba aplinkosaugine tapatybe. „Tai yra savęs identifikavimo dalykas – kiek žmogus, suvokia priklausantis tai grupei, kuri rūpinasi gamta“, – sako dr. Mykolas Simas Poškus iš Mykolo Romerio universiteto (MRU) Aplinkos psichologijos tyrimų centro.\
-\
+Psichologai tai vadina ekologine arba aplinkosaugine tapatybe. „Tai yra savęs identifikavimo dalykas – kiek žmogus, suvokia priklausantis tai grupei, kuri rūpinasi gamta“, – sako dr. Mykolas Simas Poškus iš Mykolo Romerio universiteto (MRU) Aplinkos psichologijos tyrimų centro.
+
 Tyrimai rodo, kad tose šalyse, kur nacionalinė tapatybė tampriai susijusi su gamta, pavyzdžiui, Norvegijoje ir  Prancūzijoje, gyventojai labiau linkę palaikyti aplinkosaugos politiką, tarp jų ir klimato kaitos švelninimo priemones. Bet kultūriškai artimas ryšys su gamta nėra būtina aplinkai palankaus elgesio sąlyga. Pasak mokslininko, tai galima ugdyti keičiant socialines normas – t. y. tai, kas laikoma visuotinai priimtina – skleidžiant  žinią, kad toks elgesys yra įprastas ir pageidaujamas. 
-\
+
 „Žmogus, kai įpranta taupyti vandenį ir elektrą, rūšiuoti, ima perimti ir kitus aplinkai palankius įpročius. Užsiveda toks varikliukas“, – psichologas taip pat atkreipia dėmesį, kad polinkį keistis lemia ir būdo bruožai. 
 
 M.S. Poškus savo daktaro disertacijoje [tyrinėjo ](<https://repository.mruni.eu/handle/007/15810 >)gamtai draugišką paauglių elgesį ir kaip jį veikia socialinės reklamos. „Mes žinojome, kad jos bus veiksmingos, nes buvo paremtos literatūroje aprašytais efektyvumo principais. Bet iki tol nebuvo aišku, kokie žmonės yra labiau linkę keistis apskritai.“ Tyrimas parodė, kad tie jaunuoliai, kurie yra draugiški, socialūs, atviresni ir imlesni naujovėms, greičiau pasiduoda raginimui imtis aplinkai palankių veiksmų nei konservatyvesni bendraamžiai.
@@ -111,7 +112,7 @@ Ekologinės etikos tyrinėtojo VU filosofo Česlovo Kalendos [manymu](<https://w
 
 **Ko bijo jaunimas?**
 „Aš bijau, kad lauksiu iki paskutinės akimirkos, kol kas nors mus išgelbės, ir niekas nesikeis“, – sako panevėžietė Ugnė Misevičiūtė. Jai – penkiolika, bet jos rūpesčiai visai nevaikiški. „Bijau suirutės, kuri kils dėl klimato kaitos. Dabar tai labiau jaučia kitos šalys, bet aš žinau, kad tai įvyks ir Lietuvoje.“  Didžiausią nerimą jai kelia suvokimas, kad ateis diena, kai klimato kaita taps nekontroliuojama, kaip rašoma niūriausiose klimato mokslininkų prognozėse: „Tie staigūs dideli pokyčiai ir suvokimas, kad pats esi dėl to kaltas, – tai mane gąsdina labiausiai.“
-\
+
 Klimato kaita gimnazistė susidomėjo prieš porą metų, kai per pasaulį ritosi švedų moksleivės Gretos Thunberg įkvėptų jaunimo protestų už klimatą banga. Mokykloje gaunamų žinių nepakako, tad pati ėmė ieškoti informacijos internete ir knygose, jos skaitinių sąraše – ne tik žinomos švedų moksleivės autobiografija, bet ir kanadiečių žurnalistės Naomi Klein knyga „Tai viską keičia“.
 
 Nusipiešusi plakatą, porą dienų moksleivė netgi sako sėdėjusi prie Panevėžio miesto savivaldybės. „Nežinau, kaip Greta sugebėjo išsėdėti viena tiek laiko, nes jausmas toks, lyg būtum vienas prieš visą pasaulį.“ Ji tikėjosi, kad kas nors prieis su ja pasikalbėti apie pasaulį ištikusią krizę. „Aš įsivaizdavau diskusiją su žmogumi. Kad manęs paklaus, kodėl protestuoju ir aš pateiksiu faktų, kuriuos sužinojau. Bet niekas nesusidomėjo“, – savo dviejų dienų, po dvi valandas trukusį klimato streiką prisimena U. Misevičiūtė. 
