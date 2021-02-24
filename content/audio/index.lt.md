@@ -4,4 +4,5 @@ language: lt
 path: /audio
 title: Audio
 ---
-Čia rasite nuorodų į kelis mano garso pasakojimus, kuriuos trasliavo LRT RADIJAS. Nors kuriu dokumentikas apie istoriją ir kultūrą, šitas rinkinys labiau aplinkosauginis.
+Čia kelios nuorodos į mano garso dokumentikas ir kitas laidas, kurias transliavo LRT RADIJAS. \
+Nors kuriu pasakojimus apie istoriją ir kultūrą, šitas grojaraštis labiau aplinkosauginis.
