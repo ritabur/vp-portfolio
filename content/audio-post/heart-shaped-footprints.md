@@ -15,8 +15,7 @@ Very few people have seen them. Some have been trying to meet them for years and
 
 Producer: Vaida Pilibaitytė \
 Editor: Inga Janiulytė
-Photo by Vaidas Karpavičius
-
+\
 First broadcast in 2017
 
 *Nominated for the Prix Europa 2018, Berlin* 
