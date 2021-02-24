@@ -30,6 +30,7 @@
 * ~~update deps~~
 * ~~fix font weight for FF~~
 * ~~fix rel=canonical for SEO score~~
+* sort audio entries by date (as in stories)
 * fix firebase rules
 * fix AppContext and translations.js
 * don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
