@@ -4,10 +4,6 @@ language: en
 title: Homepage
 headlineLeft: Stories about humans and the planet
 featuredEntries:
-  - type: audio-post
-    items:
-      - Test (EN)
-      - Arsenas iš giedro dangaus / Arsenic From the Clear Sky [LT]
   - type: story
     items:
       - Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety
@@ -15,4 +11,9 @@ featuredEntries:
       - Story 1
       - Story 3
       - Story 2
+  - type: audio-post
+    items:
+      - Siding with the Trees
+      - "Arsenic From a Clear Sky "
+      - Heart-shaped Footprints
 ---

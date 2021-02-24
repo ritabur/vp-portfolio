@@ -7,9 +7,8 @@ featuredEntries:
   - type: audio-post
     items:
       - Suprasti debesis / The Cloud Study [LT]
-      - Medžio pusėn stojęs žmogus/ Siding With the Trees [LT]
-      - Širdies formos pėdsakai / Heart-shaped Footprints [LT]
-      - Arsenas iš giedro dangaus / Arsenic From the Clear Sky [LT]
+      - Medžio pusėn stojęs žmogus
+      - Arsenas iš giedro dangaus
   - type: story
     items:
       - Apie ramybę ir nerimą katastrofos akivaizdoje/ On Serenity and Anxiety
