@@ -15,7 +15,7 @@ shortDescription: "Tyrimai rodo, kad žmonių, suvokiančių pasaulį ištikusio
 
 „Aš iš tiesų labai sutrinku, jeigu manęs paklausia „ar tu tiki klimato kaita“, – prisipažįsta  Kauno technologijos universiteto (KTU) profesorė Audronė Telešienė. – „Aš žinau, kad ji vyksta. Tikėti reikia dalykais, kurie yra transcendentiniai ir jų egzistavimui \[pagrįsti] faktų neturime.“
 
-Lietuvos aplinkosaugos diskursą – tai, kaip apie šiuos reiškinius kalbame ir kaip juos suvokiame – sociologė tyrinėja jau beveik du [dešimtmečius](<https://www.lituanistika.lt/content/10487 >) . Ji žino, kokia yra svarbi klausimų formuluotė sociologinėse apklausose: „Mes sąmoningai vartojame žodį „manau“, – profesorė pažymi, kad dėl žodyno mokslininkai kartais diskutuoja ne vieną valandą, – čia psichologiniai dalykai – kaip žmogaus paklausi, kokias asociacijas jam sukels.“
+Lietuvos aplinkosaugos diskursą – tai, kaip apie šiuos reiškinius kalbame ir kaip juos suvokiame – sociologė tyrinėja jau beveik du [dešimtmečius](<https://www.lituanistika.lt/content/10487 >). Ji žino, kokia yra svarbi klausimų formuluotė sociologinėse apklausose: „Mes sąmoningai vartojame žodį „manau“, – profesorė pažymi, kad dėl žodyno mokslininkai kartais diskutuoja ne vieną valandą, – čia psichologiniai dalykai – kaip žmogaus paklausi, kokias asociacijas jam sukels.“
 
 Bet kasdienėje kalboje žodžiai skraido kaip žvirbliai ir girdime klausimus apie „tikėjimą“ klimato kaita, naujo viruso pandemija ar net mokslu. „Man tai atrodo tas pats, kas klausti, ar \[tiki, kad] saulė pateka ryte, o vakare nusileidžia“, – palygina doc. Justas Kažys iš Vilniaus universiteto (VU) Klimato kaitos grupės.
 
