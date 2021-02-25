@@ -122,7 +122,8 @@ Jaunų žmonių nuostatas ir elgesį tyrinėjantys psichologai patvirtina, kad a
 „Mes galime jaunajai kartai suteikti reikiamas žinias, kuriomis remdamiesi jie galės savo gyvenime priimti veiksmingus sprendimus. Ateities verslininkai, kurdami darbo vietas, galbūt taip pat pagalvos apie gamtą. Ateities politikai ir kultūros žmonės galbūt bus jautrūs šiai tematikai, jei informuosime apie tai anksčiau.“\
 
 **Neprisijaukinta tema**
-Ilgą laiką klimato kaitą buvo labiau įprasta vadinti „globaliniu atšilimu“. Iš pradžių tai atrodė tinkamas terminas vidutinės metinės atmosferos temperatūros kilimui apibūdinti. Visgi ilgainiui mokslininkai nutarė, kad tiksliau būtų sakyti „klimato kaita“ – nurodyti į tai, ką tas šiltėjimas iš tiesų reiškia vietos lygiu įvairių šalių gyventojams. 
+Ilgą laiką klimato kaitą buvo labiau įprasta vadinti „globaliniu atšilimu“. Iš pradžių tai atrodė tinkamas terminas vidutinės metinės atmosferos temperatūros kilimui apibūdinti. Visgi ilgainiui mokslininkai nutarė, kad tiksliau būtų sakyti „klimato kaita“ – nurodyti į tai, ką tas šiltėjimas iš tiesų reiškia vietos lygiu įvairių šalių gyventojams. \
+\
 Šiandien tiek mokslininkai, tiek žurnalistai ir Lietuvoje pratinasi sakyti „klimato krizė“ ir žiniasklaidoje ši tema iš įdomybių rubrikų pagaliau persikėlė į pagrindinių naujienų skiltis. 
 
 „Karvės dėl globaliojo atšilimo kaltos tiek pat, kiek ir automobiliai. Tai mėgina įrodyti Argentinos mokslininkai, atliekantys neįprastą tyrimą“, – 2008 m. vasarą skelbė dienraštis „Lietuvos rytas“ ir šią žinią iliustravo nuotrauka, iš kurios žvelgia kiek nusigandusi juodmargė su didžiuliu rožiniu balionu ant nugaros: „Jie prie tiriamų gyvulių nugaros pritaisė talpyklas, kuriose kaupiasi dujos iš karvių organizmo.“
