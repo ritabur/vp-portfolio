@@ -141,6 +141,7 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: ["lt", "en"], i18n: true }
       - { label: "Title (do not change)", name: "title", widget: "string", i18n: duplicate }
+      - { label: "Copyright notice", name: "copyright", widget: "string", i18n: true }
       - label: "Column-1"
         i18n: true
         name: "column1"

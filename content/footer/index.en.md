@@ -1,6 +1,7 @@
 ---
 language: en
 title: Footer
+copyright: © Vaida Pilibaitytė | 2021 | All rights reserved
 path: /footer
 column1:
   title: Science journalism

@@ -2,6 +2,7 @@
 language: lt
 title: Footer
 path: /footer
+copyright: © Vaida Pilibaitytė | 2021 | Visos teisės saugomos
 column1:
   title: Žurnalistika
   body: Esu specializuota mokslo ir aplinkosaugos žurnalistė ir apdovanojimų

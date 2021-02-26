@@ -8,7 +8,7 @@ const theme = {
   breakpoints,
   space: [],
   fonts: {
-    primary: 'Raleway, sans-serif', // montserrat //raleway //work sans
+    primary: 'Raleway, sans-serif',
   },
   colors: {
     bodyPrimary: '#050505',

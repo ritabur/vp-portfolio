@@ -32,6 +32,11 @@ const StyledP = styled.p`
   line-height: 1.6;
 `;
 
+const StyledCopyrightNotice = styled.p`
+  padding-top: 16px;
+  font-size: ${(props) => props.theme.fontSizes.smMedium};
+`;
+
 // TODO: fetching both langs until footer can be part of homepage: https://github.com/netlify/netlify-cms/pull/4487
 export const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -40,6 +45,7 @@ export const Footer = () => {
         frontmatter {
           title
           language
+          copyright
           column1 {
             body
             title
@@ -58,6 +64,7 @@ export const Footer = () => {
         frontmatter {
           title
           language
+          copyright
           column1 {
             body
             title
@@ -84,28 +91,31 @@ export const Footer = () => {
       : ltFooterContent.frontmatter;
 
   return (
-    <StyledFooter
-      py={[18, null, 40, 56]}
-      px={[30, null, 70, 90]}
-      width={[null, null, null, '95%']}
-      display={[null, null, 'flex']}
-      data-cy="footer"
-    >
-      <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
-        <StyledH4>{content.column1.title}</StyledH4>
-        <Divider />
-        <StyledP>{content.column1.body}</StyledP>
-      </Box>
-      <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
-        <StyledH4>{content.column2.title}</StyledH4>
-        <Divider />
-        <StyledP>{content.column2.body}</StyledP>
-      </Box>
-      <Box as="section" flex={1}>
-        <StyledH4>{content.column3.title}</StyledH4>
-        <Divider />
-        <StyledP>{content.column3.body}</StyledP>
-      </Box>
-    </StyledFooter>
+      <>
+        <StyledFooter
+            py={[18, null, 40, 56]}
+            px={[30, null, 70, 90]}
+            width={[null, null, null, '95%']}
+            display={[null, null, 'flex']}
+            data-cy="footer"
+        >
+          <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
+            <StyledH4>{content.column1.title}</StyledH4>
+            <Divider />
+            <StyledP>{content.column1.body}</StyledP>
+          </Box>
+          <Box as="section" pb={[30, null, 0]} pr={[null, null, 30]} flex={1}>
+            <StyledH4>{content.column2.title}</StyledH4>
+            <Divider />
+            <StyledP>{content.column2.body}</StyledP>
+          </Box>
+          <Box as="section" flex={1}>
+            <StyledH4>{content.column3.title}</StyledH4>
+            <Divider />
+            <StyledP>{content.column3.body}</StyledP>
+          </Box>
+        </StyledFooter>
+        <StyledCopyrightNotice>{content.copyright}</StyledCopyrightNotice>
+      </>
   );
 };
