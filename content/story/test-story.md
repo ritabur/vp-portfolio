@@ -1,7 +1,7 @@
 ---
 language: en
 templateKey: story
-title: Story 2
+title: Test story
 date: 2020-04-18T16:12:22.009Z
 description: description
 image: /img/arita-1.jpg
