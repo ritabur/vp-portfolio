@@ -33,8 +33,9 @@
 * ~~sort audio entries by date (as in stories)~~ (already sorted from latest to oldest)
 * ~~add copyright (in footer + cms)~~
 * ~~fix weird routes~~
-* mention designs???
 * fix firebase rules && sanitize
+* migrate to mailjet for comment emails
+* mention designs???
 * fix AppContext and translations.js
 * don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * add lint staged
@@ -65,6 +66,7 @@ after domain change:
 * update siteUrl in:
     * gatsby-config
     * functions/index.js
+    * enable e2e tests
 ---
 for "release":
 * change sender email and pass in firebase (more info in functions/.env)

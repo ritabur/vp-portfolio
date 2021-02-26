@@ -49,7 +49,10 @@ const Stories = ({ data, location }) => {
     <Layout>
       <SEO
         title={t('stories')}
-        image={posts[0].node.frontmatter.image.childImageSharp.fluid.src}
+        {...(posts.length > 0
+            ? {image: posts[0].node.frontmatter.image.childImageSharp.fluid.src}
+            : {})
+        }
         path={location.pathname}
       />
       <Box mt={[8, 16, 30]} mb={[32, 72]} width={[null, null, null, '95%']}>
