@@ -49,14 +49,14 @@ const Story = ({ data, location }) => {
 export default Story;
 
 export const pageQuery = graphql`
-  query StoryByID($id: String!) {
+  query StoryByID($id: String!, $language: String) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
         shortDescription
         imageCredits
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM DD, YYYY", locale: $language)
         image {
           childImageSharp {
             fluid(maxWidth: 850) {

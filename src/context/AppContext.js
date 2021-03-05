@@ -1,4 +1,7 @@
 import * as React from 'react';
+import dayjs from 'dayjs';
+import 'dayjs/locale/lt';
+import 'dayjs/locale/en';
 
 import { BASE_LANGUAGE, languages } from 'const';
 
@@ -27,6 +30,8 @@ export const AppContextProvider = ({ children }) => {
   };
 
   const [state, setState] = React.useState(initialState);
+
+  dayjs.locale(state.selectedLanguage);
 
   return <AppContext.Provider value={state}>{children}</AppContext.Provider>;
 };
