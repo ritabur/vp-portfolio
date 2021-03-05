@@ -31,13 +31,13 @@
 * ~~fix font weight for FF~~
 * ~~fix rel=canonical for SEO score~~
 * ~~sort audio entries by date (as in stories)~~ (already sorted from latest to oldest)
+* ~~change icons~~
 * ~~add copyright (in footer + cms)~~
 * ~~fix weird routes~~
 * fix firebase rules
-* change icons
+* rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa
 * ga and gdpr
 * migrate to mailjet for comment emails
-* mention designs???
 * fix AppContext and translations.js
 * don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * add lint staged
@@ -58,7 +58,6 @@
 * a11y
 * TS
 * transitions for mobile menu and pages
-* rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa
 ---
 post-release:
 * built-in audio player

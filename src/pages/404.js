@@ -8,9 +8,9 @@ import { ContentBox } from 'components/ContentBox';
 import { Heading } from 'components/Heading';
 import { Base } from 'components/Base';
 import { useAppContext } from 'context/AppContext';
+import { GiRadioTower } from 'react-icons/gi';
 import { t } from 'utils/translations';
 import { goHome } from 'utils/routing';
-import SignalIcon from 'assets/signal.svg';
 
 const StyledLink = styled(Link)`
   display: inline-block;
@@ -28,7 +28,7 @@ const NotFoundPage = () => {
         <Box mr={[8, 16, 86, 0]} ml={[8, 16, 86, 106]} textAlign="center">
           <ContentBox>
             <Box mb={30}>
-              <SignalIcon height={200} />
+              <GiRadioTower size={200} />
             </Box>
             <Heading>{t('404Title')}</Heading>
             <Base content={t('404Content')} />
