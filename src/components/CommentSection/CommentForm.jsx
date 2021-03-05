@@ -3,6 +3,7 @@ import { Box } from 'components/Box';
 import { Button } from 'components/Button';
 import { firestore } from '../../../firebase';
 import { Title, StyledTextarea, StyledInput } from './StyledCommentForm';
+import { t } from 'utils/translations';
 
 export const CommentForm = ({
   pathname,
@@ -38,7 +39,7 @@ export const CommentForm = ({
     <form onSubmit={handleSubmit}>
       <Box mb={24}>
         <label htmlFor="text">
-          <Title>Comment</Title>
+          <Title>{t("comment")}</Title>
           <StyledTextarea
             id="text"
             rows="4"
@@ -49,7 +50,8 @@ export const CommentForm = ({
       </Box>
       <label htmlFor="name">
         <Title>
-          Name <span>*</span>
+          {/*  TODO: translate */}
+          {t("name")} <span>*</span>
         </Title>
         <StyledInput
           id="name"
@@ -59,7 +61,7 @@ export const CommentForm = ({
         />
       </label>
       <Box mt={24}>
-        <Button type="submit">{isReply ? 'Submit reply' : 'Submit'}</Button>
+        <Button type="submit">{t('submitComment')}</Button>
       </Box>
     </form>
   );

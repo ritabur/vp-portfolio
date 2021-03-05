@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { t } from 'utils/translations';
 
 import { Box } from 'components/Box';
 import ArrowIcon from 'assets/arrow.svg';
@@ -29,7 +30,7 @@ export const GoBack = () => {
       >
         <ArrowIcon height={15} />
         <Box pt={2} pl={10}>
-          Back
+          {t('back')}
         </Box>
       </GoBackContent>
     </GoBackWrapper>

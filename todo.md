@@ -33,7 +33,9 @@
 * ~~sort audio entries by date (as in stories)~~ (already sorted from latest to oldest)
 * ~~add copyright (in footer + cms)~~
 * ~~fix weird routes~~
-* fix firebase rules && sanitize
+* fix firebase rules
+* change icons
+* ga and gdpr
 * migrate to mailjet for comment emails
 * mention designs???
 * fix AppContext and translations.js

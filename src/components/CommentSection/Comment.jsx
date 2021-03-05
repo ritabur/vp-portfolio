@@ -5,6 +5,7 @@ import { Button } from 'components/Button';
 import { Box } from 'components/Box';
 import { CommentDivider, Name, Time, Content } from './StyledComment';
 import { CommentForm } from './CommentForm';
+import { t } from 'utils/translations';
 
 export const Comment = ({ comment, comments, showDivider, pathname }) => {
   const [isReplyFormOpen, setReplyFormOpen] = React.useState(false);
@@ -61,7 +62,7 @@ export const Comment = ({ comment, comments, showDivider, pathname }) => {
           onClick={() => setReplyFormOpen(!isReplyFormOpen)}
           type="button"
         >
-          {isReplyFormOpen ? 'Cancel' : 'Reply'}
+          {isReplyFormOpen ? t('cancel') : t('reply') }
         </Button>
       </Box>
       {isReplyFormOpen && getReplyForm()}

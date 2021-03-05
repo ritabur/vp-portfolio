@@ -5,6 +5,7 @@ import { ContentBox } from 'components/ContentBox';
 import { firestore } from '../../../firebase';
 import { CommentForm } from './CommentForm';
 import { Comment } from './Comment';
+import { t } from 'utils/translations';
 
 export const SectionDivider = styled(Box)`
   height: 1px;
@@ -44,7 +45,7 @@ export const CommentSection = ({ pathname }) => {
 
     return (
       <>
-        <CommentsTitle>Comments</CommentsTitle>
+        <CommentsTitle>{t('comments')}</CommentsTitle>
         {commentsWithNoReplies.map((comment, index) => (
           <Comment
             comment={comment}

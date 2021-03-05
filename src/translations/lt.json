@@ -6,5 +6,13 @@
   "contact": "Kontaktai",
   "homepage": "Į pradžią",
   "404Title": "Nerasta",
-  "404Content": "Puslapis neegzistuoja"
+  "404Content": "Puslapis neegzistuoja",
+  "comment": "Komentaras",
+  "comments": "Komentarai",
+  "name": "Vardas",
+  "submitComment": "Siųsti",
+  "submitReply": "Atsakyti",
+  "cancel": "X",
+  "reply": "Atsakyti",
+  "back": "Grįžti"
 }
