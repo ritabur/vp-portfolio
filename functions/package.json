@@ -1,9 +1,6 @@
 {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "functions": "npm install"
-  },
   "main": "index.js",
   "dependencies": {
     "dotenv": "^8.2.0",
