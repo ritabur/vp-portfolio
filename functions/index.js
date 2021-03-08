@@ -1,9 +1,11 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
+
 const serviceAccount = require('./serviceAccountKey');
 
-// TODO: update
+// TODO: update if ever released
 const host = 'https://brave-hypatia-40862b.netlify.app';
 
 admin.initializeApp({
@@ -11,7 +13,8 @@ admin.initializeApp({
     databaseURL: 'https://vp-comments.firebaseio.com.firebaseio.com'
 });
 
-const { senderemail, senderpass, receiveremail } = functions.config().mailer;
+const { SMTP_USER, SMTP_PASSWORD, SENDER_EMAIL, ADMIN_EMAIL, RECEIVER_EMAIL } = process.env;
+const RECEIVER_LIST = [ADMIN_EMAIL, RECEIVER_EMAIL];
 
 exports.sendEmailNotification = functions.firestore
   .document('comments/{docId}')
@@ -23,19 +26,18 @@ exports.sendEmailNotification = functions.firestore
     const emailHtmlText = `<span style='font-weight:bold'>${record.name}</span> wrote: <div style="margin-top:8px; background-color:#f8f8f8; padding: 8px;">${record.content}</div><div style="margin-top:8px;">Article: <a href="${articleUrl}">${articleUrl}</a></div>`;
 
     const authData = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
-      secure: true,
-      auth: {
-        user: senderemail,
-        pass: senderpass,
-      },
+        host: "in-v3.mailjet.com",
+        port: 587,
+        auth: {
+            user: SMTP_USER,
+            pass: SMTP_PASSWORD
+        }
     });
 
     return authData
       .sendMail({
-        from: 'comments@kimchi.com',
-        to: receiveremail,
+        from: SENDER_EMAIL,
+        to: ADMIN_EMAIL, // TODO: change to RECEIVER_LIST if live
         subject: '😺 New comment',
         text: emailPlainText,
         html: emailHtmlText,
