@@ -4,9 +4,6 @@
   "engines": {
     "node": "8"
   },
-  "scripts": {
-    "build": "npm install"
-  },
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^9.2.0",
