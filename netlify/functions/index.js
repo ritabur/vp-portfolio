@@ -1,13 +1,13 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
-const serviceAccount = require('./serviceAccountKey.json');
+const serviceAccount = require('./serviceAccountKey');
 
 // TODO: update
 const host = 'https://brave-hypatia-40862b.netlify.app';
 
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
+    credential: admin.credential.cert(serviceAccount.FIREBASE_KEY),
     databaseURL: 'https://vp-comments.firebaseio.com.firebaseio.com'
 });
 
