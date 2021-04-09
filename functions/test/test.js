@@ -3,7 +3,7 @@ const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
-const serviceAccount = require('./serviceAccountKey');
+const serviceAccount = require('../serviceAccountKey');
 
 // TODO: update if ever released
 const host = 'https://brave-hypatia-40862b.netlify.app';
