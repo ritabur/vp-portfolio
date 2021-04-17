@@ -14,7 +14,20 @@ export const CommentForm = ({
   const [comment, setComment] = React.useState('');
   const [name, setName] = React.useState('');
 
-  const handleSubmit = (e) => {
+  const handleReportComment = async () => {
+      await fetch('/api/report-comment', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+              comment, name, pathname
+          })
+      });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     firestore
@@ -26,6 +39,7 @@ export const CommentForm = ({
         time: new Date(),
         parentId: parentId || null,
       })
+      .then(() => handleReportComment())
       .catch((error) => console.log('add comment error:', error)); // eslint-disable-line no-console
 
     if (onSubmit) {
@@ -50,7 +64,6 @@ export const CommentForm = ({
       </Box>
       <label htmlFor="name">
         <Title>
-          {/*  TODO: translate */}
           {t("name")} <span>*</span>
         </Title>
         <StyledInput

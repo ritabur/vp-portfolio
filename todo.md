@@ -34,11 +34,11 @@
 * ~~change icons~~
 * ~~add copyright (in footer + cms)~~
 * ~~fix weird routes~~
-* fix firebase rules
 * rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa
-* ga and gdpr
 * migrate to mailjet for comment emails
 * fix AppContext and translations.js
+* fix firebase rules
+* ga and gdpr
 * don't render mobile navbar on desktop and desktop navbar on mobile - lazy load (?)
 * add lint staged
 * fix eslints

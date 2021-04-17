@@ -4,6 +4,10 @@ module.exports = {
     // TODO: change to domain
     siteUrl: 'https://brave-hypatia-40862b.netlify.app/',
   },
+  proxy: {
+    prefix: "/api",
+    url: "http://localhost:8080",
+  },
   plugins: [
     `path-resolver`,
     {
