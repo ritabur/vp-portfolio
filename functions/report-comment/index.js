@@ -10,13 +10,10 @@ const RECEIVER_LIST = [ADMIN_EMAIL, RECEIVER_EMAIL];
 const host = 'https://brave-hypatia-40862b.netlify.app';
 
 exports.handler = async (event, context) => {
-    // Only allow POST
     if (event.httpMethod !== "POST") {
         return { statusCode: 405, body: "Method Not Allowed" };
     }
 
-    // When the method is POST, the name will no longer be in the event’s
-    // queryStringParameters – it’ll be in the event body encoded as a query string
     const params = JSON.parse(event.body);
 
     const { comment, name, pathname } = params;
