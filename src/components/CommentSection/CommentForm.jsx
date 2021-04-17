@@ -17,10 +17,6 @@ export const CommentForm = ({
   const handleReportComment = async () => {
       await fetch('/api/report-comment', {
           method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-          },
           body: JSON.stringify({
               comment, name, pathname
           })
