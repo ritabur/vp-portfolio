@@ -15,7 +15,7 @@ export const CommentForm = ({
   const [name, setName] = React.useState('');
 
   const handleReportComment = async () => {
-      await fetch('/api/report-comment', {
+      await fetch('/.netlify/functions/report-comment', {
           method: 'POST',
           body: JSON.stringify({
               comment, name, pathname
