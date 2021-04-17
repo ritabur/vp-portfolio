@@ -34,8 +34,8 @@
 * ~~change icons~~
 * ~~add copyright (in footer + cms)~~
 * ~~fix weird routes~~
-* rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa
-* migrate to mailjet for comment emails
+* ~~rethink firestore email notifications (node > 8, will stop working on Mar 15, 2021) https://stackoverflow.com/questions/63932639/400-billing-account-for-project-is-not-found-billing-must-be-enabled-for-activa~~
+* ~~migrate to mailjet for comment emails~~
 * fix AppContext and translations.js
 * fix firebase rules
 * ga and gdpr
