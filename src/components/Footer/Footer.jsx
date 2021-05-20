@@ -29,6 +29,7 @@ const StyledH4 = styled.h4`
 
 const StyledP = styled.p`
   padding-top: 26px;
+  font-size: 14px;
   line-height: 1.6;
 `;
 

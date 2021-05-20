@@ -21,7 +21,7 @@ const theme = {
   fontSizes: {
     small: '11px',
     smMedium: '13px',
-    medium: '14px',
+    medium: '15px',
     large: '18px',
   },
   fontWeights: {
